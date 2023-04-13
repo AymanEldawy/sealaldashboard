@@ -4,6 +4,8 @@ export const en = {
   register_now: "Register now",
   account: "account",
   signin: "sign in",
+  login: "login",
+  signup: "Signup",
   forgot_password: "Forget Password",
   forgot_password_1: "Please enter your mobile number and a",
   secret_code: "secret code",
