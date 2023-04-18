@@ -9,7 +9,7 @@ import { createContext, useState, useEffect } from "react";
 
 export const UserRoleContext = createContext();
 export const UserRoleContextProvider = ({ children }) => {
-  const [userRole, setUserRole] = useState("provider");
+  const [userRole, setUserRole] = useState("customer");
   useEffect(() => {
     // const dir = lang === "ar" ? "rtl" : "ltr";
     // document.body.style.direction = dir;

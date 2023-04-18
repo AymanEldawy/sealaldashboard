@@ -101,7 +101,7 @@ const OrderCard = ({
                 pathname: `/submit-offers/${order?.offer?.offerNumber}`,
                 query: myOffers ? operation : "",
               }}
-              className="flex-1 p-2 text-xs !text-white !bg-primary border rounded-md !bg-transparent"
+              className="flex-1 p-2 text-xs !text-white !bg-primary border rounded-md"
 
             >
               {fetchWord("submit_offer", lang)}

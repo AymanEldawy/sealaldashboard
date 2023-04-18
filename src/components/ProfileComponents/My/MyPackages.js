@@ -71,7 +71,7 @@ const MyPackages = () => {
               classes={`capitalize min-w-[120px] text-black ${
                 plan?.name === "basic"
                   ? "bg-secondary"
-                  : "border-2 border-primary !bg-transparent"
+                  : "border-2 !text-black border-primary !bg-transparent"
               }`}
             >
               {fetchWord("add", lang)}

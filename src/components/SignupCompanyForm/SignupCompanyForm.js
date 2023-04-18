@@ -6,6 +6,7 @@ import { fetchWord } from "@/lang/fetchWord";
 import { FileUpload } from "../Forms/FileUpload";
 import { useState } from "react";
 import CustomSelectField from "../Forms/CustomSelectField";
+import InputLocation from "../Forms/InputLocation";
 
 const SignupCompanyForm = () => {
   const { lang } = useContext(LanguageContext);
@@ -52,6 +53,7 @@ const SignupCompanyForm = () => {
         label={fetchWord("location", lang)}
         onChange={(e) => setLocation(e.target.value)}
       />
+      {/* <InputLocation /> */}
       <div className="flex gap-4">
         <CustomSelectField
           name="country"

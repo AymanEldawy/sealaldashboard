@@ -45,11 +45,11 @@ const ProfileHeader = ({ role }) => {
           />
           <ProfileHeaderInfo
             title="175"
-            subtitle={fetchWord(role === "provider" ? "offers" : "orders", lang)}
+            subtitle={fetchWord(role === "provider" || role === "company" ? "offers" : "orders", lang)}
           />
           <ProfileHeaderInfo
             title="+500$"
-            subtitle={fetchWord(role === "provider" ? "earning" : 'payments', lang)}
+            subtitle={fetchWord(role === "provider" || role === "company" ? "earning" : 'payments', lang)}
           />
         </div>
       </div>

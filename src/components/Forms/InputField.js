@@ -7,10 +7,11 @@ export const InputField = ({
   classes,
   iconStart,
   iconEnd,
+  containerClassName,
   ...inputProps
 }) => {
   return (
-    <div className="mb-4 w-full">
+    <div className={`mb-4 w-full ${containerClassName}`}>
       {label ? (
         <label className="capitalize flex items-center justify-between mb-2">
           {label}

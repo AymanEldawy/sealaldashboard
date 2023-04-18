@@ -69,3 +69,7 @@ export { default as PrivacyImgIcon } from "./PrivacyImgIcon";
 export { default as AdsIcon } from "./AdsIcon";
 export { default as ViewListIcon } from "./ViewListIcon";
 export { default as ViewGridIcon } from "./ViewGridIcon";
+export { default as SendIcon } from "./SendIcon";
+export { default as LinkIcon } from "./LinkIcon";
+export { default as CheckIcon } from "./CheckIcon";
+export { default as DoubleCheckIcon } from "./DoubleCheckIcon";

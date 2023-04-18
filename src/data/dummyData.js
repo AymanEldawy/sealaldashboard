@@ -19,11 +19,11 @@ export const getOfferById = (list, itemId) => {
   return list?.find((item) => +item?.offerNumber === +itemId);
 };
 export const links = [
-  { name: "home", link: "/",role: ['all'] },
-  { name: "offers", link: "/offers", role: ['provider', 'company']},
-  { name: "services", link: "/services",role: ['all'] },
-  { name: "request_services", link: "/request-services",role: ['customer'] },
-  { name: "contact", link: "/contact",role: ['all'] },
+  { name: "home", link: "/", role: ['all'] },
+  { name: "offers", link: "/offers", role: ['provider', 'company'] },
+  { name: "services", link: "/services", role: ['all'] },
+  { name: "request_services", link: "/request-services", role: ['customer'] },
+  { name: "contact", link: "/contact", role: ['all'] },
 ];
 
 export const services = [
@@ -530,3 +530,64 @@ export const previousWorks = [
     date: "2021-06-20",
   },
 ];
+
+export const chatRooms = [
+  {
+    "roomId": "1234",
+    "users": [
+      {
+        "username": "JohnDoe",
+        "lastMessageSend": "2023-04-18T15:30:00Z",
+        "image": "https://randomuser.me/api/portraits/men/1.jpg"
+      },
+      {
+        "username": "JaneDoe",
+        "lastMessageSend": "2023-04-18T14:00:00Z",
+        "image": "https://randomuser.me/api/portraits/women/1.jpg"
+      }
+    ],
+    "conversations": [
+      {
+        "date": "2023-04-18T15:29:00Z",
+        "message": "Hi John, how are you?"
+      },
+      {
+        "date": "2023-04-18T15:31:00Z",
+        "message": "I'm doing great, thanks for asking. How about you?"
+      },
+      {
+        "date": "2023-04-18T15:32:00Z",
+        "message": "I'm good too, thanks. What have you been up to?"
+      }
+    ]
+  },
+  {
+    "roomId": "5678",
+    "users": [
+      {
+        "username": "BobSmith",
+        "lastMessageSend": "2023-04-18T13:00:00Z",
+        "image": "https://randomuser.me/api/portraits/men/2.jpg"
+      },
+      {
+        "username": "AliceJohnson",
+        "lastMessageSend": "2023-04-18T14:30:00Z",
+        "image": "https://randomuser.me/api/portraits/women/2.jpg"
+      }
+    ],
+    "conversations": [
+      {
+        "date": "2023-04-18T13:05:00Z",
+        "message": "Hey Alice, did you finish that report?"
+      },
+      {
+        "date": "2023-04-18T14:35:00Z",
+        "message": "Yes, I just sent it to you. Did you get it?"
+      },
+      {
+        "date": "2023-04-18T14:37:00Z",
+        "message": "Got it. Thanks Alice, you're the best!"
+      }
+    ]
+  }
+]

@@ -1,22 +1,24 @@
 import React from "react";
-import ProfileInformation from "./ProfileInformation";
-import TabsList from "../Tabs/TabsList";
-import { LogoutIcon, PackagesIcon, PaymentsIcon, GearIcon } from "../Icons";
 import { useState } from "react";
+
+import { GearIcon, LogoutIcon, PackagesIcon, PaymentsIcon } from "../Icons";
+import ProfileEditForm from "../ProfileEditForm/ProfileEditForm";
 import TabsContent from "../Tabs/TabsContent";
-import MyPayments from "./My/MyPayments";
-import MyPackages from "./My/MyPackages";
-import MySettings from "./My/MySettings";
+import TabsList from "../Tabs/TabsList";
 import CompaniesSuggestions from "./My/CompaniesSuggestions";
+import MyPackages from "./My/MyPackages";
+import MyPayments from "./My/MyPayments";
+import MySettings from "./My/MySettings";
+import ProfileInformation from "./ProfileInformation";
 
 const profileList = [
   { icon: <GearIcon className="h-6 w-6" />, name: "settings", role: ["all"] },
   { icon: <PaymentsIcon />, name: "payments", role: ["all"] },
-  { icon: <PackagesIcon />, name: "packages", role: ["provider"] },
+  { icon: <PackagesIcon />, name: "packages", role: ["provider", 'company'] },
   {
     icon: <PackagesIcon />,
     name: "companies_and_suggestions",
-    role: ["client"],
+    role: ["customer"],
   },
   { icon: <LogoutIcon />, name: "logout", role: ["all"] },
 ];
@@ -29,7 +31,7 @@ const ProfileBody = ({ role }) => {
   return (
     <div className="container">
       <div className="flex gap-4">
-        <ProfileInformation role={role}/>
+        <ProfileInformation role={role} setActiveTab={setActiveTab} />
         <div className="flex-1">
           <TabsList
             containerClassName="shadow-md justify-around"
@@ -45,6 +47,7 @@ const ProfileBody = ({ role }) => {
             <MyPackages tabName="packages" />
             <MySettings tabName="settings" />
             <CompaniesSuggestions tabName="companies_and_suggestions" />
+            <ProfileEditForm tabName="edit_profile" />
           </TabsContent>
         </div>
       </div>
