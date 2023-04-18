@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 
-const PaymentMethods = ({ containerClassName, labelClassName, showInputs,...input }) => {
+const PaymentMethods = ({ containerClassName, labelClassName, showInputs, ...input }) => {
   return (
     <div className={`flex gap-4 items-center ${containerClassName} `}>
       <label className={` flex flex-col gap-2 ${labelClassName}`}>
@@ -14,7 +14,7 @@ const PaymentMethods = ({ containerClassName, labelClassName, showInputs,...inpu
             className="w-8 h-8 object-contain"
           />
         </span>
-        {!!showInputs? <input type="radio" name="payment_method" {...input} />: null}
+        {!!showInputs ? <input type="radio" name="payment_method" value="visa" {...input} /> : null}
       </label>
       <label className={` flex flex-col  gap-2 ${labelClassName}`}>
         <span className="rounded-md bg-white p-2 shadow">
@@ -26,10 +26,10 @@ const PaymentMethods = ({ containerClassName, labelClassName, showInputs,...inpu
             className="w-8 h-8 object-contain"
           />
         </span>
-        {!!showInputs? <input type="radio" name="payment_method" {...input} />: null}
+        {!!showInputs ? <input type="radio" name="payment_method" value="mastercard" {...input} /> : null}
       </label>
       <label className={` flex flex-col  gap-2 ${labelClassName}`}>
-        <span className="rounded-md bg-white p-2 shadow">
+        <span className="rounded-md bg-white p-2 shadow relative">
           <Image
             src="/images/cash.png"
             alt=""
@@ -37,8 +37,10 @@ const PaymentMethods = ({ containerClassName, labelClassName, showInputs,...inpu
             height={28}
             className="w-8 h-8 object-contain"
           />
+          <span className="text-[10px] uppercase absolute font-semibold bg-yellow-400 text-white px-[2px] bottom-1">Cash</span>
+
         </span>
-        {!!showInputs? <input type="radio" name="payment_method" {...input} />: null}
+        {!!showInputs ? <input type="radio" name="payment_method" value="cash" {...input} /> : null}
       </label>
     </div>
   );

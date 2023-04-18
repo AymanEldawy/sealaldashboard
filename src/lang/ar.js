@@ -210,6 +210,8 @@ export const ar = {
   basic: "الباقة البسيطة",
   standard: "الباقة القياسية",
   premium: "الباقة المميزة",
+  our_client:'عملائنا',
+  my_works: "أعمالي",
 };
 export const getWordAr = (key) => {
   return ar[key];

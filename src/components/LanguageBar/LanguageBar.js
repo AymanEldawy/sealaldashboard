@@ -12,27 +12,28 @@ const LanguageBar = () => {
     <div className="relative">
       <button
         className="flex gap-1 items-center"
-        onClick={() => setOpen((p) => !p)}
+        // onClick={() => setOpen((p) => !p)}
+        onClick={() => changeLang(prev => prev === 'ar'? 'en': 'ar')}
       >
         {lang === "en" ? (
           <>
             <ENIcon />
-            USE - EN
+           
           </>
         ) : (
           <>
             <Image
               src="/images/arabic-lang.png"
               alt="Arabic language"
-              width={20}
-              height={10}
+              width={30}
+              height={25}
             />
-            العربية
+        
           </>
         )}
       </button>
-      {open ? (
-        <ul className="absolute top-6 left-0 min-w-[120px] py-4 bg-white shadow rounded-md text-gray-500 flex flex-col">
+      {/* {open ? (
+        <ul className="absolute top-6 ltr:left-0 rtl:right-0 min-w-[120px] py-4 bg-white shadow rounded-md text-gray-500 flex flex-col">
           {lang === "ar" ? (
             <li
               onClick={() => {
@@ -42,7 +43,7 @@ const LanguageBar = () => {
               className="flex gap-2 items-center cursor-pointer text-sm hover:bg-gray-100  p-2"
             >
               <ENIcon />
-              USE - EN
+              English
             </li>
           ) : (
             <li
@@ -62,7 +63,7 @@ const LanguageBar = () => {
             </li>
           )}
         </ul>
-      ) : null}
+      ) : null} */}
     </div>
   );
 };

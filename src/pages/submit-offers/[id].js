@@ -33,7 +33,8 @@ const SubmitOffers = () => {
           <div className="flex gap-6">
             <SubmitOfferCard offer={offer} />
             <div className="flex-1">
-              <SubmitOfferForm operation={operation}/>{" "}
+              <SubmitOfferForm />
+              {/* operation={operation} */}
             </div>
           </div>
         </div>

@@ -29,7 +29,7 @@ const ProfileBody = ({ role }) => {
   return (
     <div className="container">
       <div className="flex gap-4">
-        <ProfileInformation />
+        <ProfileInformation role={role}/>
         <div className="flex-1">
           <TabsList
             containerClassName="shadow-md justify-around"

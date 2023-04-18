@@ -12,7 +12,7 @@ export const InputField = ({
   return (
     <div className="mb-4 w-full">
       {label ? (
-        <label className="flex items-center justify-between mb-2">
+        <label className="capitalize flex items-center justify-between mb-2">
           {label}
           {error?.length ? <span className="">{error}</span> : null}
         </label>

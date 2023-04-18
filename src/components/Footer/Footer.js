@@ -16,7 +16,7 @@ const Footer = () => {
         <BoltIcon />
       </span>
       <div className="container h-full">
-        <div className="flex gap-8 items-center min-h-[280px] relative z-10">
+        <div className="flex gap-8 items-center min-h-[240px] relative z-10">
           <div className="flex items-end justify-between w-full text-white">
             <div className=" flex items-end justify-between ">
               <div className="flex flex-col gap-8">
@@ -25,10 +25,10 @@ const Footer = () => {
                     <FacebookIcon className="text-secondary" />
                   </a>
                   <a href="">
-                    <InstagramIcon className="text-secondary"/>
+                    <InstagramIcon className="text-secondary" />
                   </a>
                   <a href="">
-                    <TwitterIcon className="text-secondary"/>
+                    <TwitterIcon className="text-secondary" />
                   </a>
                 </div>
                 <a href="" className="flex gap-4 items-center">
@@ -46,7 +46,10 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <p className="pb-4 text-xs text-white text-center">© 2022 | designed by whytech.ca</p>
+        <p className="pb-4 text-xs text-white text-center">
+          © 2022 | created by{" "}
+          <a className="text-secondary capitalize" href="http://whynot-tech.com/">why not tech</a>{" "}
+        </p>
       </div>
     </footer>
   );

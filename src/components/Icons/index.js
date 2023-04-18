@@ -67,3 +67,5 @@ export { default as EmailUsIcon } from "./EmailUsIcon";
 export { default as WhatsAppIcon } from "./WhatsAppIcon";
 export { default as PrivacyImgIcon } from "./PrivacyImgIcon";
 export { default as AdsIcon } from "./AdsIcon";
+export { default as ViewListIcon } from "./ViewListIcon";
+export { default as ViewGridIcon } from "./ViewGridIcon";

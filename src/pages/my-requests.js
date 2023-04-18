@@ -18,9 +18,9 @@ const SingleRequest = () => {
       <div className="shadow-md mb-1">
         <div className="container">
           <TabsList
-            containerClassName="justify-around"
-            activeClassName="border-2 border-primary"
-            itemClassName="!p-4 text-center justify-center flex-1 first:text-green-400 last:text-red-400 tex-black capitalize"
+            containerClassName="p-3 justify-around"
+            activeClassName="!border-0 first:bg-green-500 bg-gray-500 !text-white last:bg-red-500 "
+            itemClassName="text-center justify-center border first:text-green-500 first:border-green-400 border-gray-500 rounded-lg last:text-red-500  last:border-red-500 text-black capitalize"
             list={tabs}
             activeTab={activeTab}
             setActiveTab={setActiveTab}

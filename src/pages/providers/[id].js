@@ -11,17 +11,26 @@ import { fetchWord } from "@/lang/fetchWord";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useContext, useEffect, useState } from "react";
+import { FileUpload } from '@/components/Forms/FileUpload';
+import RequestServicesForm from "@/components/RequestServicesForm/RequestServicesForm";
 
 const SingleProvider = () => {
   const { lang } = useContext(LanguageContext);
   const router = useRouter();
-  const { id } = router?.query;
+  const { id, prevPath } = router?.query;
+  const showButton = prevPath === "/offers" ? true : false;
   const [open, setOpen] = useState(false);
+  const [openRequest, setOpenRequest] = useState(false);
   const [provider, setProvider] = useState();
+  console.log(router);
 
   useEffect(() => {
     setProvider(getItemById(serviceProviders, id));
   }, [id]);
+  const getValues = (values) => {
+    setOpenRequest(false);
+    setOpen(true)
+  }
   return (
     <>
       <Layout>
@@ -30,16 +39,21 @@ const SingleProvider = () => {
           <div className="container">
             <ProviderInfo provider={provider} />
             <Button
-              onClick={() => setOpen(true)}
+              onClick={() => setOpenRequest(true)}
               classes="bg-secondary min-w-[320px] !py-3 block mx-auto"
             >
-              {" "}
-              {fetchWord("accept_offer", lang)}{" "}
+              {fetchWord("book_now", lang)}{" "}
             </Button>
           </div>
         </div>
-        {/* reviews */}
       </Layout>
+      <Modal open={openRequest} close={() => setOpenRequest(false)} modalClassName="max-h-[80vh] overflow-auto max-w-[900px]">
+        <RequestServicesForm
+          tabName="information"
+          getValues={getValues}
+        />
+      </Modal>
+
       <Modal open={open} close={() => setOpen(false)}>
         <div className="flex flex-col justify-center items-center gap-2 px-12">
           <span>

@@ -19,10 +19,11 @@ export const getOfferById = (list, itemId) => {
   return list?.find((item) => +item?.offerNumber === +itemId);
 };
 export const links = [
-  { name: "home", link: "/" },
-  { name: "services", link: "/services" },
-  { name: "request_services", link: "/request-services" },
-  { name: "contact", link: "/contact" },
+  { name: "home", link: "/",role: ['all'] },
+  { name: "offers", link: "/offers", role: ['provider', 'company']},
+  { name: "services", link: "/services",role: ['all'] },
+  { name: "request_services", link: "/request-services",role: ['customer'] },
+  { name: "contact", link: "/contact",role: ['all'] },
 ];
 
 export const services = [
@@ -494,3 +495,38 @@ export const orders = [
   },
 ];
 
+export const previousWorks = [
+  {
+    clientName: "John Smith",
+    rating: 4,
+    images: [
+      "/images/works/1.png",
+      "/images/works/2.png",
+      "/images/works/3.png",
+    ],
+    comment: "Great work, very professional!",
+    date: "2022-03-15",
+  },
+  {
+    clientName: "John Smith",
+    rating: 5,
+    images: [
+      "/images/works/4.png",
+      "/images/works/5.png",
+      "/images/works/6.png",
+    ],
+    comment: "Absolutely stunning results, exceeded my expectations!",
+    date: "2021-12-01",
+  },
+  {
+    clientName: "John Smith",
+    rating: 3,
+    images: [
+      "/images/works/7.png",
+      "/images/works/8.png",
+      "/images/works/9.png",
+    ],
+    comment: "Good work, but took longer than expected.",
+    date: "2021-06-20",
+  },
+];

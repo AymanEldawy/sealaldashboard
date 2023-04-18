@@ -14,11 +14,6 @@ import Privacy from "./Settings/Privacy";
 
 const settingList = [
   {
-    icon: <LanguagesIcon />,
-    name: "languages",
-    iconEnd: <ChevronIcon className="h-3 w-3 rtl:rotate-180" />,
-  },
-  {
     icon: <PrivacyIcon />,
     name: "privacy_policy",
     iconEnd: <ChevronIcon className="h-3 w-3 rtl:rotate-180" />,
@@ -53,7 +48,6 @@ const MySettings = () => {
 
       <TabsContent activeTabName={activeTab?.name}>
         <SupportForm tabName="support" />
-        {/* <Languages tabName="support" /> */}
         <Privacy tabName="privacy_policy" />
         <Terms tabName="term_use" />
       </TabsContent>

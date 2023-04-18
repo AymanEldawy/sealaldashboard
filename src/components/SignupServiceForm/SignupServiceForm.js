@@ -7,22 +7,29 @@ import CustomSelectField from "../Forms/CustomSelectField";
 
 const SignupServiceForm = () => {
   const { lang } = useContext(LanguageContext);
-
-  const [companyID, setCompanyID] = useState("");
   const [location, setLocation] = useState("");
   const [country, setCountry] = useState("");
   const [city, setCity] = useState("");
   const [website, setWebsite] = useState("");
   const [municipality, setMunicipality] = useState("");
-  const [companyLicense, setCompanyLicense] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState('')
   return (
     <form>
       <InputField
-        name="companyID"
-        value={companyID}
-        label={fetchWord("company_id", lang)}
-        onChange={(e) => setCompanyID(e.target.value)}
+        name="name"
+        value={name}
+        label={fetchWord("name", lang)}
+        onChange={(e) => setName(e.target.value)}
       />
+      <InputField
+        name="email"
+        value={email}
+        label={fetchWord("email", lang)}
+        onChange={(e) => setEmail(e.target.value)}
+      />
+
       <InputField
         name="location"
         value={location}
@@ -55,12 +62,23 @@ const SignupServiceForm = () => {
         label={fetchWord("website", lang)}
         onChange={(e) => setWebsite(e.target.value)}
       />
-      <FileUpload
-        name="companyLicense"
-        value={companyLicense}
-        label={fetchWord("company_license", lang)}
-        onChange={(e) => setCompanyLicense(e.target.value)}
+      <InputField
+        name="password"
+        value={password}
+        label={fetchWord("password", lang)}
+        onChange={(e) => setPassword(e.target.value)}
       />
+      <InputField
+        name="confirmPassword"
+        value={confirmPassword}
+        label={fetchWord("confirm_password", lang)}
+        onChange={(e) => setConfirmPassword(e.target.value)}
+      />
+      <FileUpload label="Profile Photo" />
+      <label className="flex gap-1 mb-4 text-sm">
+        <input type="checkbox" />
+        {fetchWord("terms", lang)}
+      </label>
     </form>
   );
 };

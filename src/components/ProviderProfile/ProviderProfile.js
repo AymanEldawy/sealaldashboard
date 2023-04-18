@@ -19,15 +19,21 @@ const ProviderProfile = ({ provider }) => {
   return (
     <ProfileBanner bannerClassName="translate-y-28" containerClassName="mb-32">
       <div className="flex gap-4 relative ">
-        <Image
-          className="rounded-[50%] object-cover  h-36 w-h-36 border-4 border-[#F2F2F2] "
-          src={provider?.image}
-          alt={provider?.name}
-          height={150}
-          width={150}
-        />
-        <div className="flex flex-1 justify-between gap-4 ltr:pr-10 rtl:pl-10">
-          <div className="flex flex-col gap-6 h-full">
+        <div className="relative flex flex-col items-center">
+          <Image
+            className="rounded-[50%] object-top object-cover h-36 w-h-36 border-4 border-[#F2F2F2] "
+            src={provider?.image}
+            alt={provider?.name}
+            height={150}
+            width={150}
+          />
+          <span className="scale-125 -mt-4 bg-white p-1">
+            <RatingStars rating={provider?.rating} />
+          </span>
+        </div>
+
+        <div className="flex flex-1 justify-between gap-4">
+          <div className="flex flex-col gap-4 h-full">
             <h3 className="font-medium text-lg">{provider?.name}</h3>
             <Link
               href="/services"
@@ -46,15 +52,21 @@ const ProviderProfile = ({ provider }) => {
               </div>
             </p>
           </div>
-          <div className="flex flex-col gap-6">
-            <SocialCard withMessage iconClassName="!text-yellow-500" />
-            <RatingStars rating={provider?.rating} />
-            <PaymentMethods />
+          <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-1">
+              <h4 className="text-sm font-medium text-gray-700">
+                {fetchWord("follow_us", lang)}
+              </h4>
+              <SocialCard withMessage iconClassName="!text-yellow-500" />
+            </div>
+            <div className="flex flex-col gap-1">
+              <h4 className="text-sm font-medium text-gray-700">
+                {fetchWord("payment_available", lang)}
+              </h4>
+              <PaymentMethods />
+            </div>
           </div>
         </div>
-        <span className="absolute ltr:-right-[68px] rtl:-left-[68px]  -bottom-20 scale-[35%]">
-          <CircleStrokeIcon />
-        </span>
       </div>
     </ProfileBanner>
   );

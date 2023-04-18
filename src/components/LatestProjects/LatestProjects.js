@@ -19,7 +19,7 @@ const settings = {
   centerPadding: "60px",
   slidesToShow: 4,
   speed: 500,
-  rows: 2,
+  // rows: 2,
   swipeToSlide: true,
   arrows: true,
   nextArrow: <CustomSlideArrow />,
@@ -29,24 +29,25 @@ const LatestProjects = () => {
   const { lang } = useContext(LanguageContext);
 
   return (
-    <div className="bg-[#F8F8F8] py-12 relative  overflow-hidden">
+    <div className="bg-[#F8F8F8] py-6 relative  overflow-hidden">
       <div className="container">
-        <SectionTitle title={fetchWord("latest_projects", lang)} />
+        {/* <SectionTitle title={fetchWord("latest_projects", lang)} /> */}
+        <SectionTitle title={fetchWord("our_client", lang)} />
         <div className="w-full">
           <Slider {...settings}>
-            {latestProjects?.map((project, index) => (
+            {latestProjects?.slice(0,6)?.map((project, index) => (
               <div
-                className="flex flex-col items-center gap-2 justify-center text-center py-4"
+                className="flex flex-col items-center gap-2 justify-center text-center py-4 px-3"
                 key={index}
               >
                 <Image
-                  className="!w-full !h-full  object-cover"
+                  className="!w-full !h-96 object-cover"
                   src={project?.image}
                   alt={project?.title}
                   height={320}
                   width={260}
                 />
-                <h3 className="text-primary text-sm capitalize mb-2">
+                <h3 className="text-primary text-sm capitalize mt-1 mb-2">
                   {fetchWord(project?.title, lang)}
                 </h3>
                 <p className="text-base font-medium">

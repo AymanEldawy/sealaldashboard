@@ -39,7 +39,7 @@ const timeList = [
   { id: 22, name: "11-12 PM" },
   { id: 23, name: "12-1 AM" },
 ];
-const RequestServicesForm = ({ getValues, setSelectedTab }) => {
+const RequestServicesForm = ({ getValues, setSelectedTab, title }) => {
   const { lang } = useContext(LanguageContext);
   const [serviceName, setServiceName] = useState("");
   const [location, setLocation] = useState("");
@@ -51,7 +51,7 @@ const RequestServicesForm = ({ getValues, setSelectedTab }) => {
   const [expirationDate, setExpirationDate] = useState("");
   const [cvv, setCvv] = useState("");
   const [name, setName] = useState("");
-
+  const [selectedMethod, setSelectedMethod] = useState('')
   const onSubmit = (e) => {
     e.preventDefault();
     getValues({
@@ -66,7 +66,8 @@ const RequestServicesForm = ({ getValues, setSelectedTab }) => {
       description,
       expirationDate,
     });
-    setSelectedTab("confirmation");
+    if(!!setSelectedTab)
+      setSelectedTab("confirmation");
   };
 
   return (
@@ -99,6 +100,7 @@ const RequestServicesForm = ({ getValues, setSelectedTab }) => {
           iconEnd={<WorldIcon />}
         />
         <InputField
+          type="datetime-local"
           label={fetchWord("select_date", lang)}
           name="selectDate"
           value={selectDate}
@@ -106,7 +108,7 @@ const RequestServicesForm = ({ getValues, setSelectedTab }) => {
           placeholder={fetchWord("select_date_placeholder", lang)}
           iconStart={<TimeCheckIcon />}
         />
-        <CustomSelectField
+        {/* <CustomSelectField
           label={fetchWord("select_time", lang)}
           name="selectTime"
           value={selectTime}
@@ -115,7 +117,7 @@ const RequestServicesForm = ({ getValues, setSelectedTab }) => {
           placeholder={fetchWord("select_time_placeholder", lang)}
           iconStart={<TimeCheckIcon />}
           selectClassName="text-sm"
-        />
+        /> */}
       </div>
       <h2 className="text-2xl font-semibold my-6">
         {fetchWord("add_information", lang)}{" "}
@@ -126,60 +128,55 @@ const RequestServicesForm = ({ getValues, setSelectedTab }) => {
         onChange={(e) => setDescription(e.target.value)}
         placeholder={fetchWord("description_placeholder", lang)}
       />
-      <button type="button" className=" flex gap-2 items-center">
-        <span className="text-white bg-primary rounded-md p-2">
-          <PlusIcon />
-        </span>
-        {fetchWord("add_picture", lang)}
-      </button>
-      <div className="flex justify-center items-center flex-col mt-8">
-        <FileUpload classes="min-h-[auto]  min-w-[340px] p-4 px-8 border border-primary" />
-        <button type="button" className="text-primary">
-          {fetchWord("camera_capture", lang)}{" "}
-        </button>
-      </div>
+
+        <FileUpload classes="min-h-[80px] w-full  min-w-[340px] p-4 px-8 border border-primary" />
       <h2 className="text-2xl font-semibold my-6">
         {fetchWord("payment_method", lang)}{" "}
       </h2>
-      <PaymentMethods showInputs />
-      <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3 mt-4">
-        <InputField
-          label={fetchWord("name", lang)}
-          name="name"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-          classes="!py-3"
-          placeholder="Khaled mohammed"
-        />
-        <InputField
-          label={fetchWord("credit_card_number", lang)}
-          name="creditCard"
-          value={creditCard}
-          onChange={(e) => setCreditCard(e.target.value)}
-          classes="!py-3"
-          placeholder="92839239237923"
-        />
-        <div className="flex gap-2">
-          <InputField
-            label={fetchWord("expiration_date", lang)}
-            name="expirationDate"
-            value={expirationDate}
-            onChange={(e) => setExpirationDate(e.target.value)}
-            classes="!py-3"
-            placeholder="Y/M"
-          />
-          <InputField
-            label={fetchWord("cvv", lang)}
-            name="cvv"
-            value={cvv}
-            onChange={(e) => setCvv(e.target.value)}
-            classes="!py-3"
-            placeholder="***"
-          />
-        </div>
-      </div>
+      <PaymentMethods showInputs onChange={e => setSelectedMethod(e.target.value)} />
+      {
+        selectedMethod === 'cash' ? null : (
+
+          <div className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3 mt-4">
+            <InputField
+              label={fetchWord("name", lang)}
+              name="name"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              classes="!py-3"
+              placeholder="Khaled mohammed"
+            />
+            <InputField
+              label={fetchWord("credit_card_number", lang)}
+              name="creditCard"
+              value={creditCard}
+              onChange={(e) => setCreditCard(e.target.value)}
+              classes="!py-3"
+              placeholder="92839239237923"
+            />
+            <div className="flex gap-2">
+              <InputField
+                label={fetchWord("expiration_date", lang)}
+                name="expirationDate"
+                value={expirationDate}
+                onChange={(e) => setExpirationDate(e.target.value)}
+                classes="!py-3"
+                placeholder="Y/M"
+              />
+              <InputField
+                label={fetchWord("cvv", lang)}
+                name="cvv"
+                value={cvv}
+                onChange={(e) => setCvv(e.target.value)}
+                classes="!py-3"
+                placeholder="***"
+              />
+            </div>
+          </div>
+        )
+      }
       <Button classes="w-[270px] py-3 text-sm mt-8">
-        {fetchWord("book_now", lang)}{" "}
+        {fetchWord(title?title:"book_now", lang)}{" "}
       </Button>
     </form>
   );

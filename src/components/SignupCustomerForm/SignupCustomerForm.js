@@ -8,10 +8,10 @@ import { useState } from "react";
 
 const SignupCustomerForm = () => {
   const { lang } = useContext(LanguageContext);
-
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const[confirmPassword, setConfirmPassword] = useState('')
   return (
     <form>
       <InputField
@@ -29,8 +29,14 @@ const SignupCustomerForm = () => {
       <InputField
         name="password"
         value={password}
-        label={fetchWord("password_label", lang)}
+        label={fetchWord("password", lang)}
         onChange={(e) => setPassword(e.target.value)}
+      />
+      <InputField
+        name="confirmPassword"
+        value={confirmPassword}
+        label={fetchWord("confirm_password", lang)}
+        onChange={(e) => setConfirmPassword(e.target.value)}
       />
       <FileUpload label="Profile Photo" />
       <label className="flex gap-1 mb-4 text-sm">

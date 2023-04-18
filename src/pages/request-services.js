@@ -11,22 +11,34 @@ import { fetchWord } from "@/lang/fetchWord";
 import React from "react";
 import { useState } from "react";
 import { useContext } from "react";
+import OfferEditIcon from './../components/Icons/OfferEditIcon';
+import BackToHome from "@/components/Global/BackToHome/BackToHome";
 
 const RequestServices = () => {
   const { lang } = useContext(LanguageContext);
   const [selectTab, setSelectedTab] = useState("information");
-  const [openFormFeedback, setOpenFormFeedback] = useState(false);
-  const getValues = (values) => {};
+  const [open, setOpen] = useState(false);
+  const getValues = (values) => { };
   const onFeedbackSubmit = (values) => {
     console.log(values);
   };
   return (
     <>
-      <RequestServicesFormFeedback
-        openFormFeedback={openFormFeedback}
-        setOpenFormFeedback={setOpenFormFeedback}
-        onFeedbackSubmit={onFeedbackSubmit}
-      />
+      <Modal open={open} close={() => setOpen(false)}>
+        <div className="flex flex-col gap-3 items-center ">
+          <OfferEditIcon />
+          <p className="text-primary">
+            {fetchWord("add_offer_message", lang)}
+          </p>
+          <BackToHome />
+          <button
+            className="text-red-500 text-sm"
+            onClick={() => setOpen(false)}
+          >
+            {fetchWord("cancel", lang)}
+          </button>
+        </div>
+      </Modal>
       <Layout>
         <BannerTitle title={fetchWord("request_services", lang)} />
         <div className="container">
@@ -42,7 +54,7 @@ const RequestServices = () => {
                 <RequestServicesConfirmation
                   tabName="confirmation"
                   setSelectedTab={setSelectedTab}
-                  setOpenFormFeedback={setOpenFormFeedback}
+                  setOpen={setOpen}
                 />
               </TabsContent>
             </div>

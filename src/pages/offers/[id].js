@@ -11,7 +11,7 @@ import { getOfferById, offers, serviceProviders } from "@/data/dummyData";
 import Image from "next/image";
 import Link from "next/link";
 import { WhatsAppShareIcon } from "@/components/Icons";
-import ServiceProviderCard from "@/components/ServiceContainerBox/ServiceProviderCard/ServiceProviderCard";
+import ServiceProviderCard from "@/components/ServiceContainerBox/ServiceProviderCard/ServiceProviderViewList";
 const SingleOffer = () => {
   const { lang } = useContext(LanguageContext);
   const [offer, setOffer] = useState({});

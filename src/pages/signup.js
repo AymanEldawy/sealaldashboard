@@ -51,7 +51,7 @@ export default function Login() {
           <h1 className="text-xl text-center font-medium mb-4 capitalize">
             {fetchWord("register", lang)}
           </h1>
-          <SignupTabBar activeStage={activeStage} />
+          <SignupTabBar activeStage={activeStage} setActiveStage={setActiveStage}/>
           {displayTab()}
 
           <Button
@@ -62,8 +62,8 @@ export default function Login() {
             }}
           >
             {activeStage === "company"
-              ? fetchWord("create_account", lang)
-              : fetchWord("next", lang)}
+              ? fetchWord("register", lang)
+              : fetchWord("create_account", lang)}
           </Button>
           <Link
             href="/login"

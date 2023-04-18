@@ -1,6 +1,7 @@
 import BannerTitle from "@/components/BannerTitle/BannerTitle";
 import { InProgressIcon, MyOfferIcon, NewOrderIcon } from "@/components/Icons";
 import { Layout } from "@/components/Layout/Layout";
+import MyOffers from "@/components/MyOffers/MyOffers";
 import NewOrders from "@/components/NewOrders/NewOrders";
 import TabsContent from "@/components/Tabs/TabsContent";
 import TabsList from "@/components/Tabs/TabsList";
@@ -18,7 +19,7 @@ const Offers = () => {
   const { lang } = useContext(LanguageContext);
   return (
     <Layout>
-      <BannerTitle title={fetchWord("service_provider", lang)} />
+      <BannerTitle title={fetchWord("offers", lang)} />
       <div className="shadow-md">
         <div className="container rounded-tl-xl">
           <TabsList
@@ -26,15 +27,15 @@ const Offers = () => {
             keyName="name"
             setActiveTab={setActiveTab}
             activeTab={activeTab}
-            containerClassName="justify-around "
-            activeClassName="border-2 border-secondary ltr:rounded-tl-xl rtl:rounded-tr-xl ltr:rounded-br-xl rtl:rounded-bl-xl"
-            itemClassName="text-primary !gap-1 flex-col min-w-[200px] !p-4 text-center justify-center capitalize"
+            containerClassName="justify-around pt-2 "
+            activeClassName=" text-black font-medium bg-secondary rounded-t-2xl"
+            itemClassName="text-primary flex-1 !gap-2 px-4 text-center justify-center capitalize"
           />
         </div>
       </div>
       <TabsContent activeTabName={activeTab?.name}>
         <NewOrders tabName="new_orders" />
-        <NewOrders tabName="my_offers" layout="my_offers" />
+        <MyOffers tabName="my_offers" layout="my_offers" />
         <NewOrders tabName="in_progress" layout="in_progress" />
       </TabsContent>
     </Layout>

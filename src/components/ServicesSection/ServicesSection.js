@@ -13,13 +13,13 @@ import { BoltSixIcon, CircleStrokeIcon } from "../Icons";
 const ServicesSection = () => {
   const { lang } = useContext(LanguageContext);
   return (
-    <div className="relative mb-20 overflow-hidden">
+    <div className="relative mb-12 overflow-hidden">
       <span className="rotate-90 flex absolute scale-75">
         <BoltSixIcon className="text-[#FF435C]" />
       </span>
       <div className="container">
-        <div className="bg-[#fff9e380] rounded-[40px] relative min-h-[380px] pt-12">
-          <span className="absolute left-8 -bottom-20 scale-75">
+        <div className="bg-[#fff9e380] rounded-[30px] relative min-h-[350px] pt-5">
+          <span className="absolute left-8 -bottom-16 scale-75">
             <CircleStrokeIcon />
           </span>
           <SectionTitle title={fetchWord("top_services", lang)} />

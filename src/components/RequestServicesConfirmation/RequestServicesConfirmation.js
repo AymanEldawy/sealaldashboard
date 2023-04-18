@@ -8,7 +8,7 @@ import { useContext } from "react";
 import { Button } from "../Global/Button/Button";
 import { EditIcon, ElectricCategoryIcon, WorldIcon } from "../Icons";
 
-const RequestServicesConfirmation = ({ setSelectedTab, setOpenFormFeedback }) => {
+const RequestServicesConfirmation = ({ setSelectedTab, setOpen }) => {
   const { lang } = useContext(LanguageContext);
   return (
     <div className="">
@@ -61,7 +61,7 @@ const RequestServicesConfirmation = ({ setSelectedTab, setOpenFormFeedback }) =>
         </div>
       </div>
       <Button
-        onClick={() => setOpenFormFeedback(true)}
+        onClick={() => setOpen(true)}
         classes="w-[300px] !p-3 mt-8 mx-auto block"
       >
         {fetchWord("confirm_send", lang)}{" "}

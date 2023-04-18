@@ -5,9 +5,9 @@ import SocialCard from "@/components/SocialCard/SocialCard";
 
 const TeamCard = ({ employee }) => {
   return (
-    <div className="relative rounded-md overflow-hidden m-4">
+    <div className="relative rounded-md overflow-hidden m-4 h-full">
       <Image
-        className="!w-full !h-full object-cover scale-105"
+        className="!w-full !h-96 object-cover scale-105"
         src={employee?.image}
         alt={employee?.name}
         height={400}

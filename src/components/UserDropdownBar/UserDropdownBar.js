@@ -9,12 +9,11 @@ const userList = [
   { link:'/my-profile', name: "profile", icon: <UserCircleIcon /> },
   { link:'/my-requests', name: "my_requests", icon: <RequestsIcon />, count: "6" },
   { link:'/offers', name: "offers", icon: <OffersIcon />, count: "10" },
-  { link:'/notification', name: "notification", icon: <BellIcon />, text: "now" },
 ];
 const UserDropdownBar = () => {
   const { lang } = useContext(LanguageContext);
   return (
-    <ul className=" absolute bg-white py-6 left-0 top-[67px] shadow-inner z-40">
+    <ul className=" absolute bg-white py-6 left-0 top-[41px] shadow-md text-black z-40 border border-gray-200 rounded-b-md">
       {userList?.map((item, index) => (
         <li key={index} className="">
           <Link

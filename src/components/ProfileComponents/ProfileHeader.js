@@ -7,24 +7,24 @@ import ProfileHeaderInfo from "./ProfileHeaderInfo";
 import { fetchWord } from "@/lang/fetchWord";
 import { LanguageContext } from "@/context/LangContext";
 
-const ProfileHeader = ({ role, changeRole }) => {
+const ProfileHeader = ({ role }) => {
   const { lang } = useContext(LanguageContext);
   return (
     <ProfileBanner
-      containerClassName="items-center"
+      containerClassName="items-center h-[180px]"
       bannerClassName=" relative overflow-hidden py-4"
     >
       <span className="absolute rtl:-left-6 ltr:-right-6 top-0 opacity-50">
         <GearIcon />
       </span>
-      <div className="flex gap-3" onClick={changeRole}>
+      <div className="flex gap-3">
         <div className="relative w-fit">
-          <Link
-            href="/"
+          <div
             className="scale-50 absolute -top-3 ltr:right-0 rtl:left-0 "
           >
+            <input type="file"  className="absolute top-0 left-0 z-10 opacity-0"/>
             <EditIcon className="text-secondary" />
-          </Link>
+          </div>
           <Image
             src={"/images/clients/Ellipse 182.png"}
             alt="Avatar"
