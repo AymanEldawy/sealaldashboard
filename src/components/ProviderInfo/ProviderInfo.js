@@ -1,13 +1,14 @@
 import { LanguageContext } from "@/context/LangContext";
+import { reviews } from "@/data/dummyData";
 import { fetchWord } from "@/lang/fetchWord";
+import Image from "next/image";
 import React from "react";
 import { useContext, useState } from "react";
+
 import SeeMore from "../Global/SeeMore/SeeMore";
-import Image from "next/image";
-import { reviews } from "@/data/dummyData";
-import ReviewCard from "../ReviewCard/ReviewCard";
-import ProviderWorksTimeLine from "../ProviderWorksTimeLine/ProviderWorksTimeLine";
 import Modal from "../Modal/Modal";
+import ProviderWorksTimeLine from "../ProviderWorksTimeLine/ProviderWorksTimeLine";
+import ReviewCard from "../ReviewCard/ReviewCard";
 
 const ProviderInfo = ({ provider }) => {
   const { lang } = useContext(LanguageContext);
@@ -118,8 +119,8 @@ const ProviderInfo = ({ provider }) => {
         <Image
           src={selectedImage}
           alt="works 2"
-          height={450}
-          width={1200}
+          height={400}
+          width={500}
           className="w-full max-h-[90vh] rounded-md object-cover "
         />
       </Modal>
