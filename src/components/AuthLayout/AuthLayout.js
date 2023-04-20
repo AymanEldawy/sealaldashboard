@@ -8,13 +8,13 @@ const AuthLayout = ({ children }) => {
     <Layout hideFooter hideApp>
       <div className="flex gap-4">
         <Image
-          className="!max-w-full !h-auto !w-auto bg-cover flex-1"
+          className="!max-w-full !h-auto !w-auto bg-cover flex-1 sticky top-0 !h-screen"
           src="/images/home-services-mdpi.png"
           alt="register"
           height={400}
           width={500}
         />
-        <div className="flex flex-col flex-1 items-center mb-8">{children}</div>
+        <div className="flex flex-col flex-1 items-center mb-8 overflow-auto">{children}</div>
       </div>
     </Layout>
   );
