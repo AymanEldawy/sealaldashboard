@@ -12,12 +12,10 @@ const ProfileHeader = ({ role }) => {
   return (
     <ProfileBanner
       containerClassName="items-center h-[180px]"
-      bannerClassName=" relative overflow-hidden py-4"
+      bannerClassName="!min-w-[450px] relative overflow-hidden py-4"
     >
-      <span className="absolute rtl:-left-6 ltr:-right-6 top-0 opacity-50">
-        <GearIcon />
-      </span>
-      <div className="flex gap-3">
+   
+      <div className="flex gap-4">
         <div className="relative w-fit">
           <div
             className="scale-50 absolute -top-3 ltr:right-0 rtl:left-0 "
@@ -28,12 +26,12 @@ const ProfileHeader = ({ role }) => {
           <Image
             src={"/images/clients/Ellipse 182.png"}
             alt="Avatar"
-            height={120}
-            width={120}
+            height={100}
+            width={100}
             className="rounded-full border-[6px] border-[#F2F2F2]"
           />
         </div>
-        <div className="flex-1 flex items-center justify-around gap-4 ltr:pr-4 rtl:pl-4">
+        <div className="flex-1 flex justify-around items-center gap-8 ltr:pr-4 rtl:pl-4">
           <ProfileHeaderInfo
             title={
               <>

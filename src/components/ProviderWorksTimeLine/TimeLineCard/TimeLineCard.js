@@ -22,7 +22,7 @@ const TimeLineCard = ({ work }) => {
         <span className="text-gray-600 text-sm">{work?.date}</span>
       </div>
       <p className="text-lead text-sm my-2">{work?.comment}</p>
-      <div className="flex gap-12">
+      <div className="flex gap-12 flex-wrap">
         {work?.images?.map((img, index) => (
           <Image
             className="rounded-md"

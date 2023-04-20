@@ -5,12 +5,12 @@ import React, { useContext } from "react";
 import { useState } from "react";
 
 import SeeMore from "../Global/SeeMore/SeeMore";
+import { ViewGridIcon, ViewListIcon } from "../Icons";
 import TabsContent from "../Tabs/TabsContent";
 import TabsList from "../Tabs/TabsList";
 import CompanyCardBox from "./CompanyCardBox";
 import ServiceCardBox from "./ServiceCardBox/ServiceCardBox";
 import ServiceProviderCard from "./ServiceProviderCard/ServiceProviderCard";
-import { ViewGridIcon, ViewListIcon } from "../Icons";
 import ServiceProviderViewList from "./ServiceProviderCard/ServiceProviderViewList";
 
 const ServiceContainerBox = ({ service }) => {
@@ -39,7 +39,7 @@ const ServiceContainerBox = ({ service }) => {
               <div className=" flex items-center gap-2">
                 <button
                   className={`bg-gray-200 rounded p-1 ${
-                    layout === "list" ? "!bg-secondary text-black" : ""
+                    layout === "list" ? "!bg-primary text-white" : ""
                   }`}
                   onClick={() => setLayout("list")}
                 >
@@ -47,7 +47,7 @@ const ServiceContainerBox = ({ service }) => {
                 </button>
                 <button
                   className={`bg-gray-200 rounded p-1 ${
-                    layout === "grid" ? "!bg-secondary text-black" : ""
+                    layout === "grid" ? "!bg-primary text-white" : ""
                   }`}
                   onClick={() => setLayout("grid")}
                 >

@@ -13,6 +13,7 @@ const ProfileEditForm = () => {
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
   const onSubmit = () => {};
   return (
@@ -47,6 +48,13 @@ const ProfileEditForm = () => {
           value={password}
           label={fetchWord("password", lang)}
           onChange={(e) => setPassword(e.target.value)}
+        />
+        <InputField
+          name="confirmPassword"
+          type="password"
+          value={confirmPassword}
+          label={fetchWord("confirm_password", lang)}
+          onChange={(e) => setConfirmPassword(e.target.value)}
         />
         <Button classes="max-w-[220px] !mt-4 w-full mx-auto block">
           {fetchWord("save", lang)}

@@ -17,24 +17,25 @@ import { useContext } from "react";
 const ProviderProfile = ({ provider }) => {
   const { lang } = useContext(LanguageContext);
   return (
-    <ProfileBanner bannerClassName="translate-y-28" containerClassName="mb-32">
+    <ProfileBanner bannerClassName="translate-y-20" containerClassName="mb-32">
       <div className="flex gap-4 relative ">
         <div className="relative flex flex-col items-center">
           <Image
-            className="rounded-[50%] object-top object-cover h-36 w-h-36 border-4 border-[#F2F2F2] "
+            className="rounded-[50%] object-top object-cover h-32 w-h-32 border-4 border-[#F2F2F2] "
             src={provider?.image}
             alt={provider?.name}
-            height={150}
-            width={150}
+            height={130}
+            width={130}
           />
-          <span className="scale-125 -mt-4 bg-white p-1">
-            <RatingStars rating={provider?.rating} />
-          </span>
+         
         </div>
 
         <div className="flex flex-1 justify-between gap-4">
           <div className="flex flex-col gap-4 h-full">
             <h3 className="font-medium text-lg">{provider?.name}</h3>
+            <span className="bg-white -mt-3">
+            <RatingStars rating={provider?.rating} />
+          </span>
             <Link
               href="/services"
               className="flex gap-2 text-sm text-primary font-medium capitalize"

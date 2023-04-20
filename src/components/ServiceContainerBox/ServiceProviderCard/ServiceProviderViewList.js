@@ -24,27 +24,20 @@ const ServiceProviderViewList = ({ provider }) => {
   }
 
   return (
-    <div className="shadow rounded-md flex gap-4 px-2 py-4">
+    <div className="shadow rounded-md flex gap-4">
       <Image
-        className="cursor-pointer object-cover"
+        className="cursor-pointer object-cover max-w-full h-24"
         src={`${provider?.image}`}
         alt={provider?.name}
-        height={160}
-        width={100}
+        height={80}
+        width={90}
         onClick={handleLink}
       />
-      <div className="flex flex-1 justify-between gap-4">
-        <div className="flex flex-col h-full gap-4">
-          <h3 className="font-medium hover:text-primary" onClick={handleLink}>
+      <div className="flex flex-col flex-1 justify-between p-2 pl-0">
+        <div className="flex justify-between items-start -mb-1">
+          <h3 className="font-medium cursor-pointer hover:text-primary" onClick={handleLink}>
             {provider?.name}
           </h3>
-          <RatingStars rating={provider?.rating} />
-          <p className="font-medium flex text-lg">
-            <span className="text-primary">{provider?.hourPrice}$</span>
-            <span>/{fetchWord("hr", lang)}</span>
-          </p>
-        </div>
-        <div className="flex justify-between flex-col items-end">
           <button
             className="scale-75 cursor-pointer"
             onClick={() => setFavorite((p) => !p)}
@@ -53,9 +46,17 @@ const ServiceProviderViewList = ({ provider }) => {
               className={favorite ? "text-red-500" : "text-[#979797]"}
             />
           </button>
+        </div>
+        <RatingStars rating={provider?.rating} />
+        <div className="flex justify-between mt-auto items-center">
+          <p className="font-medium flex ">
+            <span className="text-primary">{provider?.hourPrice}$</span>
+            <span>/{fetchWord("hr", lang)}</span>
+          </p>
+
           <PrimaryLink
             link={`/providers/${provider?.id}`}
-            className="border-primary border-2 font-medium capitalize text-sm !bg-transparent !text-black"
+            className="border-primary px-4 py-1 border-2 font-medium capitalize text-sm !bg-transparent !text-black"
           >
             {fetchWord("view_profile", lang)}
           </PrimaryLink>

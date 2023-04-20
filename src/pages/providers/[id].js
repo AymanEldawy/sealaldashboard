@@ -40,7 +40,7 @@ const SingleProvider = () => {
             <ProviderInfo provider={provider} />
             <Button
               onClick={() => setOpenRequest(true)}
-              classes="bg-secondary min-w-[320px] !py-3 block mx-auto"
+              classes="bg-secondary min-w-[320px] mt-8 !py-3 block mx-auto"
             >
               {fetchWord("book_now", lang)}{" "}
             </Button>

@@ -12,22 +12,22 @@ import MySettings from "./My/MySettings";
 import ProfileInformation from "./ProfileInformation";
 
 const profileList = [
-  { icon: <GearIcon className="h-6 w-6" />, name: "settings", role: ["all"] },
-  { icon: <PaymentsIcon />, name: "payments", role: ["all"] },
-  { icon: <PackagesIcon />, name: "packages", role: ["provider", 'company'] },
+  { icon: <GearIcon className="h-6 w-6" />, name: "settings" },
+  { icon: <PaymentsIcon />, name: "payments" },
+  { icon: <PackagesIcon />, name: "packages" },
   {
     icon: <PackagesIcon />,
     name: "companies_and_suggestions",
-    role: ["customer"],
+
   },
-  { icon: <LogoutIcon />, name: "logout", role: ["all"] },
+  { icon: <LogoutIcon />, name: "logout" },
 ];
 
 const ProfileBody = ({ role }) => {
   const [activeTab, setActiveTab] = useState(profileList[0]);
-  const list = profileList?.filter(
-    (item) => item?.role?.includes(role) || item?.role?.includes("all")
-  );
+  // const list = profileList?.filter(
+  //   (item) => item?.role?.includes(role) || item?.role?.includes("all")
+  // );
   return (
     <div className="container">
       <div className="flex gap-4">
@@ -38,7 +38,7 @@ const ProfileBody = ({ role }) => {
             itemClassName="whitespace-nowrap !py-5 text-center"
             activeClassName="border-b-4 border-primary"
             keyName="name"
-            list={list}
+            list={profileList}
             activeTab={activeTab}
             setActiveTab={setActiveTab}
           />

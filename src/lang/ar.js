@@ -212,6 +212,20 @@ export const ar = {
   premium: "الباقة المميزة",
   our_client:'عملائنا',
   my_works: "أعمالي",
+
+
+  optional: "اختياري ",
+  upload_photo: "تحميل صورة",
+  payment_available:'وسائل الدفع المتاحة',
+  follow_us:'تابعنا',
+  waiting_confirm:'بانتظار التاكيد',
+  waiting_approval:'بانتظار الموافقة',
+  register:'تسجيل',
+  confirm_password:'تاكيد كلمة السر',
+  company_name:'اسم الشركة',
+  accept_the_offer:'قبول العرض',
+  add_offer_message:'تم اضافة الطلب بنجاح و جاري معالجته',
+  save:'حفظ',
 };
 export const getWordAr = (key) => {
   return ar[key];

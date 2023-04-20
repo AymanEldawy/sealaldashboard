@@ -1,11 +1,12 @@
 import { LanguageContext } from "@/context/LangContext";
+import { fetchWord } from "@/lang/fetchWord";
 import React from "react";
 import { useContext } from "react";
-import { InputField } from "../Forms/InputField";
-import { fetchWord } from "@/lang/fetchWord";
-import { FileUpload } from "../Forms/FileUpload";
 import { useState } from "react";
+
 import CustomSelectField from "../Forms/CustomSelectField";
+import { FileUpload } from "../Forms/FileUpload";
+import { InputField } from "../Forms/InputField";
 
 const SignupCompanyForm = () => {
   const { lang } = useContext(LanguageContext);

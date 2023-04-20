@@ -12,13 +12,15 @@ import BackToHome from "../Global/BackToHome/BackToHome";
 
 const SubmitOfferForm = ({ operation }) => {
   const { lang } = useContext(LanguageContext);
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
   const [finalPrice, setFinalPrice] = useState("");
   const [expectedTime, setExpectedTime] = useState("");
   const [howLongService, setHowLongService] = useState("");
   const [previousWorkPhoto, setPreviousWorkPhoto] = useState("");
   const [offerDetails, setOfferDetails] = useState("");
-  const submit = () => {
+  const submit = (e) => {
+    e.preventDefault()
+    setOpen(true)
     if (operation === "update") {
       console.log("update");
     } else {
@@ -34,12 +36,12 @@ const SubmitOfferForm = ({ operation }) => {
             {fetchWord("offer_update_message", lang)}
           </p>
           <BackToHome />
-          <button
+          <Link href="/"
             className="text-red-500 text-sm"
             onClick={() => setOpen(false)}
           >
             {fetchWord("cancel", lang)}
-          </button>
+          </Link>
         </div>
       </Modal>
       <form onSubmit={submit}>

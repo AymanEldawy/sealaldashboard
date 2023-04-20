@@ -200,7 +200,7 @@ export const en = {
   message_placeholder: "Write your complaint message here",
   optional: "optional ",
   upload_photo: "Upload Photo",
-  our_client: "our client",
+  our_client: "our clients",
   my_works: "my works",
   payment_available:'Available payments',
   follow_us:'Follow us',

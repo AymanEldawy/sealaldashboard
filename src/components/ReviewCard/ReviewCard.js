@@ -4,21 +4,21 @@ import Image from "next/image";
 
 const ReviewCard = ({ review }) => {
   return (
-    <div className="flex gap-6 mb-8 rounded-[70px] p-6 bg-[#F9F9F9]">
+    <div className="flex gap-2 mb-4 rounded-[40px] p-2 bg-[#F9F9F9]">
       <Image
         src={review?.image}
         alt={review?.name}
-        height={110}
-        width={110}
+        height={80}
+        width={80}
         className="object-contain"
       />
-      <div className="flex-1 p-4">
-        <div className="flex justify-between items-center mb-2">
+      <div className="flex-1 px-2 rtl:pl-4 ltr:pr-4">
+        <div className="flex justify-between items-center">
           <RatingStars rating={review?.rating} />
           <span className="text-sm text-lead">{review?.date}</span>
         </div>
-        <h3 className="text-lg font-medium">{review?.name}</h3>
-        <p className="text-lead">{review?.comment}</p>
+        <h3 className="font-medium">{review?.name}</h3>
+        <p className="text-sm text-lead">{review?.comment}</p>
       </div>
     </div>
   );
