@@ -1,19 +1,30 @@
+import { InputField } from "@/components/Forms/InputField";
+import { Button } from "@/components/Global/Button/Button";
+import EyeSlashIcon from "@/components/Icons/EyeSlashIcon";
+import { SignInWith } from "@/components/SignInWith/SignInWith";
 import { fetchWord } from "@/lang/fetchWord";
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import { useContext, useState } from "react";
 
 import { LanguageContext } from "./../context/LangContext";
-import { InputField } from "@/components/Forms/InputField";
-import { Button } from "@/components/Global/Button/Button";
-import Link from "next/link";
-import { Layout } from "@/components/Layout/Layout";
-import AuthLayout from "@/components/AuthLayout/AuthLayout";
 
 export default function Login() {
   const { lang } = useContext(LanguageContext);
+  const [passwordType, setPasswordType] = useState("password");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+
+  const showPassword = () => {
+    setPasswordType(prev => prev === 'password' ? 'text' : 'password')
+  }
+
+  const submit = (e) => {
+    console.log(password, email)
+    e.preventDefault();
+
+  }
   return (
     <>
       <Head>
@@ -22,42 +33,65 @@ export default function Login() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <AuthLayout>
-        <div className="flex flex-col flex-1 mt-24 items-center w-full max-w-[500px]">
-          <div className="flex flex-col w-full max-w-[500px]">
-            <h1 className="text-xl text-center  mb-8 capitalize">
-              {fetchWord("signin", lang)}
-            </h1>
-            <InputField
-              name="email"
-              value={email}
-              label={fetchWord("email", lang)}
-              onChange={(e) => setEmail(e.target.value)}
-            />
-            <InputField
-              name="password"
-              value={password}
-              label={fetchWord("password_label", lang)}
-              onChange={(e) => setPassword(e.target.value)}
-            />
-            <label className="flex item-center gap-2 mb-4">
-              <input
-                type="checkbox"
-                name="remember_me"
-                value={(e) => setRememberMe(e.target.checked)}
-              />
-              {fetchWord("remember_me", lang)}
-            </label>
-            <Button classes="rounded-none">{fetchWord("signin", lang)}</Button>
-            <div className="mt-8 text-center gap-1 flex justify-center font-medium">
-              {fetchWord("dont_have_account", lang)}
-              <Link href="/signup" className=" text-secondary">
-                {fetchWord("register_now", lang)}
-              </Link>
+      <div className="container flex items-center min-h-screen relative" >
+        
+        <Image
+          className="object-contain absolute top-4 ltr:left-6 rtl:right-6"
+          src="/images/logo.png"
+          alt="register"
+          height={70}
+          width={130}
+        />
+        <Image
+          className="object-contain"
+          src="/images/authbanner.png"
+          alt="register"
+          height={480}
+          width={420}
+        />
+        <div className="flex flex-col flex-1 items-center mb-8 overflow-auto">
+          <div className="flex flex-col flex-1 mt-24 items-center w-full max-w-[500px]">
+            <div className="flex flex-col w-full max-w-[500px]">
+              <h1 className="text-2xl mb-2 text-center text-secondary capitalize font-semibold">
+                {fetchWord("signin", lang)}
+              </h1>
+              <p className="text-center text-ptext mb-6">{fetchWord('signin_msg', lang)}</p>
+              <form onSubmit={submit}>
+                <InputField
+                  name="email"
+                  value={email}
+                  label={fetchWord("email_phone_label", lang)}
+                  placeholder={fetchWord("email_phone_label", lang)}
+                  onChange={(e) => setEmail(e.target.value)}
+                />
+                <InputField
+                  type={passwordType}
+                  name="password"
+                  value={password}
+                  label={fetchWord("password_label", lang)}
+                  placeholder={fetchWord("enter_password", lang)}
+                  onChange={(e) => setPassword(e.target.value)}
+                  iconEnd={<button type="button" onClick={showPassword} className="mt-1 ltr:mr-1 rtl:ml-1">
+                    <EyeSlashIcon className={passwordType === 'text' ? 'text-primary' : ''} />
+                  </button>}
+                  icon
+                />
+
+                <Button classes="!p-3 block w-full">{fetchWord("login", lang)}</Button>
+              </form>
+              <Link href="/forgot-password" className=" text-[#009EF7] text-sm w-fit block ltr:ml-auto rtl:mr-auto mt-4">{fetchWord('forgot_password', lang)} {lang === 'ar' ? '؟' : '?'} </Link>
+              <SignInWith />
+              <div className="mt-4 text-center gap-1 flex justify-center">
+                {fetchWord("dont_have_account", lang)}
+                <Link href="/signup" className=" text-primary">
+                  {fetchWord("signin", lang)}
+                </Link>
+              </div>
             </div>
           </div>
         </div>
-      </AuthLayout>
+      </div>
+
     </>
   );
 }

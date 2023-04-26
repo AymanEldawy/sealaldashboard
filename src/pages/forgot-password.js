@@ -8,11 +8,19 @@ import { InputField } from "@/components/Forms/InputField";
 import { Button } from "@/components/Global/Button/Button";
 import Link from "next/link";
 import { Layout } from "@/components/Layout/Layout";
-import AuthLayout from "@/components/AuthLayout/AuthLayout";
 
 export default function ForgotPassword() {
   const { lang } = useContext(LanguageContext);
   const [email, setEmail] = useState("");
+  const [stage, setStage] = useState(1);
+
+  const sendToMobile = () => {
+    setStage(2)
+  }
+  const sendToEmail = () => {
+    setStage(2)
+  }
+
   return (
     <>
       <Head>
@@ -21,40 +29,84 @@ export default function ForgotPassword() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <AuthLayout>
-        <div className="flex flex-col flex-1 mt-24 items-center">
-          <div className="flex flex-col w-full max-w-[500px]">
-            <h1 className="text-xl text-center mb-8 font-medium capitalize">
-              {fetchWord("forgot_password", lang)}
-            </h1>
-            <div className="text-center mb-8 text-[#505050]">
-              <p className="flex justify-center gap-1">
-                {fetchWord("forgot_password_1", lang)}
-                <span className="text-primary font-medium">
-                  {fetchWord("secret_code", lang)}
-                </span>
-              </p>
-              <p>{fetchWord("forgot_password_2", lang)}</p>
-            </div>
-            <InputField
-              name="email"
-              value={email}
-              placeholder={fetchWord("email", lang)}
-              onChange={(e) => setEmail(e.target.value)}
-              classes="placeholder:text-primary !p-3 border border-[#6D41A1]"
-            />
-            <Button classes="rounded-none capitalize !p-3">
-              {fetchWord("send_code", lang)}
-            </Button>
-            <Link
-              href="/login"
-              className=" text-gray-400 text-sm mt-8 text-center"
-            >
-              {fetchWord("or_sign_in", lang)}
-            </Link>
-          </div>
+      <div className="container flex items-center min-h-screen relative" >
+        <Image
+          className="object-contain absolute top-4 ltr:left-6 rtl:right-6"
+          src="/images/logo.png"
+          alt="register"
+          height={70}
+          width={130}
+        />
+
+        <div className="flex-1 justify-center">
+          <Image
+            className="object-contain"
+            src="/images/forgot-banner.png"
+            alt="register"
+            height={480}
+            width={420}
+          />
         </div>
-      </AuthLayout>
+        <div className="flex flex-col flex-1 items-center mb-8 overflow-auto">
+          {
+            stage == 1 ? (
+              <>
+                <h1 className="text-2xl text-center mb-1 text-secondary capitalize font-semibold">
+                  {fetchWord("forgot_password", lang)}
+                </h1>
+                <p className="mb-6 text-ptext text-sm">{fetchWord('forgot_password_msg', lang)}</p>
+                <Button onClick={sendToMobile} classes="block w-full max-w-[350px] p-3">{fetchWord('mobile_number', lang)}</Button>
+                <Button onClick={sendToEmail} classes="block w-full max-w-[350px] p-3 mt-4">{fetchWord('email', lang)}</Button>
+                <p className="flex gap-1 items-center jsutify-center mt-8">
+                {fetchWord('back_to', lang)} 
+                  <Link href="/login">{fetchWord('signin', lang)} </Link>
+                </p>
+              </>
+            ) : (
+              <>
+                <h1 className="text-2xl text-center mb-1 text-secondary capitalize font-semibold">
+                  {fetchWord("code_verification", lang)}
+                </h1>
+                <p className="mb-6 text-ptext text-sm">{fetchWord('code_verification_msg', lang)}</p>
+                <div className="flex gap-2">
+                  <InputField
+                    type="tel"
+                    classes="!py-4 px-2"
+                    onChange={(e) => setNumbers(e.target.value)}
+                  />
+                  <InputField
+                    type="tel"
+                    classes="!py-4 px-2"
+                    onChange={(e) => setNumbers(e.target.value)}
+                  />
+                  <InputField
+                    type="tel"
+                    classes="!py-4 px-2"
+                    onChange={(e) => setNumbers(e.target.value)}
+                  />
+                  <InputField
+                    type="tel"
+                    classes="!py-4 px-2"
+                    onChange={(e) => setNumbers(e.target.value)}
+                  />
+                  <InputField
+                    type="tel"
+                    classes="!py-4 px-2"
+                    onChange={(e) => setNumbers(e.target.value)}
+                  />
+                  <InputField
+                    type="tel"
+                    classes="!py-4 px-2"
+                    onChange={(e) => setNumbers(e.target.value)}
+                  />
+                </div>
+                <p className="flex justify-end w-full text-sm">2:00 {fetchWord('minutes', lang)}</p>
+                <Button classes="capitalize block w-full !p-3 mt-4 mb-6">{fetchWord('verify_code', lang)}</Button>
+                <button className="text-primary underline text-sm">{fetchWord('resend_code', lang)}</button>
+              </>
+            )}
+        </div>
+      </div>
     </>
   );
 }
