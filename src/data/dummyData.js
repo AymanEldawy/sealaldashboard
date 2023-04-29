@@ -1,11 +1,4 @@
-import {
-  AirConIcon,
-  FriggedIcon,
-  GasIcon,
-  MicrowavesIcon,
-  OthersIcon,
-  OvensIcon,
-} from "@/components/Icons";
+import { AirConIcon, FriggedIcon, GasIcon, MicrowavesIcon, OthersIcon, OvensIcon } from "@/components/Icons";
 
 const getRandomOf = (list) => {
   return Math.floor(Math.random() * list?.length);
@@ -19,618 +12,254 @@ export const getOfferById = (list, itemId) => {
   return list?.find((item) => +item?.offerNumber === +itemId);
 };
 export const links = [
-  { name: "home", link: "/", role: ['all'] },
-  { name: "offers", link: "/offers", role: ['provider', 'company'] },
-  { name: "services", link: "/services", role: ['all'] },
-  { name: "request_services", link: "/request-services", role: ['customer'] },
-  { name: "contact", link: "/contact", role: ['all'] },
+  { name: "home", link: "/" },
+  { name: "about_us", link: "/about-us" },
+  { name: "categories", link: "/categories" },
+  { name: "sale", link: "/sale" },
+  { name: "companies", link: "/companies" },
+  { name: "contact_us", link: "/contact-us" },
 ];
 
-export const services = [
-  { name: "kitchen", image: "/images/services/1.png" },
-  { name: "decoration", image: "/images/services/2.png" },
-  { name: "electricity", image: "/images/services/3.png" },
-  { name: "electrical", image: "/images/services/4.png" },
-  { name: "plumbing", image: "/images/services/5.png" },
-  { name: "carpentry", image: "/images/services/6.png" },
-  { name: "furniture", image: "/images/services/7.png" },
-  { name: "paint", image: "/images/services/8.png" },
-];
 
-export const latestProjects = [
-  {
-    title: "electricity",
-    description: "electricity_description",
-    image: "/images/projects/1.png",
-  },
-  {
-    title: "plumbing",
-    description: "plumbing_description",
-    image: "/images/projects/2.png",
-  },
-  {
-    title: "plumbing",
-    description: "plumbing_description",
-    image: "/images/projects/3.png",
-  },
-  {
-    title: "plumbing",
-    description: "plumbing_description",
-    image: "/images/projects/4.png",
-  },
-  {
-    title: "electricity",
-    description: "electricity_description",
-    image: "/images/projects/1.png",
-  },
-  {
-    title: "plumbing",
-    description: "plumbing_description",
-    image: "/images/projects/2.png",
-  },
-  {
-    title: "plumbing",
-    description: "plumbing_description",
-    image: "/images/projects/3.png",
-  },
-  {
-    title: "plumbing",
-    description: "plumbing_description",
-    image: "/images/projects/4.png",
-  },
-  {
-    title: "electricity",
-    description: "electricity_description",
-    image: "/images/projects/1.png",
-  },
+export const categories = [
+  "Best Seller Products",
+  "Woman",
+  "Male",
+  "Mother & child",
+  "Supermarket",
+  "Cosmetic",
+  "Shoes & Bags",
+  "Watches & Accessories",
+  "Electronics",
+  "Devices",
+  "Toys & Hobbies",
+  "Heath & Beauty",
+  "Back to school",
+  "Others",
 
-  {
-    title: "plumbing",
-    description: "plumbing_description",
-    image: "/images/projects/2.png",
-  },
-
-  {
-    title: "plumbing",
-    description: "plumbing_description",
-    image: "/images/projects/3.png",
-  },
-
-  {
-    title: "plumbing",
-    description: "plumbing_description",
-    image: "/images/projects/4.png",
-  },
-];
-
-export const ourTeam = [
-  {
-    id: 1,
-    name: "John Martin",
-    position: "Electrician",
-    image: "/images/projects/1.png",
-    social: { facebook: "", instagram: "", twitter: "" },
-  },
-  {
-    id: 2,
-    name: "John Martin",
-    position: "Cleaner",
-    image: "/images/projects/2.png",
-    social: { facebook: "", instagram: "", twitter: "" },
-  },
-  {
-    id: 3,
-    name: "John Martin",
-    position: "Plumper",
-    image: "/images/projects/3.png",
-    social: { facebook: "", instagram: "", twitter: "" },
-  },
-  {
-    id: 4,
-    name: "John Martin",
-    position: "Plumper",
-    image: "/images/projects/4.png",
-    social: { facebook: "", instagram: "", twitter: "" },
-  },
-  {
-    id: 5,
-    name: "John Martin",
-    position: "Electrician",
-    image: "/images/projects/1.png",
-    social: { facebook: "", instagram: "", twitter: "" },
-  },
-];
-
-export const electrics = [
-  {
-    name: "refrigerators",
-    icon: <FriggedIcon />,
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,   remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop ",
-  },
-  {
-    name: "ovens",
-    icon: <OvensIcon />,
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,   remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop ",
-  },
-  {
-    name: "conditioners",
-    icon: <AirConIcon />,
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,   remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop ",
-  },
-  {
-    name: "microwaves",
-    icon: <MicrowavesIcon />,
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,   remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop ",
-  },
-  {
-    name: "gas",
-    icon: <GasIcon />,
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an ",
-  },
-  {
-    name: "others",
-    icon: <OthersIcon />,
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an ",
-  },
-];
-
-export const serviceProviders = [
-  {
-    id: 1,
-    image: "/images/projects/1.png",
-    name: "John Doe",
-    favorite: true,
-    rating: 4,
-    hourPrice: 50,
-    services: electrics?.[getRandomOf(electrics)],
-  },
-  {
-    id: 2,
-    image: "/images/projects/2.png",
-    name: "Jane Smith",
-    favorite: false,
-    rating: 3,
-    hourPrice: 60,
-    services: electrics?.[getRandomOf(electrics)],
-  },
-  {
-    id: 3,
-    image: "/images/projects/3.png",
-    name: "Bob Johnson",
-    favorite: true,
-    rating: 5,
-    hourPrice: 75,
-    services: electrics?.[getRandomOf(electrics)],
-  },
-  {
-    id: 4,
-    image: "/images/projects/5.png",
-    name: "Sarah Lee",
-    favorite: false,
-    rating: 4,
-    hourPrice: 65,
-    services: electrics?.[getRandomOf(electrics)],
-  },
-  {
-    id: 5,
-    image: "/images/projects/4.png",
-    name: "Tom Wilson",
-    favorite: true,
-    rating: 4,
-    hourPrice: 55,
-    services: electrics?.[getRandomOf(electrics)],
-  },
-  {
-    id: 6,
-    image: "/images/projects/2.png",
-    name: "Emily Wang",
-    favorite: false,
-    rating: 5,
-    hourPrice: 80,
-    services: electrics?.[getRandomOf(electrics)],
-  },
-  {
-    id: 7,
-    image: "/images/projects/3.png",
-    name: "Jack Chen",
-    favorite: true,
-    rating: 3,
-    hourPrice: 45,
-    services: electrics?.[getRandomOf(electrics)],
-  },
-  {
-    id: 8,
-    image: "/images/projects/4.png",
-    name: "Maggie Li",
-    favorite: false,
-    rating: 4,
-    hourPrice: 70,
-    services: electrics?.[getRandomOf(electrics)],
-  },
-  {
-    id: 9,
-    image: "/images/projects/5.png",
-    name: "Ryan Zhang",
-    favorite: true,
-    rating: 5,
-    hourPrice: 90,
-    services: electrics?.[getRandomOf(electrics)],
-  },
-  {
-    id: 10,
-    image: "/images/projects/1.pngg",
-    name: "Sophia Wu",
-    favorite: false,
-    rating: 4,
-    hourPrice: 60,
-    services: electrics?.[getRandomOf(electrics)],
-  },
-];
-
-export const companies = [
-  {
-    id: 1,
-
-    name: "Acme Corporation",
-    image: "/images/companies/Bitmap.png",
-  },
-  {
-    id: 2,
-
-    name: "Globex Corporation",
-    image: "/images/companies/Bitmap-1.png",
-  },
-  {
-    id: 3,
-
-    name: "Initech Corporation",
-    image: "/images/companies/Bitmap-2.png",
-  },
-  {
-    id: 4,
-
-    name: "Stark Industries",
-    image: "/images/companies/Bitmap-1.png",
-  },
-  {
-    id: 5,
-
-    name: "Wayne Enterprises",
-    image: "/images/companies/Bitmap-2.png",
-  },
-  {
-    id: 6,
-
-    name: "Umbrella Corporation",
-    image: "/images/companies/Bitmap-1.png",
-  },
-  {
-    id: 7,
-
-    name: "Oscorp Industries",
-    image: "/images/companies/Bitmap-2.png",
-  },
-  {
-    id: 8,
-
-    name: "Aperture Science",
-    image: "/images/companies/Bitmap-1.png",
-  },
-  {
-    id: 9,
-
-    name: "Weyland-Yutani Corporation",
-    image: "/images/companies/Bitmap-2.png",
-  },
-  {
-    id: 10,
-
-    name: "Gekko & Co.",
-    image: "/images/companies/Bitmap.png",
-  },
-];
-
-export const reviews = [
-  {
-    id: 1,
-    name: "John Smith",
-    image: "/images/clients/Ellipse 182.png",
-    date: "2023-04-08",
-    rating: 4,
-    comment: "Great product, works as advertised!",
-  },
-  {
-    id: 2,
-    name: "Jane Doe",
-    image: "/images/clients/Group 3.png",
-    date: "2023-04-07",
-    rating: 2,
-    comment: "This product did not meet my expectations.",
-  },
-  {
-    id: 3,
-    name: "Bob Johnson",
-    image: "/images/clients/Ellipse 180.png",
-    date: "2023-04-05",
-    rating: 5,
-    comment: "I am very happy with my purchase!",
-  },
-];
-
-export const offers = [
-  {
-    name: "Summer Sale",
-    offerNumber: "725319",
-    date: "2023-06-01",
-    image: "/images/18571126_303.png",
-    services: electrics?.[getRandomOf(electrics)],
-
-  },
-  {
-    name: "Back to School",
-    offerNumber: "834967",
-    date: "2023-08-15",
-    image: "/images/18571126_303.png",
-    services: electrics?.[getRandomOf(electrics)],
-
-  },
-  {
-    name: "Holiday Deals",
-    offerNumber: "619532",
-    date: "2023-12-01",
-    image: "/images/18571126_303.png",
-    services: electrics?.[getRandomOf(electrics)],
-
-  },
-  {
-    name: "Black Friday Deals",
-    offerNumber: "984563",
-    date: "2023-11-24",
-    image: "/images/18571126_303.png",
-    services: electrics?.[getRandomOf(electrics)],
-
-  },
-  {
-    name: "New Year Clearance",
-    offerNumber: "752369",
-    date: "2024-01-01",
-    image: "/images/18571126_303.png",
-    services: electrics?.[getRandomOf(electrics)],
-
-  },
-  {
-    name: "Spring Specials",
-    offerNumber: "135790",
-    date: "2024-04-01",
-    image: "/images/18571126_303.png",
-    services: electrics?.[getRandomOf(electrics)],
-
-  },
-];
-
-export const orders = [
-  {
-    name: "Order 1",
-    date: "2022-05-20",
-    orderNumber: "ORD-123456",
-    userId: serviceProviders[3],
-    favorite: true,
-    service: services[getRandomOf(services)],
-    offer: offers[getRandomOf(offers)],
-  },
-  {
-    name: "Order 2",
-    date: "2022-06-15",
-    orderNumber: "ORD-789012",
-    userId: serviceProviders[5],
-    favorite: false,
-    service: services[getRandomOf(services)],
-    offer: offers[getRandomOf(offers)],
-  },
-  {
-    name: "Order 3",
-    date: "2022-07-01",
-    orderNumber: "ORD-345678",
-    userId: serviceProviders[1],
-    favorite: true,
-    service: services[getRandomOf(services)],
-    offer: offers[getRandomOf(offers)],
-  },
-  {
-    name: "Order 4",
-    date: "2022-08-10",
-    orderNumber: "ORD-901234",
-    userId: serviceProviders[4],
-    favorite: false,
-    service: services[getRandomOf(services)],
-    offer: offers[getRandomOf(offers)],
-  },
-  {
-    name: "Order 5",
-    date: "2022-09-05",
-    orderNumber: "ORD-567890",
-    userId: serviceProviders[2],
-    favorite: true,
-    service: services[getRandomOf(services)],
-    offer: offers[getRandomOf(offers)],
-  },
-  {
-    name: "Order 1",
-    date: "2022-05-20",
-    orderNumber: "ORD-123456",
-    userId: serviceProviders[3],
-    favorite: true,
-    service: services[getRandomOf(services)],
-    offer: offers[getRandomOf(offers)],
-  },
-  {
-    name: "Order 2",
-    date: "2022-06-15",
-    orderNumber: "ORD-789012",
-    userId: serviceProviders[5],
-    favorite: false,
-    service: services[getRandomOf(services)],
-    offer: offers[getRandomOf(offers)],
-  },
-  {
-    name: "Order 3",
-    date: "2022-07-01",
-    orderNumber: "ORD-345678",
-    userId: serviceProviders[1],
-    favorite: true,
-    service: services[getRandomOf(services)],
-    offer: offers[getRandomOf(offers)],
-  },
-  {
-    name: "Order 4",
-    date: "2022-08-10",
-    orderNumber: "ORD-901234",
-    userId: serviceProviders[4],
-    favorite: false,
-    service: services[getRandomOf(services)],
-    offer: offers[getRandomOf(offers)],
-  },
-  {
-    name: "Order 5",
-    date: "2022-09-05",
-    orderNumber: "ORD-567890",
-    userId: serviceProviders[2],
-    favorite: true,
-    service: services[getRandomOf(services)],
-    offer: offers[getRandomOf(offers)],
-  },
-];
-
-export const previousWorks = [
-  {
-    clientName: "John Smith",
-    rating: 4,
-    images: [
-      "/images/works/1.png",
-      "/images/works/2.png",
-      "/images/works/3.png",
-    ],
-    comment: "Great work, very professional!",
-    date: "2022-03-15",
-  },
-  {
-    clientName: "John Smith",
-    rating: 5,
-    images: [
-      "/images/works/4.png",
-      "/images/works/5.png",
-      "/images/works/6.png",
-    ],
-    comment: "Absolutely stunning results, exceeded my expectations!",
-    date: "2021-12-01",
-  },
-  {
-    clientName: "John Smith",
-    rating: 3,
-    images: [
-      "/images/works/7.png",
-      "/images/works/8.png",
-      "/images/works/9.png",
-    ],
-    comment: "Good work, but took longer than expected.",
-    date: "2021-06-20",
-  },
-];
-
-export const chatRooms = [
-  {
-    "roomId": "1234",
-    "users": [
-      {
-        "username": "JohnDoe",
-        "lastMessageSend": "2023-04-18T15:30:00Z",
-        "image": "https://randomuser.me/api/portraits/men/1.jpg"
-      },
-      {
-        "username": "JaneDoe",
-        "lastMessageSend": "2023-04-18T14:00:00Z",
-        "image": "https://randomuser.me/api/portraits/women/1.jpg"
-      }
-    ],
-    "conversations": [
-      {
-        "date": "2023-04-18T15:29:00Z",
-        "message": "Hi John, how are you?"
-      },
-      {
-        "date": "2023-04-18T15:31:00Z",
-        "message": "I'm doing great, thanks for asking. How about you?"
-      },
-      {
-        "date": "2023-04-18T15:32:00Z",
-        "message": "I'm good too, thanks. What have you been up to?"
-      }
-    ]
-  },
-  {
-    "roomId": "5678",
-    "users": [
-      {
-        "username": "BobSmith",
-        "lastMessageSend": "2023-04-18T13:00:00Z",
-        "image": "https://randomuser.me/api/portraits/men/2.jpg"
-      },
-      {
-        "username": "AliceJohnson",
-        "lastMessageSend": "2023-04-18T14:30:00Z",
-        "image": "https://randomuser.me/api/portraits/women/2.jpg"
-      }
-    ],
-    "conversations": [
-      {
-        "date": "2023-04-18T13:05:00Z",
-        "message": "Hey Alice, did you finish that report?"
-      },
-      {
-        "date": "2023-04-18T14:35:00Z",
-        "message": "Yes, I just sent it to you. Did you get it?"
-      },
-      {
-        "date": "2023-04-18T14:37:00Z",
-        "message": "Got it. Thanks Alice, you're the best!"
-      }
-    ]
-  }
 ]
 
-export const allProposal = [
+export const products = [
+
   {
-    "name": "John Doe",
-    "price": 30,
-    "description": "We are seeking a highly skilled software engineer to join our team. The ideal candidate will have experience with a variety of programming languages and frameworks, and will be able to work independently as well as in a team environment.",
-    "timeToGo": "Immediately",
-    "deadline": "May 31, 2023",
-    image: "/images/clients/Group 3.png",
-    "title": "Software Engineer"
+    id: 'Product X',
+    "name": "Product X",
+    "description": "This is a great product that will meet all of your needs!",
+    "status": true,
+    image:'/images/products/1.png',
+    "price": 25,
+    "rating": 4,
+    "favorite": false,
+    "discount": 0.15,
+    "company_name": "ABC Inc.",
+    "delivery_time": "2-3 Delivery days"
   },
   {
-    "name": "Jane Smith",
-    "price": 33,
-    "description": "We are looking for an experienced marketing manager to develop and implement marketing strategies that will help our company grow. The ideal candidate will have a proven track record of success in marketing, and will be able to lead a team of marketing professionals.",
-    "timeToGo": "Immediately",
-    "deadline": "June 15, 2023",
-    image: "/images/clients/Group 3.png",
-    "title": "Marketing Manager"
+    id: 'Product Y',
+    "name": "Product Y",
+    "description": "This is another great product that will meet all of your needs!",
+    "status": false,
+    image:'/images/products/1.png',
+    "price": 20,
+    "rating": 3,
+    "favorite": true,
+    "discount": 0.10,
+    "company_name": "XYZ Corp.",
+    "delivery_time": "3-5 Delivery days"
   },
   {
-    "name": "Bob Johnson",
+    id: 'Product Z',
+    "name": "Product Z",
+    "description": "This is an amazing product that you won't want to miss out on!",
+    "status": true,
+    image:'/images/products/1.png',
+    "price": 39,
+    "rating": 5,
+    "favorite": true,
+    "discount": 0.25,
+    "company_name": "ACME Inc.",
+    "delivery_time": "1-2 Delivery days"
+  },
+  {
+    id: 'Product A',
+    "name": "Product A",
+    "description": "This product is perfect for those who need a reliable solution!",
+    "status": true,
+    image:'/images/products/1.png',
+    "price": 15,
+    "rating": 4,
+    "favorite": false,
+    "discount": 0.05,
+    "company_name": "DEF Corp.",
+    "delivery_time": "4-6 Delivery days"
+  },
+  {
+    id: 'Product B',
+    "name": "Product B",
+    "description": "This is a high-quality product that will exceed your expectations!",
+    "status": false,
+    image:'/images/products/1.png',
     "price": 29,
-    "description": "We are seeking a data scientist with experience in statistical modeling, machine learning, and data visualization. The ideal candidate will be able to work with large datasets and have strong programming skills in Python, R, or similar languages.",
-    "timeToGo": "Immediately",
-    "deadline": "April 30, 2023",
-    image: "/images/clients/Group 3.png",
-    "title": "Data Scientist"
+    "rating": 3,
+    "favorite": false,
+    "discount": 0.20,
+    "company_name": "GHI Inc.",
+    "delivery_time": "2-4 Delivery days"
+  },
+  {
+    id: 'Product C',
+    "name": "Product C",
+    "description": "This product is designed to make your life easier and more enjoyable!",
+    "status": true,
+    image:'/images/products/1.png',
+    "price": 50,
+    "rating": 5,
+    "favorite": true,
+    "discount": 0.30,
+    "company_name": "JKL Corp.",
+    "delivery_time": "1-3 Delivery days"
+  },
+  {
+    id: 'Product D',
+    "name": "Product D",
+    "description": "This is a versatile product that can be used in many different ways!",
+    "status": true,
+    image:'/images/products/1.png',
+    "price": 19,
+    "rating": 3,
+    "favorite": false,
+    "discount": 0.10,
+    "company_name": "MNO Inc.",
+    "delivery_time": "3-5 Delivery days"
+  },
+  {
+    id: 'Product E',
+    "name": "Product E",
+    "description": "This product is perfect for those who demand the best!",
+    "status": true,
+    image:'/images/products/1.png',
+    "price": 99,
+    "rating": 5,
+    "favorite": true,
+    "discount": 0.40,
+    "company_name": "PQR Corp.",
+    "delivery_time": "1-2 Delivery days"
+  },
+  {
+    id: 'Product F',
+    "name": "Product F",
+    "description": "This is a reliable product that you can count on!",
+    "status": false,
+    image:'/images/products/1.png',
+    "price": 24,
+    "rating": 4,
+    "favorite": false,
+    "discount": 0.15,
+    "company_name": "STU Inc.",
+    "delivery_time": "2-4 Delivery days"
+  },
+  {
+    id: 'Product G',
+    "name": "Product G",
+    "description": "This product is perfect for those who need a powerful solution!",
+    "status": true,
+    image:'/images/products/1.png',
+    "price": 69,
+    "rating": 5,
+    "favorite": true,
+    "discount": 0.35,
+    "company_name": "VWX Corp.",
+    "delivery_time": "1-3 Delivery days"
+  },
+  {
+    id: 'Product H',
+    "name": "Product H",
+    "description": "This is a high-performance product that won't let you down!",
+    "status": true,
+    image:'/images/products/1.png',
+    "price": 39,
+    "rating": 4,
+    "favorite": false,
+    "discount": 0.20,
+    "company_name": "YZA Inc.",
+    "delivery_time": "3-5 Delivery days"
+  },
+  {
+    id: 'Product I',
+    "name": "Product I",
+    "description": "This product is perfect for those who demand the best!",
+    "status": true,
+    image:'/images/products/1.png',
+    "price": 99,
+    "rating": 5,
+    "favorite": true,
+    "discount": 0.40,
+    "company_name": "BCD Corp.",
+    "delivery_time": "1-2 Delivery days"
+  },
+  {
+    id: 'Product J',
+    "name": "Product J",
+    "description": "This is a versatile product that can be used in many different ways!",
+    "status": true,
+    image:'/images/products/1.png',
+    "price": 19,
+    "rating": 3,
+    "favorite": false,
+    "discount": 0.10,
+    "company_name": "EFG Inc.",
+    "delivery_time": "3-5 Delivery days"
+  },
+  {
+    id: 'Product K',
+    "name": "Product K",
+    "description": "This product is perfect for those who need a reliable solution!",
+    "status": true,
+    image:'/images/products/1.png',
+    "price": 15,
+    "rating": 4,
+    "favorite": false,
+    "discount": 0.05,
+    "company_name": "HIJ Corp.",
+    "delivery_time": "4-6 Delivery days"
+  },
+  {
+    id: 'Product L',
+    "name": "Product L",
+    "description": "This is a high-quality product that will exceed your expectations!",
+    "status": false,
+    image:'/images/products/1.png',
+    "price": 29,
+    "rating": 3,
+    "favorite": false,
+    "discount": 0.20,
+    "company_name": "KLM Inc.",
+    "delivery_time": "2-4 Delivery days"
+  },
+  {
+    id: 'Product M',
+    "name": "Product M",
+    "description": "This product is designed to make your life easier and more enjoyable!",
+    "status": true,
+    image:'/images/products/1.png',
+    "price": 50,
+    "rating": 5,
+    "favorite": true,
+    "discount": 0.30,
+    "company_name": "NOP Corp.",
+    "delivery_time": "1-3 Delivery days"
+  },
+  {
+    id: 'Product N',
+    "name": "Product N",
+    "description": "This is a reliable product that you can count on!",
+    "status": false,
+    image:'/images/products/1.png',
+    "price": 24,
+    "rating": 4,
+    "favorite": false,
+    "discount": 0.15,
+    "company_name": "QRS Inc.",
+    "delivery_time": "2-4 Delivery days"
   }
 ]
-

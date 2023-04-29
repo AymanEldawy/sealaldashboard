@@ -30,11 +30,53 @@ export const en = {
   back_to: 'Back top',
   code_verification: "Code Verification",
   code_verification_msg: "Enter OTP sent to you",
-  minutes:'minutes',
-  verify_code:'verify code',
+  minutes: 'minutes',
+  verify_code: 'verify code',
   resend_code: "Resend code",
 
 
+  express_description: 'Express Deilivery and free returns within 30 days',
+  coupon_discount: 'My Discount Coupons',
+  sell_trenyol: "Sell ​​on Trendyol",
+  help_support: "Help & Support",
+  compare: "Compare",
+
+
+
+  all_categories: "All Categories",
+  search_product: "Search For Products",
+  search: "Search",
+  my_cart: "My Cart",
+  shop_department: "SHOP BY DEPARTMENT",
+
+
+  good_shopping: "Feel - good Shopping",
+  weekend_discount: 'WEEKEND DISCOUNT',
+  new_arrival_the_shop: "New Arival at the shop",
+  big_sale: "Big sale up to 70%",
+  shop_now: "Shop Now",
+
+  home: "Home",
+  about_us: "About us",
+  categories: "Categories",
+  sale: "Sale",
+  companies: "Companies",
+  contact_us: "Contact us",
+  hotline: "Hotline:",
+
+  popular_products: "Popular Products",
+  hot_categories: "Hot Categories",
+  all: "All",
+
+
+  flash_sale: "flash sale",
+  shopping_now_description: "you can shopping now",
+  opportunity_products: "opportunity products",
+  best_seller: 'Best seller Products',
+  hours: 'hours',
+  minutes: 'minutes',
+  seconds: 'seconds',
+  ends_in: 'ends in',
 
 
 

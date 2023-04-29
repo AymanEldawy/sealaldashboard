@@ -17,7 +17,7 @@ const Contact = () => {
           <div className="flex-1 p-8 bg-[#F9F9F9] rounded-lg">
             <ContactForm />
           </div>
-          <div className="w-[40%] p-8">
+          <div className="w-[40%] p-8  dark:text-red-500  ">
             <ContactInfo />
           </div>
         </div>

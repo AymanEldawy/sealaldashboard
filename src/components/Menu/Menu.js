@@ -11,16 +11,15 @@ import { useState } from "react";
 
 const Menu = () => {
   const { lang } = useContext(LanguageContext);
-  const shadow = `box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;`;
   return (
-    <div className="shadow" style={{ boxShadow: shadow }}>
-      <div className="container justify-between flex items-center py-4 ">
+    <div className=" border-b border-[#ECECEC]">
+      <div className="container justify-between flex items-center py-6 ">
         <Brand />
-        <div className="flex gap-4">
-          <MenuLinks />
+        <div className="flex flex-1 gap-4">
+          <SearchBar />
          
+          <MenuLinks />
         </div>
-        <SearchBar />
       </div>
     </div>
   );
