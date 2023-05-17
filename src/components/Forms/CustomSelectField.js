@@ -9,10 +9,12 @@ const CustomSelectField = ({
   selectClassName,
   placeholder,
   iconStart,
+  arrowClassName,
+  containerClassName,
   ...selectProps
 }) => {
   return (
-    <div className="mb-4 w-full">
+    <div className={`mb-4 w-full ${containerClassName}`}>
       {label ? (
         <label className="flex items-center justify-between mb-2">
           {label}
@@ -37,7 +39,7 @@ const CustomSelectField = ({
               </option>
             ))}
         </select>
-        <span className="-rotate-90 absolute ltr:right-3  top-2 rtl:left-3 scale-50 flex items-center justify-center z-10 w-8 h-8">
+        <span className={`-rotate-90 absolute ltr:right-3  top-2 rtl:left-3 scale-50 flex items-center justify-center z-10 w-8 h-8 ${arrowClassName}`}>
           <ChevronIcon
             color="#0063C6"
             className={`bg-white ${iconClassName}`}

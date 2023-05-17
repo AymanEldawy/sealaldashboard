@@ -49,13 +49,14 @@ export const en = {
   my_cart: "My Cart",
   shop_department: "SHOP BY DEPARTMENT",
 
-
+  // upper menu
   good_shopping: "Feel - good Shopping",
   weekend_discount: 'WEEKEND DISCOUNT',
   new_arrival_the_shop: "New Arival at the shop",
   big_sale: "Big sale up to 70%",
   shop_now: "Shop Now",
 
+  // menu
   home: "Home",
   about_us: "About us",
   categories: "Categories",
@@ -63,12 +64,11 @@ export const en = {
   companies: "Companies",
   contact_us: "Contact us",
   hotline: "Hotline:",
-
   popular_products: "Popular Products",
   hot_categories: "Hot Categories",
   all: "All",
 
-
+  // home page
   flash_sale: "flash sale",
   shopping_now_description: "you can shopping now",
   opportunity_products: "opportunity products",
@@ -78,11 +78,79 @@ export const en = {
   seconds: 'seconds',
   ends_in: 'ends in',
 
+  // why us
+  why_us: 'Why us?',
+  easy_shopping: "Easy shopping",
+  easy_payment: "Easy payment methods",
+  fast_shipping: "Fast shipping",
+  fast_shipping_description: "Over the last few weeks, and as previously in our first article ",
+
+
+  institutional: "Institutional",
+  popular_brands: "Popular Brands",
+  popular_phones: "popular phones",
+  all_here: "all here",
+  contact_info: "contact info",
+
+
+  more_about: "more about",
+  contact_info: "contact info",
+
+
+  // footer
+  form_subscribe: "Subscribe Newsletter",
+  form_subscribe_msg: "Contact us 24 hours a day, 7 days a week",
+  subscribe: "subscribe",
+  your_email: "your email",
+  copy_right_msg: "Copyright © 2022 – Sealal. All rights reserved.",
+
+
+  // categories page
+  all_categories: "All Categories",
+  colors: 'colors',
+  sizes: 'sizes',
+  brands: 'brands',
+  price: 'price',
+  colors: 'colors',
+  min: "min",
+  max: "max",
+  min_price: "Min.price:",
+  max_price: "Max.price:",
+  brands: 'brands',
+
+  sort_by: "sort by",
+
+  // Single product page
+  product_description: "product description",
+  reviews: "reviews",
+  additional_information: "additional information",
+  in_stock: "in stock",
+  review: "review",
+  size: "size",
+  color: "color",
+  Size_Guide: "Size Guide",
+  add_to_cart: "add to cart",
+  out_of_stock: "out of stock",
+  tags: "tags",
+  SKU: "SKU",
+  product_code: "product code",
+  introduction: "introduction",
+  Material: "Material",
+  Weight: "Weight",
+  confirmed_order: "confirmed order",
+  similar_products: "similar products",
+  size_chart: "size chart",
+  size_chart_msg: "*This data was obtained from manually measuring the product, it may be off by 1-2 CM.",
+  size_chart_msg1: "How to measure the  Products size?",
+  features: "features",
+  more: "more",
+  product_tech_description:"product tech description",
 
 
 
-
-
+  // 
+  // 
+  // 
   remember_me: "remember me",
   register_now: "Register now",
   account: "account",
@@ -119,7 +187,6 @@ export const en = {
   services: "Services",
   contact: "Contact",
   search: "Search",
-  form_subscribe: "Subscribe to our newsletter",
   join: "Join",
   get_Professional: "Get Professional",
   home_services: "Home Services",

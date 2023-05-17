@@ -8,7 +8,7 @@ import { fetchWord } from "@/lang/fetchWord";
 const SearchBar = ({ inputClassName, containerClassName, iconClassName }) => {
   const { lang } = useContext(LanguageContext);
   return (
-    <form className={`flex bg-bmain rounded-3xl flex-1 border border-primary items-center ${containerClassName}`}>
+    <form className={`flex bg-white rounded-3xl flex-1 border border-primary items-center ${containerClassName}`}>
       <select className="bg-transparent min-w-[60px] text-[#616161] px-4 text-sm">
         <option>{fetchWord('all_categories', lang)}</option>
         <option>Men</option>

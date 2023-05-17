@@ -11,7 +11,7 @@ import { ProductStatus } from './ProductStatus'
 export const ProductCard = ({ product }) => {
 
   return (
-    <div className='relative bg-white pt-2 px-2'>
+    <div className='relative border border-gray-100 pt-2 px-2'>
       {
         product?.status ?
           <ProductStatus status={product?.status} />

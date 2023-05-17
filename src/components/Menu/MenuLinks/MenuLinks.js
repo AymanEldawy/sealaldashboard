@@ -13,7 +13,7 @@ const MenuLinks = () => {
   return (
     <ul className="flex gap-8 items-center justify-end min-w-[220px] pr-12">
       <li className="flex gap-2">
-        <Link href="" className="block w-6"><HeartIcon className="text-secondary" /> </Link>
+        <Link href="" className="block w-6"><HeartIcon className=" stroke-secondary" /> </Link>
       </li>
       <li className="flex gap-2">
         <Link href="" className="block w-6"><UserCircleIcon /> </Link>
