@@ -17,7 +17,6 @@ const Menu = () => {
         <Brand />
         <div className="flex flex-1 gap-4">
           <SearchBar />
-         
           <MenuLinks />
         </div>
       </div>

@@ -1,6 +1,6 @@
 import { Layout } from '@/components/Layout/Layout'
 import TabsList from '@/components/Tabs/TabsList';
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import TabsContent from './../../components/Tabs/TabsContent';
 import { ProductImages } from '@/components/SingleProductComponents/ProductImages';
 import { ProductDescription } from '@/components/SingleProductComponents/ProductDescription';
@@ -13,13 +13,15 @@ import { useRouter } from 'next/router';
 import { ProductSizeChart } from '@/components/SingleProductComponents/ProductSizeChart';
 import { ProductCompare } from '@/components/SingleProductComponents/ProductCompare';
 import { ProductFeatures } from '@/components/SingleProductComponents/ProductFeatures';
+import { GlobalOptions } from '@/context/GlobalOptions';
 
 // additional_information
 const tabs = ['product_description', 'reviews', 'size_chart', 'compare', 'product_tech_description']
 
 const maxQuantity = 5
 const SingleProduct = () => {
-  const router = useRouter()
+  const router = useRouter();
+  const { addToCart } = useContext(GlobalOptions);
   const [color, setColor] = useState();
   const [size, setSize] = useState();
   const [quantity, setQuantity] = useState(1);
@@ -32,12 +34,15 @@ const SingleProduct = () => {
   console.log(router)
   console.log(activeTab)
   // add to cart
+  const handleToCart = () => {
+    addToCart({ ...product, quantity: quantity })
+  }
   return (
     <Layout>
       <div className='container'>
         <div className='flex flex-col md:flex-row gap-8'>
           <ProductImages images={productImages} />
-          <ProductInformation maxQuantity={maxQuantity} quantity={quantity} setQuantity={setQuantity} color={color} setColor={setColor} size={size} setSize={setSize} product={product} />
+          <ProductInformation handleToCart={handleToCart} maxQuantity={maxQuantity} quantity={quantity} setQuantity={setQuantity} color={color} setColor={setColor} size={size} setSize={setSize} product={product} />
         </div>
         <TabsList
           list={tabs}

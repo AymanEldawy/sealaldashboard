@@ -14,7 +14,7 @@ const ReviewCard = ({ review }) => {
         alt={review?.name}
         height={70}
         width={70}
-        className="object-contain -translate-y-6 -mx-4"
+        className="object-contain -translate-y-8 -mx-4"
       />
       <div className="flex-1 flex gap-4 px-2 rtl:pl-4 ltr:pr-4 py-3">
         <div className="flex flex-col gap-2">

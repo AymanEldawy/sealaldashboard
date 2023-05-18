@@ -1,15 +1,15 @@
+import { GlobalOptionsProvider } from "@/context/GlobalOptions";
 import { LangContextProvider } from "@/context/LangContext";
-import { UserRoleContextProvider } from "@/context/UserContext";
 
 import "@/styles/globals.css";
 
 function App({ Component, pageProps }) {
   return (
-    <UserRoleContextProvider>
+    <GlobalOptionsProvider>
       <LangContextProvider>
         <Component {...pageProps} />
       </LangContextProvider>
-    </UserRoleContextProvider>
+    </GlobalOptionsProvider>
   );
 }
 export default App;

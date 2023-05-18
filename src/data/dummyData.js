@@ -588,3 +588,36 @@ export const phoneChart = [
     "value": "No"
   }
 ]
+
+
+export const cartList = [
+
+  {
+    id: 'Product M',
+    "name": "Product M",
+    "description": "This product is designed to make your life easier and more enjoyable!",
+    "status": true,
+    image: '/images/products/1.png',
+    "price": 50,
+    "rating": 5,
+    "favorite": true,
+    "discount": 0.30,
+    "company_name": "NOP Corp.",
+    "delivery_time": "1-3 Delivery days",
+    quantity: 4
+  },
+  {
+    id: 'Product N',
+    "name": "Product N",
+    "description": "This is a reliable product that you can count on!",
+    "status": false,
+    image: '/images/products/1.png',
+    "price": 24,
+    "rating": 4,
+    "favorite": false,
+    "discount": 0.15,
+    "company_name": "QRS Inc.",
+    "delivery_time": "2-4 Delivery days",
+    quantity: 2
+  }
+]

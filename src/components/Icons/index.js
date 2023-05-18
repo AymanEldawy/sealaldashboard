@@ -78,3 +78,13 @@ export { default as GoogleIcon } from "./GoogleIcon";
 export { default as ListViewIcon } from "./ListViewIcon";
 export { default as GridViewIcon } from "./GridViewIcon";
 export { default as ArrowsIcon } from "./ArrowsIcon";
+export { default as DeleteIcon } from "./DeleteIcon";
+export { default as MapIcon } from "./MapIcon";
+export { default as MobileIcon } from "./MobileIcon";
+export { default as SlashIcon } from "./SlashIcon";
+export { default as DollarIcon } from "./DollarIcon";
+export { default as TagIcon } from "./TagIcon";
+export { default as TrunkFlatIcon } from "./TrunkFlatIcon";
+export { default as MessageFlatIcon } from "./MessageFlatIcon";
+export { default as CardFlatIcon } from "./CardFlatIcon";
+

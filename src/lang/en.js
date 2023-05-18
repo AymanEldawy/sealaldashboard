@@ -144,7 +144,71 @@ export const en = {
   size_chart_msg1: "How to measure the  Products size?",
   features: "features",
   more: "more",
-  product_tech_description:"product tech description",
+  product_tech_description: "product tech description",
+  // cart page
+  cart_empty_msg: "Cart is empty",
+  product_description: "Product Description",
+  size: "Size",
+  quantity: "Quantity",
+  price: "Price",
+  max_quantity_msg: "max quantity",
+  Discount: "Discount",
+  Delivery: "Delivery",
+  Subtotal: "Subtotal",
+  Total: "Total",
+  promo_code_msg: "If you have a promotion code, Please enter there ",
+  apply: "apply",
+  checkout: "checkout",
+
+  // favorite page
+  favorite_empty_msg: "There are no items!",
+  Stock_status: "Stock status",
+
+
+  // about page
+  about_us: "about us",
+  Our_Partner: "Our Partner",
+  Happy_clients: "Happy clients",
+
+  // contact page
+  contact_us: "contact us",
+  contact_msg: "How can I help you?",
+
+  address: "Address",
+  phone_number: "Phone Number",
+  email_address: "E-mail Address",
+  send_message: "send us Message",
+  your_name: "Your name",
+  enter_your_name: "Enter your name",
+  your_email: "Your Email",
+  message: "Message",
+  write_message: "Write message here",
+
+  // FAQ page
+  ask_us: "Ask us any thing",
+  faq: "FAQ",
+  faq_placeholder: "Search For any question",
+
+
+  faq_title1: "How do I change my account email?",
+  faq_desc1: "You can log in to your account and change it from your Profile > Edit Profile. Then go to the general tab to change your email.",
+  faq_title2: "What should I do if my payment fails?",
+  faq_desc2: "If your payment fails, you can use the (COD) payment option, if available on that order. If your payment is debited from your account after a payment failure, it will be credited back within 7-10 days.",
+  faq_title3: "What is your cancellation policy?",
+  faq_desc3: "You can now cancel an order when it is in packed/shipped status. Any amount paid will be credited into the same payment mode using which the payment was made",
+  faq_title4: "How do I check order delivery status ?",
+  faq_title5: "What is Instant Refunds?",
+  faq_title6: "How do I apply a coupon on my order?",
+  faq_desc4: "Please tap on “My Orders” section under main menu of App/Website/M-site to check your order status.",
+  faq_desc5: "Upon successful pickup of the return product at your doorstep, Myntra will instantly initiate the refund to your source account or chosen method of refund. Instant Refunds is not available in a few select pin codes and for all self ship returns.",
+  faq_desc6: "You can apply a coupon on cart page before order placement. The complete list of your unused and valid coupons will be available under “My Coupons” tab of App/Website/M-site.",
+
+  faq_if: "If you have any other questions",
+  have_question: "Still have questions?",
+  have_question_msg: "Can’t find the answer you’re looking for? Please chat to our friendly team.",
+  get_in_touch: "Get in touch",
+
+
 
 
 
@@ -234,7 +298,6 @@ export const en = {
   about: "about",
   some_work: "some of my work",
   customer_feedback: "Customer feedback and comment",
-  get_in_touch: "Get in touch",
   subject: "Subject",
   message: "Message",
   submit_now: "Submit now",

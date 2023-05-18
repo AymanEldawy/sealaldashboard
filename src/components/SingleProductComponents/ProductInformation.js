@@ -8,7 +8,7 @@ import { ProductSizes } from './ProductSizes'
 import { colors, sizes } from '@/data/dummyData'
 import { ProductQuantity } from './ProductQuantity'
 
-export const ProductInformation = ({ product, color, setColor, size, setSize, quantity, setQuantity, maxQuantity }) => {
+export const ProductInformation = ({ handleToCart, product, color, setColor, size, setSize, quantity, setQuantity, maxQuantity }) => {
   const { lang } = useContext(LanguageContext);
   const [quantityError, setQuantityError] = useState(false)
   return (
@@ -34,7 +34,7 @@ export const ProductInformation = ({ product, color, setColor, size, setSize, qu
         {quantityError ? <p className="capitalize text-red-500 ">{fetchWord('out_of_stock', lang)}</p> :
           <ProductQuantity quantity={quantity} setQuantity={setQuantity} maxQuantity={maxQuantity} setQuantityError={setQuantityError} />
         }
-        <button className='w-full max-w-[300px] p-2 capitalizes rounded-sm text-center bg-primary text-white'>{fetchWord('add_to_cart', lang)}</button>
+        <button onClick={handleToCart} className='active:bg-transparent active:text-primary w-full max-w-[300px] p-2 capitalizes rounded-sm text-center bg-primary text-white'>{fetchWord('add_to_cart', lang)}</button>
       </div>
       <div className="mt-4 capitalize text-sm">
         <div className='flex gap-4'>
