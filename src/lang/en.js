@@ -208,221 +208,114 @@ export const en = {
   have_question_msg: "Can’t find the answer you’re looking for? Please chat to our friendly team.",
   get_in_touch: "Get in touch",
 
-
-
-
-
-  // 
-  // 
-  // 
-  remember_me: "remember me",
-  register_now: "Register now",
-  account: "account",
-  forgot_password_1: "Please enter your mobile number and a",
-  secret_code: "secret code",
-  forgot_password_2: "will be sent to your mobile number",
-  or_sign_in: "or Sign in",
-  sent_to: "sent to",
-  please_enter: "Please enter the",
-  confirm: "Confirm",
-  next: "Next",
-  name: "Name",
-  register: "Register",
-  service_provider: "service provider",
-  customer: "customer",
-  company: "company",
-  terms: "I agree with Terms and Conditions",
-
-  company_id: "company id",
-  location: "Location",
-  municipality: "Municipality",
-  country: "Country",
-  state: "State",
-  city: "City",
-  website: "Website",
-  company_license: "Company License",
-  instagram_account: "instagram account",
-  facebook_account: "facebook account",
-  our_work: "Our work",
-  create_account: "create account",
-
-  home: "Home",
-  request_services: "request services",
-  services: "Services",
-  contact: "Contact",
-  search: "Search",
-  join: "Join",
-  get_Professional: "Get Professional",
-  home_services: "Home Services",
-  book_now: "Book Now",
-
-  top_services: "Top Services",
-  kitchen: "Kitchen",
-  decoration: "Decoration",
-  electricity: "Electricity",
-  electrical: "Electrical Devices",
-  plumbing: "Plumbing",
-  carpentry: "Carpentry",
-  furniture: "Furniture",
-  paint: "Paint & Gypsum",
-  browse_services: "browse services",
-
-  why_choose_us: "Why choose us ?",
-  warranty_maintenance: "Warranty & Maintenance",
-  affordable_price: "Affordable Price",
-  services24: "24/7 Services",
-
-  latest_projects: "Our Latest Project",
-  electricity: "Electricity",
-  electricity_description: "Technician utside AC",
-  plumbing: "plumbing",
-  plumbing_description: "Cleaning service. Sponges",
-
-  client_say: "What Our Clients Say ?",
-  discover_appointment: "Discover and appointment a lot of services",
-  our_team: "Our Great Team",
-
-  refrigerators: "refrigerators",
-  ovens: "ovens",
-  conditioners: "conditioners",
-  microwaves: "microwaves",
-  gas: "Gas",
-  others: "Others",
-
-  hr: "hr",
-
-  service_providers: "Service Providers near you",
-  view_profile: "view profile",
-  see_more: "see more",
-  companies: "companies",
-  about: "about",
-  some_work: "some of my work",
-  customer_feedback: "Customer feedback and comment",
-  subject: "Subject",
-  message: "Message",
-  submit_now: "Submit now",
-  your_email: "your email",
-
-  request_services: "Request Services",
-  enter_information: "Enter information",
-  confirmation: "Confirmation",
-  wait_offers: "Wait offers",
-
-  add_information: "Add Information",
-  service_name: "Service Name",
-  service_name_placeholder: "Give an accurate description of your problem",
-  select_category: "Select Category",
-  select_time: "Select Time",
-  select_time_placeholder: "Add ime that works for you",
-  select_date: "Select Date",
-  select_date_placeholder: "Add a date hat works for you",
-  add_details: "Add Details",
-  description: "Description",
-  description_placeholder: "Enter a full description",
-  add_picture: "Add a picture of the problem",
-  camera_capture: "Camera Capture",
-  payment_method: "Payment Method",
-
-  credit_card_number: "Credit card number",
-  expiration_date: "Expiration date",
-  cvv: "CVV",
-  photo: "photos",
-  confirm_send: "Confirm and Send",
-
-  profile: "Profile",
-  my_requests: "My Requests",
-  offers: "Offers",
-  notification: "Notification",
-
-  current_orders: "Current Orders",
-  previous_orders: "Previous Orders",
-  canceled_orders: "Canceled Orders",
-
-  view_offers: "View the offers",
-  all_offers: "all offers",
-  see_all: "see all",
-  accept_offer: "Accept the offer",
-
-  thank_you: "Thank You",
-  soon: "We will contact you as soon as possible",
-  back_home: "Back Home",
-  service_provider: "service provider",
-  new_orders: "new orders",
-  my_offers: "my offers",
-  in_progress: "in progress",
-
-  submit_offer: "Submit Offer",
-  view_details: "view details",
-
-  final_price: "Enter your final price for the",
-  expected_time: "Enter the expected time to go",
-  how_long_service: "How long is the service ",
-  enter_photo: "Enter photos of your previous work",
-  offer_details_label: "Enter your offer details",
-  more_offers: "view more offers",
-  send: "Send",
-  done: "Done",
-  cancel: "Cancel",
-  confirm: "Confirm",
-  edit_offer: "edit offer",
-  offer_update_message: "The offer has been successfully update",
-
-  reason_label: "What is the reason for canceling the order?",
-  enter_here: "Enter here",
-  job_done_msg: "Are you sure you got the job done?",
-  add_feedback: "Add Feedback",
-  add_comment: "Add comment",
-
-  reviews: "reviews",
-  earning: "earning",
-
-  profile_information: "Personal Information",
-
-  address: "Address",
-  user_name: "User name",
-  payments: "Payments",
-  settings: "Settings",
-  packages: "Packages",
-  companies_and_suggestions: "Complaints and suggestions",
-  logout: "Logout",
-  password: "Password",
-  add_payment: "add new payment method",
-  month: "month",
-  add: "add",
-  choose_plan: "Choose the best plan for you ",
-
-  languages: "Languages",
-  privacy_policy: "Privacy Policy",
-  term_use: "Term of Use",
-  support: "Support",
-  How_help_you: "How can we help you ?",
-  problem_here: "enter problem here",
-  email_us: "email us",
-  contact_us: "contact us",
-  ads_msg:
-    "Your suggestions have been sent and will e answered as soon as possible",
-  title: "Title",
-  message_placeholder: "Write your complaint message here",
-  optional: "optional ",
-  upload_photo: "Upload Photo",
-  our_client: "our clients",
-  my_works: "my works",
-  payment_available: 'Available payments',
-  follow_us: 'Follow us',
-  waiting_confirm: 'waiting confirm',
-  waiting_approval: 'waiting approval',
-  register: 'register',
-  confirm_password: 'confirm password',
-  company_name: 'company name',
-  accept_the_offer: 'accept the offer',
-  add_offer_message: 'The offer has been added and we will review it',
-  save: 'save',
-  //
-  //
+  // profile page
+  follow: "follow",
+  following: "following",
+  followers: "followers",
+  hello: "hello",
+  Profile_info: "Profile info",
   orders: "orders",
-  basic: "basic",
-  standard: "standard",
-  premium: "premium",
+  My_Products: "My Products",
+  Terms: "Terms",
+  Help: "Help",
+
+  My_Orders: "My Orders",
+  My_Addresses: "My Addresses",
+  My_saved_cards: "My saved cards",
+  Stores_follow: "Stores / follow",
+  Buy_again: "Buy again",
+
+  // profile info 
+  General_info: "General info",
+  first_name: "First Name ",
+  last_name: "last Name",
+  User_name: "User name",
+  User_last_name: "User last name",
+  update: "update",
+  Security: "Security",
+
+
+  add_new_email: "Add new email",
+  password: "password",
+  change_password: "change password",
+  // profile seller orders
+  order_number: "order number",
+  product_name: "product name",
+  quantity: "quantity",
+  address_details: "address details",
+  New: "New",
+
+
+  // my orders
+  All: "All",
+  Completed: "Completed",
+  Pending: "Pending",
+  Canceled: "Canceled",
+
+  Order_date: "Order date",
+  order_summary: "order summary",
+  Buyer: "Buyer",
+  Company_name: "Company name",
+
+  Amount_total: "Amount total",
+  Delivered: "Delivered",
+  More_details: "More details",
+  Send_invoice: "Send invoice",
+  Evaluate_the_product: "Evaluate the product",
+  Delivered_details: "Delivered details",
+
+
+  // addresses
+  home_address: "home address",
+  add_new_address: "add new address",
+  Update_address: "Update address",
+  address_update_msg: "Address has been updated successfully!",
+  address_added_msg: "Address added successfully!",
+  Add_new_address: "Add new address",
+  Title: "Title",
+  Address_Line_One: "Address Line One",
+  Address_Line_Two: "Address Line Two",
+  city: "City",
+  country: "country",
+  Update_address: "Update address",
+  My_Saved_Address: "My Saved Address",
+  Edit: "Edit",
+  postal: "postal code",
+  street: "street",
+  home_number: "home number",
+
+  // my cards
+  add_new_card: "add new card",
+  Update_card: "Update card",
+  Name_card: "Name on card",
+  Card_number: "Card number",
+  year: "year",
+  month: "month",
+  cvc: "CVC",
+  card_cvc_msg: "3 or 4 digits usually found on the signature strip",
+  SET_DEFAULT: "SET AS DEFAULT",
+  Save: "Save",
+
+  // stores & follow
+  go_to_store: "go to store",
+  Stores:"Stores",
+
+
+
+  // terms
+  terms: "terms",
+  terms_desc: "It is a long established fact that a reader will be using Lorem Ipsu distracted by the readable content of a page when  t that a reader looking at its layout. The point of using Lorem Ipsum look like rea is that it has a more-or-less normal distribution of letters look like as opposed to using 'Content here, content here', making it look la look like readable English. looking at its layout. The point of using Lorem Ipsum look like rea is that it has a more-or-less normal distribution of letters look like as opposed to using 'Content here, content here', making it look la look like readable English.",
+  Use_License: "Use License",
+  Use_License_desc: "It is a long established fact that a reader will be using Lorem Ipsu distracted by the readable content of a page when  t that a reader looking at its layout. The point of using Lorem Ipsum look like rea is that it has a more-or-less normal distribution of letters look like as opposed to using 'Content here, content here', making it look la look like ",
+  Use_License_desc1: " he point of using Lorem Ipsum look like rea is that it has a more-or-less normal distribution of letters ",
+  Use_License_desc2: " Lorem Ipsum look like rea is that it has a more-or-less normal distribution of letters ",
+  Use_License_desc3: " using Lorem Ipsum look like rea is that it has a more-or-less normal distribution of letters ",
+  Use_License_desc4: "psum look like rea is that it has a more-or-less normal distribution of letters ",
+  Use_License_desc5: "he point of using Lorem Ipsum look like rea is that it has a more-or-less normal distribution of letters he point of using Lorem Ipsum look like rea is that it has a more-or-less normal distribution of letters ",
+
+  // 
+  // 
+  // 
 };
 
 export const getWordEn = (key) => {

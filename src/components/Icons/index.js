@@ -87,4 +87,5 @@ export { default as TagIcon } from "./TagIcon";
 export { default as TrunkFlatIcon } from "./TrunkFlatIcon";
 export { default as MessageFlatIcon } from "./MessageFlatIcon";
 export { default as CardFlatIcon } from "./CardFlatIcon";
+export { default as SIMIcon } from "./SIMIcon";
 

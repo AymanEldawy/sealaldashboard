@@ -6,10 +6,20 @@ export const GlobalOptions = createContext();
 
 export const GlobalOptionsProvider = ({ children }) => {
   const [cart, setCart] = useState();
-
+  const [user, setUser] = useState({
+    name: "Monga",
+    role: "seller"
+  })
   useEffect(() => {
     setCart(cartList)
   }, []);
+
+  const changeUserRole = () => {
+    if (user?.role === 'user')
+      setUser(prev => { return { ...prev, role: "seller" } })
+    else
+      setUser(prev => { return { ...prev, role: "user" } })
+  }
 
   const addToCart = (item) => {
     setCart(prev => [...prev, {
@@ -20,10 +30,9 @@ export const GlobalOptionsProvider = ({ children }) => {
     setCart(prev => prev?.filter(item => item?.id !== id))
   }
 
-  console.log(cart)
-
+  const values = { user, changeUserRole, cart, addToCart, removeFromCart, cartLength: cart?.length }
   return (
-    <GlobalOptions.Provider value={{ cart, addToCart, removeFromCart, cartLength: cart?.length }}>
+    <GlobalOptions.Provider value={values}>
       {children}
     </GlobalOptions.Provider>
   );

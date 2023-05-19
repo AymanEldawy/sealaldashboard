@@ -12,6 +12,7 @@
   --lead-color: #979797;
   --p-text: #949CA9;
   --max-width: 1200px;
+  --max-width-lrg: 1300px;
   --border-radius: 12px;
   --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
     "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
@@ -28,12 +29,18 @@ body {
   font-family: 'Poppins', sans-serif;
   /* height: 5000px; */
 }
+.container-lrg ,
 .container {
   max-width: var(--max-width) !important;
   margin: 0 auto;
   padding-left: 1rem;
   padding-right: 1rem;
 }
+
+.container-lrg {
+  max-width: var(--max-width-lrg) !important;
+}
+
 /* dev */
 button:focus,
 input:focus,

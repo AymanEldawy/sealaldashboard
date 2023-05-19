@@ -22,7 +22,6 @@ export const SortBy = ({ sortBy, setSortBy }) => {
         selectClassName="p-0 !border-none px-2"
         arrowClassName="!right-0 !-top-1"
       />
-
     </div>
   )
 }

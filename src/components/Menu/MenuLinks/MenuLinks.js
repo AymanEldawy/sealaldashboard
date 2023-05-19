@@ -16,7 +16,7 @@ const MenuLinks = () => {
         <Link href="/favorites" className="block w-6"><HeartIcon className=" stroke-secondary" /> </Link>
       </li>
       <li className="flex gap-2">
-        <Link href="" className="block w-6"><UserCircleIcon /> </Link>
+        <Link href="/profile" className="block w-6"><UserCircleIcon className="text-secondary" /> </Link>
       </li>
       <li className="flex gap-2 relative">
         <Link href="/cart">

@@ -621,3 +621,255 @@ export const cartList = [
     quantity: 2
   }
 ]
+
+
+export const sellerOrders = [
+
+  {
+    "order_number": "5b7e2297",
+    "product_name": "Chair",
+    "quantity": 7,
+    "address_details": {
+      "address": "123 Main St",
+      "city": "Anytown",
+      "state": "CA",
+      "zip": "12345"
+    }
+  },
+  {
+    "order_number": "e0df0a74",
+    "product_name": "Table",
+    "quantity": 5,
+    "address_details": {
+      "address": "456 Oak St",
+      "city": "Anytown",
+      "state": "CA",
+      "zip": "12345"
+    }
+  },
+  {
+    "order_number": "a4e7bce2",
+    "product_name": "Sofa",
+    "quantity": 2,
+    "address_details": {
+      "address": "789 Elm St",
+      "city": "Anytown",
+      "state": "CA",
+      "zip": "12345"
+    }
+  },
+  {
+    "order_number": "7e377d9d",
+    "product_name": "Armchair",
+    "quantity": 1,
+    "address_details": {
+      "address": "321 Pine St",
+      "city": "Anytown",
+      "state": "CA",
+      "zip": "12345"
+    }
+  },
+  {
+    "order_number": "8f8b0e6d",
+    "product_name": "Bed",
+    "quantity": 3,
+    "address_details": {
+      "address": "654 Cedar St",
+      "city": "Anytown",
+      "state": "CA",
+      "zip": "12345"
+    }
+  },
+  {
+    "order_number": "e3e7b6c3",
+    "product_name": "Bookshelf",
+    "quantity": 2,
+    "address_details": {
+      "address": "987 Birch St",
+      "city": "Anytown",
+      "state": "CA",
+      "zip": "12345"
+    }
+  },
+  {
+    "order_number": "a4c8e4b7",
+    "product_name": "Desk",
+    "quantity": 1,
+    "address_details": {
+      "address": "246 Walnut St",
+      "city": "Anytown",
+      "state": "CA",
+      "zip": "12345"
+    }
+  },
+  {
+    "order_number": "e5e4d4fe",
+    "product_name": "Lamp",
+    "quantity": 4,
+    "address_details": {
+      "address": "753 Maple St",
+      "city": "Anytown",
+      "state": "CA",
+      "zip": "12345"
+    }
+  },
+  {
+    "order_number": "a3e8d9c6",
+    "product_name": "Mirror",
+    "quantity": 2,
+    "address_details": {
+      "address": "159 Oak St",
+      "city": "Anytown",
+      "state": "CA",
+      "zip": "12345"
+    }
+  },
+  {
+    "order_number": "c1d3d1e0",
+    "product_name": "Rug",
+    "quantity": 1,
+    "address_details": {
+      "address": "852 Cedar St",
+      "city": "Anytown",
+      "state": "CA",
+      "zip": "12345"
+    }
+  },
+  {
+    "order_number": "f7e0c2c9",
+    "product_name": "Side table",
+    "quantity": 2,
+    "address_details": {
+      "address": "753 Oak St",
+      "city": "Anytown",
+      "state": "CA",
+      "zip": "12345"
+    }
+  },
+  {
+    "order_number": "d1b7e5a1",
+    "product_name": "Armchair",
+    "quantity": 1,
+    "address_details": {
+      "address": "963 Pine St",
+      "city": "Anytown",
+      "state": "CA",
+      "zip": "12345"
+    }
+  },
+  {
+    "order_number": "e5f3b9d6",
+    "product_name": "Bookcase",
+    "quantity": 3,
+    "address_details": {
+      "address": "753 Walnut St",
+      "city": "Anytown",
+      "state": "CA",
+      "zip": "12345"
+    }
+  },
+  {
+    "order_number": "b8c4e1d0",
+    "product_name": "Chair",
+    "quantity": 4,
+    "address_details": {
+      "address": "246 Cedar St",
+      "city": "Anytown",
+      "state": "CA",
+      "zip": "12345"
+    }
+  },
+  {
+    "order_number": "d6c1e8d3",
+    "product_name": "Coffee table",
+    "quantity": 1,
+    "address_details": {
+      "address": "753 Pine St",
+      "city": "Anytown",
+      "state": "CA",
+      "zip": "12345"
+    }
+  },
+  {
+    "order_number": "f0d4e2b2",
+    "product_name": "Dining table",
+    "quantity": 1,
+    "address_details": {
+      "address": "246 Elm St",
+      "city": "Anytown",
+      "state": "CA",
+      "zip": "12345"
+    }
+  },
+  {
+    "order_number": "e4d0b4c8",
+    "product_name": "Lamp",
+    "quantity": 2,
+    "address_details": {
+      "address": "963 Oak St",
+      "city": "Anytown",
+      "state": "CA",
+      "zip": "12345"
+    }
+  },
+  {
+    "order_number": "b0f2c5a1",
+    "product_name": "Sofa",
+    "quantity": 1,
+    "address_details": {
+      "address": "852 Elm St",
+      "city": "Anytown",
+      "state": "CA",
+      "zip": "12345"
+    }
+  },
+  {
+    "order_number": "e8d0c2b6",
+    "product_name": "TV stand",
+    "quantity": 1,
+    "address_details": {
+      "address": "159 Walnut St",
+      "city": "Anytown",
+      "state": "CA",
+      "zip": "12345"
+    }
+  }
+]
+
+export const addresses = [
+  {
+    id: 1,
+    name: 'Damitta 1',
+    city: 'Cairo',
+    country: 'Egypt',
+    street: 'El Shrabassy St , Damietta',
+    default: true,
+  },
+
+  {
+    id: 2,
+    name: 'Damitta 1',
+    city: 'Cairo',
+    country: 'Egypt',
+    street: 'El Shrabassy St , Damietta',
+    default: true,
+  },
+
+  {
+    id: 3,
+    name: 'Damitta 1',
+    city: 'Cairo',
+    country: 'Egypt',
+    street: 'El Shrabassy St , Damietta',
+    default: true,
+  },
+
+  {
+    id: 4,
+    name: 'Damitta 1',
+    city: 'Cairo',
+    country: 'Egypt',
+    street: 'El Shrabassy St , Damietta',
+    default: true,
+  },
+];

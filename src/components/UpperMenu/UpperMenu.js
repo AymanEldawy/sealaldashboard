@@ -3,7 +3,6 @@ import { fetchWord } from "@/lang/fetchWord";
 import Link from "next/link";
 import React, { useContext, useState } from "react";
 import LanguageBar from "../LanguageBar/LanguageBar";
-import UserDropdownBar from "../UserDropdownBar/UserDropdownBar";
 
 const UpperMenu = () => {
   const { lang } = useContext(LanguageContext);

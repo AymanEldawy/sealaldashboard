@@ -6,7 +6,6 @@ import SearchBar from "../SearchBar/SearchBar";
 import { fetchWord } from "@/lang/fetchWord";
 import { useContext } from "react";
 import { LanguageContext } from "@/context/LangContext";
-import UserDropdownBar from "../UserDropdownBar/UserDropdownBar";
 import { useState } from "react";
 
 const Menu = () => {

@@ -3,6 +3,7 @@ import React, { useContext } from 'react'
 import BarsIcon from '../Icons/BarsIcon'
 import { LanguageContext } from '@/context/LangContext'
 import { fetchWord } from '@/lang/fetchWord'
+import { New } from '../New'
 
 const Sidebar = ({ title, containerClassName, listClassName, itemClassName, linkClassName, list, extraContent }) => {
   const { lang } = useContext(LanguageContext)
@@ -13,11 +14,9 @@ const Sidebar = ({ title, containerClassName, listClassName, itemClassName, link
         {list?.map((category, index) => (
           <li key={category} className={`p-1 list-disc  hover:text-primary ${itemClassName}`}>
             <Link href={`/categories/${category}`} className={linkClassName}>{category}
-
               {index === 4 ?
-                <span className='p-1 text-xs ltr:ml-4 rtl:mr-4 bg-green-500 text-white'>New</span>
+              <New />
                 : null}
-
             </Link>
           </li>
         ))}
