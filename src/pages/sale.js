@@ -11,7 +11,7 @@ const Sale = () => {
   return (
     <Layout>
       <div className="container">
-        <FlashSaleBanner containerClassName="translate-y-0 mb-6" />
+        <FlashSaleBanner containerClassName="!translate-y-0 mb-6" />
         <CollectionSubCategories categories={categories} selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory} />
         <div className={`my-8 gap-2 grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5`}>
           {
