@@ -301,7 +301,6 @@ export const en = {
   Stores: "Stores",
 
 
-
   // terms
   terms: "terms",
   terms_desc: "It is a long established fact that a reader will be using Lorem Ipsu distracted by the readable content of a page when  t that a reader looking at its layout. The point of using Lorem Ipsum look like rea is that it has a more-or-less normal distribution of letters look like as opposed to using 'Content here, content here', making it look la look like readable English. looking at its layout. The point of using Lorem Ipsum look like rea is that it has a more-or-less normal distribution of letters look like as opposed to using 'Content here, content here', making it look la look like readable English.",
@@ -312,6 +311,14 @@ export const en = {
   Use_License_desc3: " using Lorem Ipsum look like rea is that it has a more-or-less normal distribution of letters ",
   Use_License_desc4: "psum look like rea is that it has a more-or-less normal distribution of letters ",
   Use_License_desc5: "he point of using Lorem Ipsum look like rea is that it has a more-or-less normal distribution of letters he point of using Lorem Ipsum look like rea is that it has a more-or-less normal distribution of letters ",
+
+  // seller products
+  Product_code: "Product code",
+  Product_name: "Product name",
+  Product_description: "Product descrebtion",
+  Product_price: "Peoduct price",
+
+
 
   // 
   // 

@@ -19,6 +19,7 @@ import { MyCards } from '@/components/ProfileComponents/MyCards/MyCards';
 import { Stores } from '@/components/ProfileComponents/Stores/Stores';
 import { Terms } from '@/components/ProfileComponents/Terms';
 import { BuyAgain } from '@/components/ProfileComponents/BuyAgain';
+import { SellerProducts } from '@/components/ProfileComponents/SellerProducts/SellerProducts';
 
 
 // if there an id
@@ -78,6 +79,7 @@ const Profile = () => {
                   <Stores tabName="Stores_follow" />
                   <Terms tabName="Terms" />
                   <BuyAgain tabName="Buy_again" />
+                  <SellerProducts tabName="My_Products" />
                 </TabsContent>
               </div>
             </div>
