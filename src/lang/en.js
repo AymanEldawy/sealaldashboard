@@ -298,7 +298,7 @@ export const en = {
 
   // stores & follow
   go_to_store: "go to store",
-  Stores:"Stores",
+  Stores: "Stores",
 
 
 

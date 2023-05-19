@@ -1,11 +1,6 @@
 import { InputField } from "@/components/Forms/InputField";
 import { Button } from "@/components/Global/Button/Button";
 import EyeSlashIcon from "@/components/Icons/EyeSlashIcon";
-import { SignInWith } from "@/components/SignInWith/SignInWith";
-import SignupCompanyForm from "@/components/SignupCompanyForm/SignupCompanyForm";
-import SignupCustomerForm from "@/components/SignupCustomerForm/SignupCustomerForm";
-import SignupServiceForm from "@/components/SignupServiceForm/SignupServiceForm";
-import SignupTabBar from "@/components/SignupTabBar/SignupTabBar";
 import { fetchWord } from "@/lang/fetchWord";
 import Head from "next/head";
 import Image from "next/image";
