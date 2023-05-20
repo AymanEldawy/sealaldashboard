@@ -88,4 +88,5 @@ export { default as TrunkFlatIcon } from "./TrunkFlatIcon";
 export { default as MessageFlatIcon } from "./MessageFlatIcon";
 export { default as CardFlatIcon } from "./CardFlatIcon";
 export { default as SIMIcon } from "./SIMIcon";
+export { default as BookmarkIcon } from "./BookmarkIcon";
 

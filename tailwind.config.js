@@ -12,7 +12,8 @@ module.exports = {
         primary: "#EA4958",
         secondary: "#094E99",
         ptext: '#949CA9',
-        bmain: "#F2F5F8",
+        bsecondary: "#F2F5F8",
+        bmain: "#F4F4F4",
         lead:'#979797'
       },
     },

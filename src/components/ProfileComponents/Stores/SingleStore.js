@@ -16,7 +16,7 @@ export const SingleStore = ({ setSelectedStore, store }) => {
           <button className="underline text-primary" onClick={() => setSelectedStore('')}>{fetchWord('Stores', lang)}</button> / Store name
         </>
       } />
-      <div className='bg-[#F4F4F4] p-4'>
+      <div className='bg-bmain p-4'>
         <StoreAvatarInfo hideFollow />
         <p className="mt-4 text-sm">
           {fetchWord('Use_License_desc', lang)}

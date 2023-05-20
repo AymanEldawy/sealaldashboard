@@ -17,7 +17,7 @@ export const OrderCard = ({ setOrderDetails }) => {
     }
   }
   return (
-    <div className='bg-[#F4F4F4] py-2 px-4 mb-6'>
+    <div className='bg-bmain py-2 px-4 mb-6'>
       <ul className='flex items-center justify-between pt-2'>
         <li className="flex flex-col max-w-[25%] capitalize">
           <strong className="text-secondary">{fetchWord('Order_date', lang)}</strong>

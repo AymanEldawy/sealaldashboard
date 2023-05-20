@@ -13,7 +13,7 @@ const Sidebar = ({ title, containerClassName, listClassName, itemClassName, link
       <ul className={`flex flex-col gap-2  py-2 px-8 overflow-auto flex-1 ${listClassName}`}>
         {list?.map((category, index) => (
           <li key={category} className={`p-1 list-disc  hover:text-primary ${itemClassName}`}>
-            <Link href={`/categories/${category}`} className={linkClassName}>{category}
+            <Link href={`/categories/${category}`} className={` flex gap-4 justify-between ${linkClassName}`}>{category}
               {index === 4 ?
               <New />
                 : null}

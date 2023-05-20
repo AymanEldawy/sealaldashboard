@@ -4,6 +4,7 @@ export const en = {
   email_phone_label: 'E-mail or phone number',
   enter_email: 'Enter your email',
   password_label: 'password',
+  confirm_password: "confirm password",
   username_label: 'Your name',
   enter_your_name: 'Enter your name',
   enter_password: 'Enter your password',
@@ -159,6 +160,24 @@ export const en = {
   promo_code_msg: "If you have a promotion code, Please enter there ",
   apply: "apply",
   checkout: "checkout",
+  confirm: "confirm",
+  cart: "Cart",
+  addresses: "addresses",
+  payment: "payment",
+  payments: "payments",
+
+  // payment stage
+  Registered_cards: "Registered cards",
+  order_summary: "order summary",
+  card: "card",
+  vpn: "vpn",
+  Name: "Name",
+  Date: "Date",
+  Bank_Name: "Bank Name",
+  Review_your_order: "Review your order",
+  save: "save",
+
+
 
   // favorite page
   favorite_empty_msg: "There are no items!",
@@ -233,7 +252,12 @@ export const en = {
   User_last_name: "User last name",
   update: "update",
   Security: "Security",
-
+  Country_Region: "Country / Region",
+  Town: "Town",
+  Street_address: "Street address ",
+  Phone: "Phone",
+  Order_note: "Order note",
+  Place_order: "Place order",
 
   add_new_email: "Add new email",
   password: "password",
@@ -251,6 +275,8 @@ export const en = {
   Completed: "Completed",
   Pending: "Pending",
   Canceled: "Canceled",
+  cancel: "cancel",
+  Cancel: "Cancel",
 
   Order_date: "Order date",
   order_summary: "order summary",
@@ -300,6 +326,24 @@ export const en = {
   go_to_store: "go to store",
   Stores: "Stores",
 
+  // my products
+  products: 'products',
+  upload_products: "Upload product photos",
+  upload_photos: "upload photos",
+
+  Category: "Category",
+  Description: "Description",
+  Upload_text: "Upload text",
+  Discard: "Discard",
+  Add_product: "Add product",
+
+  // orders 
+  make_it_done: "make it done",
+  order_details:"order details",
+  product_statues:"product statues",
+  Cancel_the_order:"Cancel the order",
+  buyer_name:"buyer name",
+
 
   // terms
   terms: "terms",
@@ -315,10 +359,10 @@ export const en = {
   // seller products
   Product_code: "Product code",
   Product_name: "Product name",
-  Product_description: "Product descrebtion",
-  Product_price: "Peoduct price",
-
-
+  Product_description: "Product description",
+  Product_price: "Product price",
+  rate_seller: "rate seller",
+  seller: "seller",
 
   // 
   // 

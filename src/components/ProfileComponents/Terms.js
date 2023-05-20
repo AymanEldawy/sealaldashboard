@@ -7,7 +7,7 @@ import { fetchWord } from '@/lang/fetchWord';
 export const Terms = () => {
   const { lang } = useContext(LanguageContext)
   return (
-    <div className='bg-[#F4F4F4] p-4 pb-8'>
+    <div className='bg-bmain p-4 pb-8'>
       <ol className='list-decimal flex flex-col gap-4 px-8'>
         <li className="marker:text-primary">
           <h4 className="text-lg font-semibold text-primary">{fetchWord('terms', lang)}</h4>

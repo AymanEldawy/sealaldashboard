@@ -26,7 +26,7 @@ export const ProfileInfo = () => {
   return (
     <div className="">
       <ProfileTitle title={fetchWord('profile', lang)} />
-      <div className="bg-[#F4F4F4] py-8 px-4 mb-4">
+      <div className="bg-bmain py-8 px-4 mb-4">
         <h3 className="text-[#363636] font-semibold text-lg">{fetchWord('General_info', lang)}</h3>
         <ProfileForm
           firstField={fetchWord('first_name', lang)}
@@ -40,7 +40,7 @@ export const ProfileInfo = () => {
           onSecondFieldChange={setLastName}
         />
       </div>
-      <div className="bg-[#F4F4F4] py-8 px-4">
+      <div className="bg-bmain py-8 px-4">
         <h3 className="text-[#363636] font-semibold text-lg">{fetchWord('Security', lang)}</h3>
         <ProfileForm
           firstFieldType="email"

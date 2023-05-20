@@ -4,6 +4,7 @@ import React, { useContext, useState } from 'react'
 import { OrderCard } from './OrderCard';
 import { fetchWord } from '@/lang/fetchWord';
 import { OrderDetailsCard } from './OrderDetailsCard';
+import { SellerBar } from '../SellerBar';
 
 const list = [
   "All",
@@ -26,12 +27,13 @@ export const MyOrders = () => {
             <button key={item} onClick={() => setStatus(item)} className={`text-[#CCCCCC] capitalize flex-1 text-center font-medium text-lg justify-center ${status === item ? "border-b-2 border-primary !text-primary -mb-[1px]" : ""}`}>{fetchWord(item, lang)}</button>
           ))
         }
-
-
       </div>
       {
         !!orderDetails ? (
-          <OrderDetailsCard order={orderDetails} />
+          <>
+            <SellerBar />
+            <OrderDetailsCard order={orderDetails} />
+          </>
         ) : (
           <div className=''>
             <OrderCard setOrderDetails={setOrderDetails} />

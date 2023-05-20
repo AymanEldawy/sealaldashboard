@@ -12,7 +12,7 @@ export const Stores = () => {
   return (
     <div>
       {
-        !!selectedStore ? (
+      !!selectedStore ? (
           <SingleStore setSelectedStore={setSelectedStore}  store={selectedStore} />
         ) : (
           <>

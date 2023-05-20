@@ -10,7 +10,7 @@ export const ContactForm = () => {
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
   return (
-    <div className="bg-[#F4F4F4] py-12 mt-12">
+    <div className="bg-bmain py-12 mt-12">
       <div className="container">
         <h2 className='font-semibold text-xl capitalize mb-4 text-secondary'>
           {fetchWord('send_message', lang)}

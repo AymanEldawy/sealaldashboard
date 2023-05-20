@@ -38,7 +38,7 @@ const FAQ = () => {
         </figure>
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           {faqList?.map(item => (
-            <div className="bg-[#F4F4F4] rounded p-2 flex items-start gap-2" key={item?.title}>
+            <div className="bg-bmain rounded p-2 flex items-start gap-2" key={item?.title}>
               <span className="flex items-center justify-center p-2 rounded-full bg-white">{item?.icon}</span>
               <div className="">
                 <h4 className="text-secondary font-semibold mb-4">{fetchWord(item?.title, lang)}</h4>
@@ -53,7 +53,7 @@ const FAQ = () => {
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
           </p>
         </div>
-        <div className="flex items-center justify-between bg-[#F4F4F4] rounded-md p-4 my-8">
+        <div className="flex items-center justify-between bg-bmain rounded-md p-4 my-8">
           <div className>
             <h3 className="text-primary font-medium mb-1">{fetchWord('have_question', lang)}</h3>
             <p className="text-[#363636] text-xs">{fetchWord('have_question_msg', lang)}</p>

@@ -12,7 +12,7 @@ const list = [
 export const SortBy = ({ sortBy, setSortBy }) => {
   const { lang } = useContext(LanguageContext)
   return (
-    <div className='flex p-2 gap-2 border border-secondary rounded-md shrink-0 min-w-[150px]'>
+    <div className='flex p-1 gap-2 border border-secondary rounded-md shrink-0 min-w-[150px]'>
       <span className="text-primary font-semibold capitalize whitespace-nowrap">{fetchWord('sort_by', lang)}</span>
       <CustomSelectField
         placeholder={list?.[0]?.name}

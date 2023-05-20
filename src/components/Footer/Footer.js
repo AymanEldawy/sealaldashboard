@@ -78,7 +78,7 @@ const Footer = () => {
         </div>
       </div>
       <FormSubscription />
-      <div className="flex items-center justify-between container py-4 bg-bmain">
+      <div className="flex items-center justify-between container py-4 bg-bsecondary">
         <p className="text-secondary font-semibold text-[12px]">
           {fetchWord('copy_right_msg', lang)}
         </p>

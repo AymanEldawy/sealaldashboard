@@ -21,7 +21,7 @@ const About = () => {
         </p>
         <WhyChooseUs />
       </div>
-      <div className='mt-12 bg-[#F4F4F4] p-8'>
+      <div className='mt-12 bg-bmain p-8'>
         <div className='container'>
           <h2 className='font-semibold text-xl capitalize mb-5 text-secondary'>
             {fetchWord('Our_Partner', lang)}

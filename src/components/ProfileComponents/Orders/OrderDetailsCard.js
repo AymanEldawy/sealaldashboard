@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { fetchWord } from '@/lang/fetchWord';
 import { Button } from '@/components/Global/Button/Button';
 
-export const OrderDetailsCard = () => {
+export const OrderDetailsCard = ({ isSeller, order }) => {
   const { lang } = useContext(LanguageContext);
   const displayStatus = (status) => {
     switch (status) {
@@ -17,20 +17,34 @@ export const OrderDetailsCard = () => {
     }
   }
   return (
-    <div className='bg-[#F4F4F4] py-2 px-4 mb-6'>
+    <div className='bg-bmain py-2 px-4 mb-6'>
       <div className='flex justify-between items-center gap-4'>
         <ul className='flex items-center justify-between pt-2 gap-4 flex-1'>
           <li className="flex flex-col capitalize">
             <strong className="text-secondary">{fetchWord('Order_date', lang)}</strong>
             <span>23 september 20222</span>
           </li>
-          <li className="flex flex-col  capitalize">
-            <strong className="text-secondary">{fetchWord('Company_name', lang)}</strong>
-            <span>Company name</span>
-          </li>
+          {
+            isSeller ? (
+              <li className="flex flex-col  capitalize">
+                <strong className="text-secondary">{fetchWord('buyer_name', lang)}</strong>
+                <span>Buyer name</span>
+              </li>
+            ) : (
+              <li className="flex flex-col  capitalize">
+                <strong className="text-secondary">{fetchWord('Company_name', lang)}</strong>
+                <span>Company name</span>
+              </li>
+            )
+          }
         </ul>
         <div className='flex-1 justify-end flex items-center'>
-        <Button classes="!text-sm border-primary bg-transparent border font-semibold !text-primary hover:!bg-primary hover:!text-white text-xs">{fetchWord('Send_invoice', lang)}</Button>
+          {
+            isSeller ?
+              <Button classes="!text-sm border-primary bg-transparent border font-semibold !text-primary hover:!bg-primary hover:!text-white text-xs">{fetchWord('Cancel_the_order', lang)}</Button>
+              :
+              <Button classes="!text-sm border-primary bg-transparent border font-semibold !text-primary hover:!bg-primary hover:!text-white text-xs">{fetchWord('Send_invoice', lang)}</Button>
+          }
         </div>
       </div>
       <div className='bg-white p-4 my-4 flex justify-between items-center gap-4'>
@@ -44,7 +58,12 @@ export const OrderDetailsCard = () => {
               <strong className='text-secondary'>125$</strong>
             </div>
             <p className="text-[#666666] text-xs">Because we have many types of elements</p>
-            <Button classes="border-primary bg-transparent border text-xs w-fit px-4 font-semibold !text-primary hover:!bg-primary hover:!text-white">{fetchWord('Evaluate_the_product', lang)}</Button>
+            {
+              isSeller ?
+                <Button classes="border-primary bg-transparent border text-xs w-fit px-4 font-semibold !text-primary hover:!bg-primary hover:!text-white">{fetchWord('product_statues', lang)}</Button>
+                :
+                <Button classes="border-primary bg-transparent border text-xs w-fit px-4 font-semibold !text-primary hover:!bg-primary hover:!text-white">{fetchWord('Evaluate_the_product', lang)}</Button>
+            }
           </div>
         </div>
         <div className=' flex gap-2 items-center flex-1 justify-between'>
