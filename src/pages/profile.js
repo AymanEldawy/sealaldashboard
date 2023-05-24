@@ -1,26 +1,26 @@
 import { Layout } from '@/components/Layout/Layout';
-import { ProfileSidebar } from '@/components/ProfileComponents/ProfileSidebar'
-import { GlobalOptions } from '@/context/GlobalOptions';
-import React from 'react'
-import { useContext } from 'react';
-import { useRouter } from 'next/router';
-import Image from 'next/image';
-import { ProfileCard } from '@/components/ProfileComponents/ProfileCard';
-import { useState } from 'react';
-import { ProductCard } from '@/components/Product/ProductCard';
-import { products } from '@/data/dummyData';
 import SubMenu from '@/components/Menu/SubMenu/SubMenu';
-import TabsContent from '@/components/Tabs/TabsContent';
-import { ProfileInfo } from '@/components/ProfileComponents/ProfileInfo';
-import { SellerOrders } from '@/components/ProfileComponents/SellerOrders/SellerOrders';
-import { MyOrders } from '@/components/ProfileComponents/Orders/MyOrders';
+import { ProductCard } from '@/components/Product/ProductCard';
 import { Addresses } from '@/components/ProfileComponents/Addresses/Addresses';
+import { BuyAgain } from '@/components/ProfileComponents/BuyAgain';
+import { Help } from '@/components/ProfileComponents/Help';
 import { MyCards } from '@/components/ProfileComponents/MyCards/MyCards';
+import { MyOrders } from '@/components/ProfileComponents/Orders/MyOrders';
+import { ProfileCard } from '@/components/ProfileComponents/ProfileCard';
+import { ProfileInfo } from '@/components/ProfileComponents/ProfileInfo';
+import { ProfileSidebar } from '@/components/ProfileComponents/ProfileSidebar'
+import { SellerOrders } from '@/components/ProfileComponents/SellerOrders/SellerOrders';
+import { SellerProducts } from '@/components/ProfileComponents/SellerProducts/SellerProducts';
 import { Stores } from '@/components/ProfileComponents/Stores/Stores';
 import { Terms } from '@/components/ProfileComponents/Terms';
-import { BuyAgain } from '@/components/ProfileComponents/BuyAgain';
-import { SellerProducts } from '@/components/ProfileComponents/SellerProducts/SellerProducts';
-
+import TabsContent from '@/components/Tabs/TabsContent';
+import { GlobalOptions } from '@/context/GlobalOptions';
+import { products } from '@/data/dummyData';
+import Image from 'next/image';
+import { useRouter } from 'next/router';
+import React from 'react'
+import { useContext } from 'react';
+import { useState } from 'react';
 
 // if there an id
 // => view as 
@@ -80,6 +80,7 @@ const Profile = () => {
                   <Terms tabName="Terms" />
                   <BuyAgain tabName="Buy_again" />
                   <SellerProducts tabName="My_Products" />
+                  <Help tabName="Help" />
                 </TabsContent>
               </div>
             </div>

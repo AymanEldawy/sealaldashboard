@@ -89,4 +89,5 @@ export { default as MessageFlatIcon } from "./MessageFlatIcon";
 export { default as CardFlatIcon } from "./CardFlatIcon";
 export { default as SIMIcon } from "./SIMIcon";
 export { default as BookmarkIcon } from "./BookmarkIcon";
+export { default as BanIcon } from "./BanIcon";
 
