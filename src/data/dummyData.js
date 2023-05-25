@@ -455,7 +455,7 @@ export const reviews = [
   {
     id: 1,
     name: "John Smith",
-    image: "/images/clients/Ellipse 182.png",
+    image: "/images/clients/1.png",
     date: "2023-04-08",
     rating: 4,
     comment: "Great product, works as advertised!",
@@ -463,7 +463,7 @@ export const reviews = [
   {
     id: 2,
     name: "Jane Doe",
-    image: "/images/clients/Group 3.png",
+    image: "/images/clients/2.png",
     date: "2023-04-07",
     rating: 2,
     comment: "This product did not meet my expectations.",
@@ -471,7 +471,7 @@ export const reviews = [
   {
     id: 3,
     name: "Bob Johnson",
-    image: "/images/clients/Ellipse 180.png",
+    image: "/images/clients/3.png",
     date: "2023-04-05",
     rating: 5,
     comment: "I am very happy with my purchase!",

@@ -190,6 +190,7 @@ export const en = {
   Happy_clients: "Happy clients",
 
   // contact page
+  send: "send",
   contact_us: "contact us",
   contact_msg: "How can I help you?",
 
@@ -237,6 +238,8 @@ export const en = {
   My_Products: "My Products",
   Terms: "Terms",
   Help: "Help",
+  logout: "logout",
+
 
   My_Orders: "My Orders",
   My_Addresses: "My Addresses",
@@ -339,10 +342,10 @@ export const en = {
 
   // orders 
   make_it_done: "make it done",
-  order_details:"order details",
-  product_statues:"product statues",
-  Cancel_the_order:"Cancel the order",
-  buyer_name:"buyer name",
+  order_details: "order details",
+  product_statues: "product statues",
+  Cancel_the_order: "Cancel the order",
+  buyer_name: "buyer name",
 
 
   // terms
@@ -364,25 +367,25 @@ export const en = {
   rate_seller: "rate seller",
   seller: "seller",
 
-   // help page
-   question_1: `'How do I change my account email?'`,
-   answer_1: `You can log in to your account and change it from your Profile > Edit Profile. Then go to the general tab to change your email.`,
-   question_2: `What should I do if my payment fails?`,
-   answer_2:
-     'If your payment fails, you can use the (COD) payment option, if available on that order. If your payment is debited from your account after a payment failure, it will be credited back within 7-10 days.',
-   question_3: `What is your cancellation policy?`,
-   answer_3:
-     'You can now cancel an order when it is in packed/shipped status. Any amount paid will be credited into the same payment mode using which the payment was made',
-   question_4: `How do I check order delivery status ?`,
-   answer_4:
-     'Please tap on “My Orders” section under main menu of App/Website/M-site to check your order status.',
-   question_5: `What is Instant Refunds?`,
-   answer_5:
-     'Upon successful pickup of the return product at your doorstep, Myntra will instantly initiate the refund to your source account or chosen method of refund. Instant Refunds is not available in a few select pin codes and for all self ship returns.',
-   question_6: `How do I apply a coupon on my order?`,
-   answer_6:
-     'You can apply a coupon on cart page before order placement. The complete list of your unused and valid coupons will be available under “My Coupons” tab of App/Website/M-site.',
- 
+  // help page
+  question_1: `'How do I change my account email?'`,
+  answer_1: `You can log in to your account and change it from your Profile > Edit Profile. Then go to the general tab to change your email.`,
+  question_2: `What should I do if my payment fails?`,
+  answer_2:
+    'If your payment fails, you can use the (COD) payment option, if available on that order. If your payment is debited from your account after a payment failure, it will be credited back within 7-10 days.',
+  question_3: `What is your cancellation policy?`,
+  answer_3:
+    'You can now cancel an order when it is in packed/shipped status. Any amount paid will be credited into the same payment mode using which the payment was made',
+  question_4: `How do I check order delivery status ?`,
+  answer_4:
+    'Please tap on “My Orders” section under main menu of App/Website/M-site to check your order status.',
+  question_5: `What is Instant Refunds?`,
+  answer_5:
+    'Upon successful pickup of the return product at your doorstep, Myntra will instantly initiate the refund to your source account or chosen method of refund. Instant Refunds is not available in a few select pin codes and for all self ship returns.',
+  question_6: `How do I apply a coupon on my order?`,
+  answer_6:
+    'You can apply a coupon on cart page before order placement. The complete list of your unused and valid coupons will be available under “My Coupons” tab of App/Website/M-site.',
+
 };
 
 export const getWordEn = (key) => {

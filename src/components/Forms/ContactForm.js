@@ -1,8 +1,10 @@
 import { LanguageContext } from '@/context/LangContext';
+import { fetchWord } from '@/lang/fetchWord';
 import React, { useContext, useState } from 'react'
+
+import { Button } from '../Global/Button/Button';
 import { InputField } from './InputField';
 import { TextField } from './TextField';
-import { fetchWord } from '@/lang/fetchWord';
 
 export const ContactForm = () => {
   const { lang } = useContext(LanguageContext);
@@ -38,6 +40,7 @@ export const ContactForm = () => {
             classes="h-[170px]"
 
           />
+          <Button classes="w-full max-w-[300px] mt-4">{fetchWord('send', lang)}</Button>
         </form>
       </div>
     </div>
