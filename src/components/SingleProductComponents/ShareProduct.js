@@ -9,7 +9,7 @@ const ShareProduct = ({ setShare, url }) => {
   const { lang } = useContext(LanguageContext)
   const [copied, setCopied] = useState(false)
   const copy = () => {
-    navigator.clipboard.writeText('https://sealalmobile-mu.vercel.app');
+    navigator.clipboard.writeText('https://sealalweb.vercel.app');
     setCopied(true)
     setTimeout(() => {
       setCopied(false)
@@ -38,7 +38,7 @@ const ShareProduct = ({ setShare, url }) => {
         </div>
         <p className='mt-4 flex items-center justify-between'>{fetchWord('or_copy', lang)} {copied ? <span className='text-xs bg-green-100 text-green-500 p-1 px-2'>{fetchWord('Copied', lang)}</span> : null} </p>
         <div className='py-2 border rounded-[10px] flex justify-between mt-2 px-2 gap-2 items-center text-xs'>
-          <p>https://sealalmobile-mu.vercel.app</p>
+          <p>https://sealalweb.vercel.app</p>
           <button onClick={copy} className='p-2 rounded-md bg-primary text-white'>
             {fetchWord('Copy', lang)}
           </button>
