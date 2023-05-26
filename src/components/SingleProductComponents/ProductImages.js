@@ -3,7 +3,7 @@ import { ProductStatus } from '../Product/ProductStatus'
 import { ProductSale } from '../Product/ProductSale'
 import Image from 'next/image'
 
-export const ProductImages = ({ images }) => {
+export const ProductImages = ({ images, setOpenShare }) => {
   const [selectedImage, setSelectedImage] = useState(images?.[0]?.src)
   return (
     <div className="flex-1 overflow-hidden">

@@ -34,10 +34,10 @@ const Categories = () => {
           <div className='flex-1 overflow-hidden'>
             <SubMenu />
             <CategoriesSortBar activeKeywords={activeKeywords} setActiveKeywords={setActiveKeywords} sortBy={sortBy} setSortBy={setSortBy} activeView={activeView} setActiveView={setActiveView} />
-            <div className={`mt-8 gap-4 grid ${activeView === 'grid' ? "sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4" : ""}`}>
+            <div className={`mt-8 gap-4 grid ${activeView === 'grid' ? "sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4" : "grid-cols-1"}`}>
               {
                 products?.map(product => (
-                  <ProductCard key={product?.id} product={product} />
+                  <ProductCard grid={activeView !== 'grid'} key={product?.id} product={product} />
                 ))
               }
             </div>

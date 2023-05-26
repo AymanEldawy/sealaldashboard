@@ -6,7 +6,7 @@ import { OrderSummary } from '../OrderSummary'
 import { LanguageContext } from '@/context/LangContext'
 import { fetchWord } from '@/lang/fetchWord'
 
-export const CartPayment = ({ subtotal, total, cart, banks, stage, selectedPaymentCard, setSelectedPaymentCard }) => {
+export const CartPayment = ({ subtotal, total, cart, banks, stage, setStage, selectedPaymentCard, setSelectedPaymentCard }) => {
   const { lang } = useContext(LanguageContext)
   return (
     <div className="my-12">
@@ -19,7 +19,7 @@ export const CartPayment = ({ subtotal, total, cart, banks, stage, selectedPayme
           setSelectedPaymentCard={setSelectedPaymentCard}
         />
         <div className='flex-1'>
-          <OrderSummary cart={cart} total={total} subtotal={subtotal} />
+          <OrderSummary cart={cart} total={total} subtotal={subtotal} setStage={setStage} />
         </div>
 
       </div>

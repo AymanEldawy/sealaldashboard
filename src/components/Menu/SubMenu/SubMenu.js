@@ -13,11 +13,11 @@ const SubMenu = () => {
       <ul className='flex items-center justify-around flex-1'>
         {links?.map(item => (
           <li key={item?.name}>
-            <Link href={item?.link} className={`text-secondary hover:text-primary ${router?.pathname === item?.link ? 'text-primary' : ''}`}>{fetchWord(item?.name, lang)}</Link>
+            <Link href={item?.link} className={`capitalize text-secondary hover:text-primary ${router?.pathname === item?.link ? 'text-primary' : ''}`}>{fetchWord(item?.name, lang)}</Link>
           </li>
         ))}
       </ul>
-      <p className='text-primary font-medium min-w-[180px] rtl:text-left ltr:text-right'>{fetchWord('hotline', lang)} (+0123456789</p>
+      <p className='text-primary font-medium capitalize min-w-[180px] rtl:text-left ltr:text-right'>{fetchWord('hotline', lang)} (+0123456789</p>
     </div>
   )
 }

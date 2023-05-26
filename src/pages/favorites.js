@@ -17,6 +17,10 @@ const Favorites = () => {
     setFavorites(products?.filter(product => product?.favorite))
     setLoading(false)
   }, [])
+
+  const removeFromFavorite = (id) => {
+    setFavorites(prev => prev?.filter(item => item?.id !== id))
+  }
   return (
     <Layout>
       <div className="container">
@@ -28,7 +32,7 @@ const Favorites = () => {
                   <FavoriteHead />
                   <div className='mt-8 border-[#ECECEC] border p-4'>
                     {favorites?.map(item => (
-                      <FavoriteItem key={item?.id} item={item} />
+                      <FavoriteItem key={item?.id} item={item} removeFromFavorite={removeFromFavorite} />
                     ))}
                   </div>
 

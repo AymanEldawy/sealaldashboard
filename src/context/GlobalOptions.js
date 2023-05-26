@@ -27,10 +27,19 @@ export const GlobalOptionsProvider = ({ children }) => {
     }])
   }
   const removeFromCart = (id) => {
+    console.log(id)
     setCart(prev => prev?.filter(item => item?.id !== id))
   }
+  const updateQuantity = (id, quantity) => {
+    let newCart = cart?.map(item => {
+      if (item?.id === id) {
+        return { ...item, quantity }
+      } else return item
+    })
+    setCart(newCart)
+  }
 
-  const values = { user, changeUserRole, cart, addToCart, removeFromCart, cartLength: cart?.length }
+  const values = { user, changeUserRole, cart, updateQuantity, addToCart, removeFromCart, cartLength: cart?.length }
   return (
     <GlobalOptions.Provider value={values}>
       {children}

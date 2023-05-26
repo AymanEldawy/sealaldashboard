@@ -165,6 +165,11 @@ export const en = {
   addresses: "addresses",
   payment: "payment",
   payments: "payments",
+  Share_this_link_via: "Share this link via",
+  Copy: "Copy",
+  or_copy: "Or copy link",
+  Copied: "Copied",
+
 
   // payment stage
   Registered_cards: "Registered cards",
@@ -386,6 +391,10 @@ export const en = {
   answer_6:
     'You can apply a coupon on cart page before order placement. The complete list of your unused and valid coupons will be available under “My Coupons” tab of App/Website/M-site.',
 
+    // confirm order
+    confirm_order_msg1:"Thank you for your order!",
+    confirm_order_msg2:"Your purchase has been confirmed",
+    continue_shopping:"continue shopping",
 };
 
 export const getWordEn = (key) => {

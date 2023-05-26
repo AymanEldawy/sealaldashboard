@@ -9,7 +9,7 @@ export const CartBar = ({ subtotal, total }) => {
     <div className='flex flex-wrap gap-4 justify-center items-center my-4'>
       <div className='flex items-center justify-center min-w-[200px] font-medium text-[#3D3D3D] border border-[#ECECEC] p-4 rounded-md gap-12'>
         <span>{fetchWord('Discount', lang)}</span>
-        <span>${+subtotal - +total}</span>
+        <span>${(+subtotal - total)?.toFixed(2)}</span>
       </div>
       <div className='flex items-center justify-center min-w-[200px] font-medium text-[#3D3D3D] border border-[#ECECEC] p-4 rounded-md gap-12'>
         <span>{fetchWord('Delivery', lang)}</span>
@@ -17,13 +17,12 @@ export const CartBar = ({ subtotal, total }) => {
       </div>
       <div className='flex items-center justify-center min-w-[200px] font-medium text-[#3D3D3D] border border-[#ECECEC] p-4 rounded-md gap-12'>
         <span>{fetchWord('Subtotal', lang)}</span>
-        <span>${subtotal + 20}</span>
+        <span>${(+subtotal + 20)?.toFixed(2)}</span>
       </div>
       <div className='flex items-center justify-center min-w-[200px] font-medium text-[#3D3D3D] border border-[#ECECEC] p-4 rounded-md gap-12'>
         <span>{fetchWord('Total', lang)}</span>
-        <span>${total + 20}</span>
+        <span>${(+total + 20)?.toFixed(2)}</span>
       </div>
-
     </div>
   )
 }

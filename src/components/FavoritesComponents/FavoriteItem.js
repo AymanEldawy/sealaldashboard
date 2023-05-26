@@ -6,8 +6,10 @@ import { LanguageContext } from '@/context/LangContext'
 import { fetchWord } from '@/lang/fetchWord'
 import { Button } from '../Global/Button/Button'
 import { DeleteIcon } from '../Icons'
+import { GlobalOptions } from '@/context/GlobalOptions'
 
-export const FavoriteItem = ({ item }) => {
+export const FavoriteItem = ({ removeFromFavorite, item }) => {
+  const { addToCart } = useContext(GlobalOptions)
   const { lang } = useContext(LanguageContext)
   return (
     <div className='flex items-center mb-4 gap-8'>
@@ -27,8 +29,8 @@ export const FavoriteItem = ({ item }) => {
         <div className='flex justify-between items-end'>
           <span className="font-semibold">In Stock</span>
           <div className='flex items-center gap-2'>
-            <Button classes="!py-2 !px-4 text-sm !rounded-sm "><DeleteIcon /> </Button>
-            <Button classes="!py-2 !px-4 text-sm !rounded-sm min-w-[200px] capitalize">{fetchWord('add_to_cart', lang)} </Button>
+            <Button onClick={() => removeFromFavorite(item?.id)} classes="!py-2 !px-4 text-sm !rounded-sm "><DeleteIcon /> </Button>
+            <Button onClick={() => addToCart({ ...item, quantity: 1 })} classes="!py-2 !px-4 text-sm !rounded-sm min-w-[200px] capitalize">{fetchWord('add_to_cart', lang)} </Button>
           </div>
         </div>
       </div>

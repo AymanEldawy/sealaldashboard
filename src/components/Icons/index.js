@@ -90,4 +90,6 @@ export { default as CardFlatIcon } from "./CardFlatIcon";
 export { default as SIMIcon } from "./SIMIcon";
 export { default as BookmarkIcon } from "./BookmarkIcon";
 export { default as BanIcon } from "./BanIcon";
+export { default as ThumbUpIcon } from "./ThumbUpIcon";
+export { default as ShareIcon } from "./ShareIcon";
 

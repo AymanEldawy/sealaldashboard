@@ -3,6 +3,7 @@ import { CartBar } from '@/components/CartComponents/CartBar';
 import { CartHead } from '@/components/CartComponents/CartHead';
 import { CartItem } from '@/components/CartComponents/CartItem';
 import { CartProductsBody } from '@/components/CartComponents/CartProductsBody';
+import ConfirmOrder from '@/components/CartComponents/ConfirmOrder';
 import { CartPayment } from '@/components/CartComponents/Payment/CartPayment';
 import { PromoCode } from '@/components/CartComponents/PromoCode';
 import { EmptyPage } from '@/components/EmptyPage/EmptyPage';
@@ -26,7 +27,7 @@ const stages = {
 
 const Cart = () => {
   const { lang } = useContext(LanguageContext);
-  const { cart, removeFromCart } = useContext(GlobalOptions);
+  const { cart, removeFromCart, updateQuantity } = useContext(GlobalOptions);
   const [loading, setLoading] = useState();
   const [total, setTotal] = useState(0)
   const [code, setCode] = useState('')
@@ -40,8 +41,8 @@ const Cart = () => {
     let total = cart?.reduce((result, cur) => {
       return result += cur?.price * cur?.quantity
     }, 0)
-    setSubtotal(total)
-    setTotal(total)
+    setSubtotal(total?.toFixed(2))
+    setTotal(total?.toFixed(2))
   }, [cart])
 
   const applyCode = (e) => {
@@ -59,7 +60,7 @@ const Cart = () => {
   const selectedStage = (tab) => {
     setStage(stages?.[tab])
   }
-  console.log(subtotal)
+  console.log(stage)
   return (
     <Layout>
       <div className="container">
@@ -68,7 +69,7 @@ const Cart = () => {
             {
               cart?.length ? (
                 <TabsContent activeTabName={stage?.stateName}>
-                  <CartProductsBody subtotal={subtotal} total={total} tabName={stages?.cart?.stateName} setStage={selectedStage} cart={cart} msg={msg} error={error} code={code} setCode={setCode} applyCode={applyCode} />
+                  <CartProductsBody updateQuantity={updateQuantity} removeFromCart={removeFromCart} subtotal={subtotal} total={total} tabName={stages?.cart?.stateName} setStage={selectedStage} cart={cart} msg={msg} error={error} code={code} setCode={setCode} applyCode={applyCode} />
                   <CartAddress tabName={stages?.address?.stateName} setStage={selectedStage} />
                   <CartPayment
                     subtotal={subtotal}
@@ -80,6 +81,7 @@ const Cart = () => {
                     stage={stage}
                     tabName={stages?.payment?.stateName}
                     setStage={selectedStage} />
+                  <ConfirmOrder tabName={stages?.confirm?.stateName} stage={stage} />
                 </TabsContent>
               )
                 :

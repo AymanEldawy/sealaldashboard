@@ -1,13 +1,14 @@
+import { LanguageContext } from '@/context/LangContext';
+import { fetchWord } from '@/lang/fetchWord';
 import React from 'react'
+import { useContext } from 'react';
+
+import { Button } from '../Global/Button/Button';
+import PrimaryLink from '../Global/PrimaryLink/PrimaryLink';
+import { CartBar } from './CartBar';
 import { CartHead } from './CartHead'
 import { CartItem } from './CartItem'
-import { useContext } from 'react';
-import { LanguageContext } from '@/context/LangContext';
-import { CartBar } from './CartBar';
 import { PromoCode } from './PromoCode';
-import PrimaryLink from '../Global/PrimaryLink/PrimaryLink';
-import { fetchWord } from '@/lang/fetchWord';
-import { Button } from '../Global/Button/Button';
 
 export const CartProductsBody = ({
   total,
@@ -19,7 +20,8 @@ export const CartProductsBody = ({
   setCode,
   applyCode,
   setStage,
-
+  updateQuantity,
+  removeFromCart
 }) => {
   const { lang } = useContext(LanguageContext)
   return (
@@ -27,7 +29,7 @@ export const CartProductsBody = ({
       <CartHead />
       <div className='mt-8 border-[#ECECEC] border p-4'>
         {cart?.map(item => (
-          <CartItem key={item?.id} item={item} />
+          <CartItem key={item?.id} item={item} updateQuantity={updateQuantity} removeFromCart={removeFromCart}/>
         ))}
       </div>
       <CartBar total={total} subtotal={subtotal} />
@@ -36,7 +38,7 @@ export const CartProductsBody = ({
         <div className="flex gap-4 items-end flex-1 justify-between">
           <div className='flex flex-1 items-center justify-center min-w-[200px] font-semibold text-[#3D3D3D] border border-[#ECECEC] p-2 rounded-md gap-12'>
             <span>{fetchWord('Total', lang)}</span>
-            <span>${total + 20}</span>
+            <span>${(+total + 20)?.toFixed(2)}</span>
           </div>
           <Button classes="!p-2 min-w-[210px]" onClick={() => setStage("address")}>{fetchWord('checkout', lang)} </Button>
         </div>

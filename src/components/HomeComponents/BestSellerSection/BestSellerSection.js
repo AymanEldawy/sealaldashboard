@@ -13,12 +13,12 @@ export const BestSellerSection = () => {
     <div>
       <SectionTitle title={fetchWord('best_seller', lang)} link="" />
       <div className='flex gap-4 items-start'>
-        <div className='flex-1 grid grid-cols-4 gap-4'>
+        <div className='flex-1 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4'>
           {products?.slice(0, 8)?.map(product => (
             <ProductCard product={product} key={product?.id} />
           ))}
         </div>
-        <div className='w-[244px] bg-black rounded-2xl overflow-hidden'>
+        <div className='w-[244px] bg-black rounded-2xl overflow-hidden sticky top-0 min-h-[100dvh]'>
           <Image src="/images/ads-banner.png" alt="ads banner" height={400} width={250} className='object-cover h-[540px]' />
           <div className='bg-[#1F0154] p-4 relative'>
             <span className='bg-inherit w-[120%] h-16 absolute -top-[33px] left-[-20px] rotate-12'></span>

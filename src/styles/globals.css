@@ -141,3 +141,29 @@ select {
 .filter-price .rc-slider-handle-2 {
   /* left: 55% !important; */
 }
+
+
+/* hero swiper */
+.swiper-product-gallery .swiper-pagination,
+.single-product-slider .swiper-pagination ,
+.hero-swiper .swiper-pagination{
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 5px;
+  z-index: 99;
+}
+.swiper-product-gallery .swiper-pagination {
+  bottom: 10px;
+}
+.hero-swiper .swiper-pagination-bullet-active{
+  background-color: var(--primary-color);
+}
+
+.swiper-pagination .swiper-pagination-bullet-active,
+.single-product-slider .swiper-pagination-bullet-active{
+  background-color: #fff;
+  border: none
+}
