@@ -92,4 +92,5 @@ export { default as BookmarkIcon } from "./BookmarkIcon";
 export { default as BanIcon } from "./BanIcon";
 export { default as ThumbUpIcon } from "./ThumbUpIcon";
 export { default as ShareIcon } from "./ShareIcon";
+export { default as FilterIcon } from "./FilterIcon";
 

@@ -1,14 +1,16 @@
-import React, { useContext, useState } from 'react'
-import RatingStars from '../RatingStars/RatingStars'
-import { ProductFavorite } from '../Product/ProductFavorite'
-import { fetchWord } from '@/lang/fetchWord'
 import { LanguageContext } from '@/context/LangContext'
-import { ProductColors } from './ProductColors'
-import { ProductSizes } from './ProductSizes'
 import { colors, sizes } from '@/data/dummyData'
-import { ProductQuantity } from './ProductQuantity'
-import { HeartIcon, ShareIcon } from '../Icons'
+import { fetchWord } from '@/lang/fetchWord'
+import Link from 'next/link'
+import React, { useContext, useState } from 'react'
+
 import { Button } from '../Global/Button/Button'
+import { HeartIcon, ShareIcon } from '../Icons'
+import { ProductFavorite } from '../Product/ProductFavorite'
+import RatingStars from '../RatingStars/RatingStars'
+import { ProductColors } from './ProductColors'
+import { ProductQuantity } from './ProductQuantity'
+import { ProductSizes } from './ProductSizes'
 
 export const ProductInformation = ({ handleToCart, setOpenShare, product, color, setColor, size, setSize, quantity, setQuantity, maxQuantity }) => {
   const { lang } = useContext(LanguageContext);
@@ -16,7 +18,7 @@ export const ProductInformation = ({ handleToCart, setOpenShare, product, color,
   return (
     <div className='flex-1'>
       <div className='flex flex-wrap relative items-center gap-6'>
-        <h3 className='text-secondary font-medium'>{product?.company_name}</h3>
+        <Link href="/profile/3223" className='text-secondary font-medium'>{product?.company_name}</Link>
         <div className="flex gap-2 items-center">
           <RatingStars rating={product?.rating} />
           <span className='text-xs text-[#333333]'>(6) {fetchWord('review', lang)}</span>

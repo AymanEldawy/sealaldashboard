@@ -1,16 +1,17 @@
-import React, { useState, useEffect, useContext } from 'react'
-import { ProfileTitle } from '../ProfileTitle'
-import { ViewAs } from '../../CategoriesFilterComponents/ViewAs'
-import { SortBy } from '../../CategoriesFilterComponents/SortBy'
-import { OrdersTable } from './OrdersTable'
-import { OrderSellerDetails } from './OrderSellerDetails'
-import { fetchWord } from '@/lang/fetchWord'
+import { Button } from '@/components/Global/Button/Button'
 import { LanguageContext } from '@/context/LangContext'
 import { sellerOrders } from '@/data/dummyData'
+import { fetchWord } from '@/lang/fetchWord'
+import React, { useContext, useEffect, useState } from 'react'
+
+import { SortBy } from '../../CategoriesFilterComponents/SortBy'
+import { ViewAs } from '../../CategoriesFilterComponents/ViewAs'
 import { OrderCard } from '../Orders/OrderCard'
 import { OrderDetailsCard } from '../Orders/OrderDetailsCard'
+import { ProfileTitle } from '../ProfileTitle'
 import { SellerBar } from '../SellerBar'
-import { Button } from '@/components/Global/Button/Button'
+import { OrderSellerDetails } from './OrderSellerDetails'
+import { OrdersTable } from './OrdersTable'
 
 const list = [
   "All",
