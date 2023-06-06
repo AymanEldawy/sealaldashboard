@@ -61,7 +61,6 @@ export { default as SupportIcon } from "./SupportIcon";
 export { default as EmailUsIcon } from "./EmailUsIcon";
 export { default as WhatsAppIcon } from "./WhatsAppIcon";
 export { default as PrivacyImgIcon } from "./PrivacyImgIcon";
-export { default as AdsIcon } from "./AdsIcon";
 export { default as ViewListIcon } from "./ViewListIcon";
 export { default as ViewGridIcon } from "./ViewGridIcon";
 export { default as SendIcon } from "./SendIcon";
@@ -94,3 +93,29 @@ export { default as ThumbUpIcon } from "./ThumbUpIcon";
 export { default as ShareIcon } from "./ShareIcon";
 export { default as FilterIcon } from "./FilterIcon";
 
+
+
+// new icons
+
+export { default as CalenderIcon } from "./CalenderIcon";
+export { default as MessageIcon } from "./MessageIcon";
+export { default as StoreIcon } from "./StoreIcon";
+export { default as EducationIcon } from "./EducationIcon";
+export { default as QuestionMarkIcon } from "./QuestionMarkIcon";
+export { default as WarningIcon } from "./WarningIcon";
+export { default as SortIcon } from "./SortIcon";
+export { default as EllipseIcon } from "./EllipseIcon";
+export { default as ImageIcon } from "./ImageIcon";
+export { default as FullScreenIcon } from "./FullScreenIcon";
+export { default as CameraIcon } from "./CameraIcon";
+export { default as VideoTimeIcon } from "./VideoTimeIcon";
+export { default as VideoTimeLineIcon } from "./VideoTimeLineIcon";
+export { default as VideoPlayIcon } from "./VideoPlayIcon";
+export { default as DiamondIcon } from "./DiamondIcon";
+export { default as AutomaticIcon } from "./AutomaticIcon";
+export { default as VideoCenterPrimaryIcon } from "./VideoCenterPrimaryIcon";
+export { default as TrunkPrimaryIcon } from "./TrunkPrimaryIcon";
+export { default as CardPrimaryIcon } from "./CardPrimaryIcon";
+export { default as ReportIcon } from "./ReportIcon";
+export { default as ReportViewIcon } from "./ReportViewIcon";
+export { default as BellFlatIcon } from "./BellFlatIcon";

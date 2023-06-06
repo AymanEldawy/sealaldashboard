@@ -1,5 +1,345 @@
 import { AirConIcon, FriggedIcon, GasIcon, MicrowavesIcon, OthersIcon, OvensIcon } from "@/components/Icons";
 
+
+
+export const links = [
+  {
+    id: 1,
+    name: "Product",
+    link: "/",
+    children: [
+      { name: 'Sub item', link: '/' },
+      { name: 'Sub item', link: '/' },
+    ]
+  },
+  {
+    id: 2,
+    name: "Order_shipping",
+    link: "/about-us",
+    children: [
+      { name: 'Sub item', link: '/' },
+      { name: 'Sub item', link: '/' },
+    ]
+  },
+  {
+    id: 3,
+    name: "Finance",
+    link: "/categories",
+    children: [
+      { name: 'Sub item', link: '/' },
+      { name: 'Sub item', link: '/' },
+    ]
+  },
+  {
+    id: 4,
+    name: "Promotion_Price",
+    link: "/sale",
+    children: [
+      { name: 'Sub item', link: '/' },
+      { name: 'Sub item', link: '/' },
+    ]
+  },
+  { id: 5, name: "Store_Management", link: "/companies" },
+  { id: 6, name: "Advertising_Management", link: "/contact-us" },
+];
+
+export const productsData = [
+  {
+    id: "21",
+    "buybox": "ABC Corp",
+    "Product_information": "A powerful smartphone with advanced features",
+    "Barcode": "123456789012",
+    "Brand": "XYZ",
+    "Model_Code": "SMX-123",
+    "Color": "Black",
+    "Body": "Metal",
+    "Commission": 0.05,
+    "Market_Selling_Price": 129.99,
+    "Sealal_Sale_Price": 109.99,
+    "Stock": 50,
+    "Situation": "New",
+    "Transactions": 100
+  },
+  {
+    id: "22",
+    "buybox": "XYZ Corp",
+    "Product_information": "A high-performance laptop for professionals",
+    "Barcode": "234567890123",
+    "Brand": "ABC",
+    "Model_Code": "LPY-456",
+    "Color": "Silver",
+    "Body": "Aluminum",
+    "Commission": 0.07,
+    "Market_Selling_Price": 199.99,
+    "Sealal_Sale_Price": 179.99,
+    "Stock": 20,
+    "Situation": "Refurbished",
+    "Transactions": 50
+  },
+  {
+    id: "23",
+    "buybox": "PQR Corp",
+    "Product_information": "Comfortable headphones with noise-cancellation",
+    "Barcode": "345678901234",
+    "Brand": "LMN",
+    "Model_Code": "HPZ-789",
+    "Color": "White",
+    "Body": "Plastic",
+    "Commission": 0.03,
+    "Market_Selling_Price": 39.99,
+    "Sealal_Sale_Price": 34.99,
+    "Stock": 100,
+    "Situation": "New",
+    "Transactions": 500
+  },
+  {
+    id: "24",
+    "buybox": "LMN Corp",
+    "Product_information": "A stylish and versatile smartwatch",
+    "Barcode": "456789012345",
+    "Brand": "PQR",
+    "Model_Code": "SWT-012",
+    "Color": "Gold",
+    "Body": "Stainless steel",
+    "Commission": 0.08,
+    "Market_Selling_Price": 249.99,
+    "Sealal_Sale_Price": 229.99,
+    "Stock": 10,
+    "Situation": "New",
+    "Transactions": 25
+  },
+  {
+    id: "25",
+    "buybox": "JKL Corp",
+    "Product_information": "Powerful speakers with wireless connectivity",
+    "Barcode": "567890123456",
+    "Brand": "JKL",
+    "Model_Code": "SPV-345",
+    "Color": "Black",
+    "Body": "Plastic",
+    "Commission": 0.06,
+    "Market_Selling_Price": 99.99,
+    "Sealal_Sale_Price": 89.99,
+    "Stock": 30,
+    "Situation": "New",
+    "Transactions": 75
+  }
+]
+
+export const salesInformation = [
+  {
+    "Image": "/images/products/1.png",
+    "Barcode": "123456789012",
+    "Color": "Black",
+    "Trendyol Sale Price": 49.99,
+    "Stock": 100,
+    "VAT": 0.18,
+    "Stock code": "PRD-001",
+    "Process": "New arrival"
+  },
+  {
+    "Image": "/images/products/2.png",
+    "Barcode": "234567890123",
+    "Color": "White",
+    "Trendyol Sale Price": 29.99,
+    "Stock": 50,
+    "VAT": 0.18,
+    "Stock code": "PRD-002",
+    "Process": "Clearance sale"
+  },
+  {
+    "Image": "/images/products/3.png",
+    "Barcode": "345678901234",
+    "Color": "Red",
+    "Trendyol Sale Price": 69.99,
+    "Stock": 20,
+    "VAT": 0.18,
+    "Stock code": "PRD-003",
+    "Process": "Pre-order"
+  },
+  {
+    "Image": "/images/products/4.png",
+    "Barcode": "456789012345",
+    "Color": "Blue",
+    "Trendyol Sale Price": 99.99,
+    "Stock": 10,
+    "VAT": 0.18,
+    "Stock code": "PRD-004",
+    "Process": "Back in stock"
+  },
+  {
+    "Image": "/images/products/5.png",
+    "Barcode": "567890123456",
+    "Color": "Green",
+    "Trendyol Sale Price": 39.99,
+    "Stock": 30,
+    "VAT": 0.18,
+    "Stock code": "PRD-005",
+    "Process": "Limited edition"
+  }
+]
+export const gallery = [
+  { file_name: 'W7A5367.jpg', size: '1200x1800 15.09.2021', image: "/images/products/1.png" },
+  { file_name: 'W7A5367.jpg', size: '1200x1800 15.09.2021', image: "/images/products/1.png" },
+  { file_name: 'W7A5367.jpg', size: '1200x1800 15.09.2021', image: "/images/products/1.png" },
+  { file_name: 'W7A5367.jpg', size: '1200x1800 15.09.2021', image: "/images/products/1.png" },
+]
+
+export const customerQuestions = [
+
+  {
+    id: 1,
+    "Creation_Date": "2022-02-14",
+    "Product_information": "A high-quality widget for everyday use",
+    "Question_Detail": "Does the widget come in different colors?",
+    "Process": "We currently offer the widget in black and white."
+  },
+  {
+    id: 2,
+    "Creation_Date": "2022-03-01",
+    "Product_information": "An advanced widget for tech enthusiasts",
+    "Question_Detail": "What is the warranty on Widget B?",
+    "Process": "Widget B comes with a 1-year warranty for all manufacturing defects."
+  },
+  {
+    id: 3,
+    "Creation_Date": "2022-04-10",
+    "Product_information": "A compact widget for travel",
+    "Question_Detail": "Can Widget C be used internationally?",
+    "Process": "Yes, Widget C works with all international power outlets."
+  },
+  {
+    id: 4,
+    "Creation_Date": "2022-05-15",
+    "Product_information": "A durable widget for outdoor activities",
+    "Question_Detail": "Is Widget D waterproof?",
+    "Process": "Yes, Widget D is completely waterproof and can be used in any weather condition."
+  },
+  {
+    id: 5,
+    "Creation_Date": "2022-06-20",
+    "Product_information": "A versatile widget with multiple functions",
+    "Question_Detail": "What are the different functions of Widget E?",
+    "Process": "Widget E can be used as a flashlight, a compass, and a thermometer."
+  },
+  {
+    id: 6,
+    "Creation_Date": "2022-07-25",
+    "Product_information": "A stylish widget for home decor",
+    "Question_Detail": "What colors is Widget F available in?",
+    "Process": "Widget F is available in black, white, and silver."
+  },
+  {
+    id: 7,
+    "Creation_Date": "2022-08-30",
+    "Product_information": "A high-performance widget for professionals",
+    "Question_Detail": "When will Widget G be back in stock?",
+    "Process": "We expect Widget G to be back in stock in 2-3 weeks."
+  },
+  {
+    id: 8,
+    "Creation_Date": "2022-09-10",
+    "Product_information": "An eco-friendly widget made from recycled materials",
+    "Question_Detail": "How is Widget H environmentally friendly?",
+    "Process": "Widget H is made from 100% recycled plastic and comes in eco-friendly packaging."
+  },
+  {
+    id: 9,
+    "Creation_Date": "2022-10-20",
+    "Product_information": "A customizable widget that can be personalized",
+    "Question_Detail": "Can Widget I be engraved with a name or message?",
+    "Process": "Yes, Widget I can be engraved with a name or message of your choice."
+  },
+  {
+    id: 10,
+    "Creation_Date": "2022-11-30",
+    "Product_information": "A budget-friendly widget for everyday use",
+    "Question_Detail": "What is the material of Widget J?",
+    "Process": "Widget J is made from high-quality plastic that is durable and long-lasting."
+  }
+
+]
+export const documentData = [
+  {
+    id: 1,
+    'Creation_Date': "12/01/203",
+    'Brand': "Lorem ipsum",
+    'Category': "Category",
+    'Document_Detail': "Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum, or lipsum",
+    'Document_Status': "Lorem ipsum",
+  },
+  {
+    id: 2,
+    'Creation_Date': "12/01/203",
+    'Brand': "Lorem ipsum",
+    'Category': "Category",
+    'Document_Detail': "Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum, or lipsum",
+    'Document_Status': "Lorem ipsum",
+  },
+  {
+    id: 3,
+    'Creation_Date': "12/01/203",
+    'Brand': "Lorem ipsum",
+    'Category': "Category",
+    'Document_Detail': "Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum, or lipsum",
+    'Document_Status': "Lorem ipsum",
+  },
+  {
+    id: 4,
+    'Creation_Date': "12/01/203",
+    'Brand': "Lorem ipsum",
+    'Category': "Category",
+    'Document_Detail': "Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum, or lipsum",
+    'Document_Status': "Lorem ipsum",
+  },
+  {
+    id: 5,
+    'Creation_Date': "12/01/203",
+    'Brand': "Lorem ipsum",
+    'Category': "Category",
+    'Document_Detail': "Lorem ipsum, or lipsum Lorem ipsum, or lipsum Lorem ipsum, or lipsum",
+    'Document_Status': "Lorem ipsum",
+  },
+
+]
+
+
+
+export const notifications = [
+  {
+    "id": 1,
+    "title": "Annual Company Picnic",
+    "description": "Join us for our annual company picnic at Central Park",
+    "date": "2023-07-15T10:00:00.000Z"
+  },
+  {
+    "id": 2,
+    "title": "Complete Project Proposal",
+    "description": "Draft and submit project proposal for client X",
+    "date": "2023-06-30T23:59:59.000Z"
+  },
+  {
+    "id": 3,
+    "title": "Doctor's Appointment",
+    "description": "Don't forget to go for your annual checkup with Dr. Smith",
+    "date": "2023-07-01T09:30:00.000Z"
+  },
+  {
+    "id": 4,
+    "title": "New Study Shows Benefits of Regular Exercise",
+    "description": "A new study published in the Journal of Health and Fitness finds that regular exercise can improve mental health and reduce risk of chronic diseases.",
+    "date": "2023-06-29T18:00:00.000Z"
+  },
+  {
+    "id": 5,
+    "title": "Summer Clearance Sale",
+    "description": "Get up to 50% off on summer clothing and accessories",
+    "date": "2023-07-10T00:00:00.000Z"
+  }
+]
+
+// unused
+
 const getRandomOf = (list) => {
   return Math.floor(Math.random() * list?.length);
 };
@@ -12,14 +352,6 @@ export const getOfferById = (list, itemId) => {
   console.log(list, itemId);
   return list?.find((item) => +item?.offerNumber === +itemId);
 };
-export const links = [
-  { name: "home", link: "/" },
-  { name: "about_us", link: "/about-us" },
-  { name: "categories", link: "/categories" },
-  { name: "sale", link: "/sale" },
-  { name: "companies", link: "/companies" },
-  { name: "contact_us", link: "/contact-us" },
-];
 
 
 export const categories = [

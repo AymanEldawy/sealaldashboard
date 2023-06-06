@@ -1,4 +1,5 @@
 export const en = {
+  /*********** AUTH PAGE **********/
   signin_msg: 'Let’s build something great',
   signup_msg: 'Enter details to create your account',
   email_phone_label: 'E-mail or phone number',
@@ -34,13 +35,290 @@ export const en = {
   minutes: 'minutes',
   verify_code: 'verify code',
   resend_code: "Resend code",
+  /*********** AUTH PAGE **********/
+  /*********************************/
+  /*********** UPPER MENU **********/
+  Vendor_Panel: "Vendor Panel",
+  Seller_Information_Center: "Seller Information Center",
+  My_Announcements: "My Announcements",
+  Calendar: "Calendar",
+  Support: "Support",
+  Go_To_Store: "Go To Store",
+  with_the_Store: "with the Store",
+  /*********** UPPER MENU **********/
+  /*********************************/
+  /*********** MENU **********/
+  Product: "Product",
+  Order_shipping: "Order & shipping",
+  Finance: "Finance",
+  Promotion_Price: "Promotion & Price",
+  Store_Management: "Store Management",
+  Advertising_Management: "Advertising Management",
+  /*********** MENU **********/
+  /*********************************/
+  /*********** Footer **********/
+  'Sub item': "sub Item",
+  Created_by: "Created by",
+  /*********** Footer **********/
+  /*********************************/
+  /*********** PRODUCT PAGE **********/
+  Lists_of_products: "Lists of products",
+  Add_Product: "Add Product",
+  How_Product_List: "How Do I Manage the Product List?",
+  Help: "Help",
+  All_products: "All products",
+  on_sale: "on sale",
+  Out_of_stock: "Out of stock",
+  What_Revise: "What You Need to Revise",
+  Not_Available: "Not Available",
+  Locked_Products: "Locked Products",
+  Archived_Products: "Archived Products",
+  Barcode: "Barcode",
+  Model_Code: "Model Code",
+  Name_of_the_product: "Name of the product",
+  Stock_code: "Stock code",
+  Reason_for_Discontinuation: "Reason for Discontinuation",
+  Category: "Category",
+  Brand: "Brand",
+  Clean: "Clean",
+  filter: 'filter',
+  Batch_Actions: "Batch Actions",
+  Customize_Table: "Customize Table",
+  Download_with_Excel: "Download with Excel",
+  buybox: "buybox",
+  Product_information: "Product information",
+  Brand: "Brand",
+  Color: "Color",
+  Commission: "Commission",
+  Market_Selling_Price: "Market Selling Price",
+  Sealal_Sale_Price: "Sealal Sale Price",
+  Stock: "Stock",
+  Situation: "Situation",
+  Transactions: "Transactions",
+  Body: "Body",
+  Model_Code: "Model Code",
+  no_results: "There are no results",
+
+  Batch_Actions: "Batch Actions",
+  Customize_Table: "Customize Table",
+  Download_with_Excel: "Download with Excel",
+  Customize_Table: "Customize Table",
+  /*********** PRODUCT PAGE **********/
+  /*********************************/
+  /*********** Create PRODUCT PAGE **********/
+  Create_Single_Product: "Create a Single Product",
+  Product_Information: "Product Information",
+  Sales_Information: "Sales Information",
+  Product_features: "Product features",
+
+  Product_Name: "Product Name",
+  Enter_product_name: "Enter product name",
+  Select_Category: "Select Category",
+  Category_Category: "Category > Category",
+  Model_Code: "Model Code",
+  Enter_model_code: "Enter model code",
+  Brand: "Brand",
+  Please_choose_brand: "Please choose brand",
+  Color: "Color",
+  Color: "Color",
+  Size: "Size",
+  Body: "Body",
+  Product_Description_msg: "Product Description * (If you enter html content in this field, it will be transferred to the product card in an edited form.)",
+
+  // sales information component
+  "Image": "Image",
+  "Barcode": "Barcode",
+  "Color": "Color",
+  "Trendyol_Sale_Price": "Trendyol Sale Price",
+  "Stock": "Stock",
+  "VAT": "VAT",
+  "Stock code": "Stock code",
+  "Process": "Process",
+  "VAT": "VAT",
+  "Stock code": "Stock code",
+  "Process": "Process",
+
+  // product features
+  Age_Group: "Age Group *",
+  Make_Your_Choice: "Make Your Choice",
+  Gender: "Gender *",
+  Make_Your_Choice: "Make Your Choice",
+  Material_Optional: "Material (Optional)",
+  Pattern_Optional: "Pattern (Optional)",
+  Make_Your_Choice: "Make Your Choice",
+  Type_Optional: "Type (Optional)",
+  Make_Your_Choice: "Make Your Choice",
+  Package_Content_Optional: "Package Content (Optional)",
+  Make_Your_Choice: "Make Your Choice",
+  Additional_Feature_Optional: "Additional Feature (Optional)",
+  Make_Your_Choice: "Make Your Choice",
+  Usage_Area_Optional: "Usage Area (Optional)",
+  Make_Your_Choice: "Make Your Choice",
+  Fabric_Type_Optional: "Fabric Type (Optional)",
+  Make_Your_Choice: "Make Your Choice",
+  Collection_Optional: "Collection (Optional)",
+  Make_Your_Choice: "Make Your Choice",
+  Back_to_School_Optional: "Back to School (Optional)",
+  Make_Your_Choice: "Make Your Choice",
+  Persona_Optional: "Persona (Optional)",
+  Make_Your_Choice: "Make Your Choice",
+  Environment_Optional: "Environment (Optional)",
+  Make_Your_Choice: "Make Your Choice",
+  Sustainability_Detail_Optional: "Sustainability Detail (Optional)",
+  Make_Your_Choice: "Make Your Choice",
+  Leather_Quality_Optional: "Leather Quality (Optional)",
+  Make_Your_Choice: "Make Your Choice",
+  Weaving_Type_Optional: "Weaving Type (Optional)",
+  Make_Your_Choice: "Make Your Choice",
+  Technical_Optional: "Technical (Optional)",
+  Make_Your_Choice: "Make Your Choice",
+
+  // images Gallery
+  Image_Gallery: "Image Gallery",
+  ACTIVE_IMAGES: "ACTIVE IMAGES",
+  REJECTED_IMAGES: "REJECTED IMAGES",
+  PCS: "PCS",
+  Download_All: "Download All",
+  Select_All_and_Delete: "Select All and Delete",
+  Delete_Selected: "Delete Selected",
+  Download_Excel: "Download Excel",
+  Search: "Search...",
+  SELECT_OR_DRAG_NEW_IMAGE: "SELECT OR DRAG NEW IMAGE",
+  The_image_format: "The image you upload must be in JPG or PNG format",
+  The_image_size: "The image you upload must have a minimum 600x800 standard and a maximum size of 10MB.",
+  To_view_rules: "To view the visual rules",
+  click: "click",
+
+  // video center
+  videoCenter_1: "must be in mp4 format and a minimum of 8 and a maximum of 60 seconds.",
+  videoCenter_2: "if it is vertical and in 1280x720 format.",
+  videoCenter_3: "You can reach the categories with the video feature closed here .",
+  SELECT_OR_DRAG_NEW_Video: "SELECT OR DRAG NEW Video",
+  Video_Center: "Video Center",
+  Video_Information: "Video Information",
+  Video_Name: "Video Name",
+  Type_the_Video_Name: "Type the Video Name",
+  Explanation: "Explanation",
+  Type_the_description: "Type the description",
+  /********** Create PRODUCT PAGE **********/
+  /*********************************/
+  /********** Customer Questions PAGE **********/
+  Customer_Questions: "Customer Questions",
+  Product_question: "Product question",
+  Order_question: "Order question",
+  My_ready_answer: "My ready answer",
+  Question: "Question",
+  Answer: "Answer",
+  Status: "Status",
+  Name_of_the_product: "Name of the product",
+  Barcode: "Barcode",
+  Starting_date: "Starting date",
+  End_Date: "End Date",
+  Keyword_Search: "Keyword Search",
+  Brand: "Brand",
+  New_by_creation_date: "New by creation date",
+  Creation_Date: "Creation Date",
+  Product_information: "Product information",
+  Question_Detail: "Question Detail",
+  Process: "Process",
+
+  // Read Answer
+  Answer_Title: "Answer Title",
+  Answer_Text: "Answer Text",
+  Add_to_my_Canned_Answers: "Add to my Canned Answers",
 
 
-  express_description: 'Express Deilivery and free returns within 30 days',
-  coupon_discount: 'My Discount Coupons',
-  sell_trenyol: "Sell ​​on Trendyol",
-  help_support: "Help & Support",
-  compare: "Compare",
+  /********** Customer Questions PAGE **********/
+  /*********************************/
+  /********** Document Transactions PAGE **********/
+  Document_Transactions: "Document Transactions",
+  Authenticity_document: "Authenticity document ",
+  Trademark_Registration_procedures: "Trademark Registration procedures",
+  All: "All",
+
+
+  Upload_documents_to_selected: "Upload documents to selected",
+  Creation_Date: "Creation Date",
+  Document_Detail: "Document Detail",
+  Document_Status: "Document Status",
+
+  /********** Document Transactions PAGE **********/
+  /*********************************/
+  /********** Document Transactions PAGE **********/
+  Shipping_today: "Shipping today",
+  Current_Deadline: "Current Deadline",
+  /********** Document Transactions PAGE **********/
+  /*********************************/
+  /********** Home PAGE **********/
+  My_sales_performance: "My sales performance",
+  My_sales_Today: "My sales Today",
+  My_last_days_sales_: "My last 70 days sales ",
+  My_last_day_sales: "My last 30 day sales ",
+  I_will_Buy_Next: "I will Buy Next",
+
+  // actions
+  Actions: "Actions",
+  Pending_orders: "Pending orders",
+  Delayed_orders: "Delayed orders",
+  Pending_Returns: "Pending Returns",
+  My_items_not_for_sale: "My items not for sale",
+  Products_pending_revision: "Products pending revision",
+  Pending_Products_questions: "Pending Products questions",
+  Pending_Order_questions: "Pending Order questions",
+  Eligible_Campaigns: "Eligible Campaigns",
+  Pieces: "Pieces",
+  Questions: "Questions",
+
+
+  // Vehicles
+  Vehicles: "Vehicles",
+  Automatic_Pricing: "Automatic Pricing",
+  Video_center: "Video center",
+  Fast_Delivery_operation: "Fast Delivery & operation",
+  Future_Payments: "Future Payments",
+  My_Product_Evaluations_Report: "My Product Evaluations Report",
+  My_Favorite_Views_Report: "My Favorite & Views Report",
+
+  // Companies
+  Campaigns: "Campaigns",
+  campaign_ads_description: "You can follow and participate in the campaigns from this area. There is no active campaign.",
+  Campaigns_Training: "Campaigns Training",
+
+  // new arrivals slider
+  new_arrivals_slider_description: "New Arrival at the shop",
+  new_arrivals_slider_text: "Big sale up to 70%",
+
+  // Notifications
+  "Notification": "Notification",
+  // events calender 
+  Events_calendar:"Events calendar",
+  Fashion_sale: "Fashion sale ",
+  Fashion_sale_msg : "Will start from this day ",
+  // "Operation": "Operation",
+  /********** Home PAGE **********/
+  /*********************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -50,13 +328,41 @@ export const en = {
   my_cart: "My Cart",
   shop_department: "SHOP BY DEPARTMENT",
 
-  // upper menu
-  good_shopping: "Feel - good Shopping",
-  weekend_discount: 'WEEKEND DISCOUNT',
-  new_arrival_the_shop: "New Arival at the shop",
-  big_sale: "Big sale up to 70%",
-  shop_now: "Shop Now",
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  // 
+  // 
+  // 
+  // 
+  // 
+  // 
+  // 
+  // 
+  // 
   // menu
   home: "Home",
   about_us: "About us",
@@ -391,10 +697,10 @@ export const en = {
   answer_6:
     'You can apply a coupon on cart page before order placement. The complete list of your unused and valid coupons will be available under “My Coupons” tab of App/Website/M-site.',
 
-    // confirm order
-    confirm_order_msg1:"Thank you for your order!",
-    confirm_order_msg2:"Your purchase has been confirmed",
-    continue_shopping:"continue shopping",
+  // confirm order
+  confirm_order_msg1: "Thank you for your order!",
+  confirm_order_msg2: "Your purchase has been confirmed",
+  continue_shopping: "continue shopping",
 };
 
 export const getWordEn = (key) => {

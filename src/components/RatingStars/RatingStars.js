@@ -1,7 +1,7 @@
 import React from "react";
 import { StarIcon } from "../Icons";
 
-const RatingStars = ({ rating }) => {
+const RatingStars = ({ rating, count }) => {
   return (
     <div className="flex">
       {Array(5)
@@ -12,6 +12,7 @@ const RatingStars = ({ rating }) => {
             className={index < rating ? "text-yellow-500" : "text-gray-400"}
           />
         ))}
+        {count ? <span className=" mx-1 font-medium text-black text-xs">{count}</span> : null}
     </div>
   );
 };

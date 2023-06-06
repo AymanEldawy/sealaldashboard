@@ -7,12 +7,13 @@
 :root {
   --primary-color: #EA4958;
   --secondary-color: #094E99;
+  --secondary-light-color:#F7FBFF;
   --text-color: #F2F5F8;
   --bg-main-color: #f2f5f8;
   --lead-color: #979797;
   --p-text: #949CA9;
   --max-width: 1200px;
-  --max-width-lrg: 1300px;
+  --max-width-lrg: 1320px;
   --border-radius: 12px;
   --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
     "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
@@ -24,12 +25,13 @@
   box-sizing: border-box;
 }
 body {
-  background-color: #ffffff;
+  /* background-color:var(--secondary-light-color); */
+  background-color: #eaf5ff;
   /* background-color: #e4e4e4; */
   font-family: 'Poppins', sans-serif;
   /* height: 5000px; */
 }
-.container-lrg ,
+.container-small,
 .container {
   max-width: var(--max-width) !important;
   margin: 0 auto;
@@ -37,8 +39,9 @@ body {
   padding-right: 1rem;
 }
 
-.container-lrg {
-  max-width: var(--max-width-lrg) !important;
+.container {
+  max-width: 100% !important;
+  /* max-width: var(--max-width-lrg) !important; */
 }
 
 /* dev */
@@ -144,9 +147,11 @@ select {
 
 
 /* hero swiper */
-.swiper-product-gallery .swiper-pagination,
-.single-product-slider .swiper-pagination ,
-.hero-swiper .swiper-pagination{
+.new-arrivals {
+overflow: visible !important;
+}
+
+.new-arrivals .swiper-pagination{
   position: absolute;
   bottom: 10px;
   left: 50%;
@@ -154,16 +159,69 @@ select {
   display: flex;
   gap: 5px;
   z-index: 99;
+  bottom: -15px !important;
 }
-.swiper-product-gallery .swiper-pagination {
-  bottom: 10px;
-}
-.hero-swiper .swiper-pagination-bullet-active{
+.new-arrivals .swiper-pagination-bullet-active{
   background-color: var(--primary-color);
 }
 
-.swiper-pagination .swiper-pagination-bullet-active,
-.single-product-slider .swiper-pagination-bullet-active{
-  background-color: #fff;
-  border: none
+.new-arrivals .swiper-button-next,
+.new-arrivals .swiper-button-prev {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  padding: 1rem;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.new-arrivals .swiper-button-next:after,
+.new-arrivals .swiper-button-prev:after {
+  font-size: 24px;
+  transform: scale(.8);
+  color: #000;
+}
+.new-arrivals .swiper-button-next {
+  right: -11px;
+}
+.new-arrivals .swiper-button-prev {
+  left: -11px;
+}
+
+/* calender */
+.custom-calendar-events .react-datepicker__header.react-datepicker__header--custom {
+  background-color: white;
+  border-bottom: none;
+}
+.custom-calendar-events .react-datepicker__day-names {
+  
+}
+.custom-calendar-events .react-datepicker__day-names div { 
+  font-size: 1rem !important;
+  color: #9291A5;
+  font-weight: 500
+}
+.custom-calendar-events .react-datepicker__day {
+  font-size: 1rem !important;
+  color:#1D1C2B;
+  font-weight:normal
+ }
+ .custom-calendar-events .react-datepicker__day-names,
+ .custom-calendar-events .react-datepicker__week {
+  display: flex;
+  width: 100%;
+  gap: 1rem;
+  justify-content: center;
+}
+
+ .custom-calendar-events .react-datepicker__day--selected {
+  background-color: var(--primary-color) !important;
+  border-radius: 50%;
+  color: white;
+}
+
+.custom-calendar-events .react-datepicker__children-container {
+  width: 100%;
 }

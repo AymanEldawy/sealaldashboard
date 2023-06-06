@@ -5,6 +5,7 @@ const CustomSelectField = ({
   label,
   list,
   error,
+  labelClassName,
   iconClassName,
   selectClassName,
   placeholder,
@@ -16,7 +17,7 @@ const CustomSelectField = ({
   return (
     <div className={`mb-4 w-full ${containerClassName}`}>
       {label ? (
-        <label className="flex items-center justify-between mb-2">
+        <label className={`flex items-center justify-between mb-2 ${labelClassName}`}>
           {label}
           {error?.length ? <span className="">{error}</span> : null}
         </label>

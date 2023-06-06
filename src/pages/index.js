@@ -1,28 +1,21 @@
-import Banner from '@/components/Banner/Banner';
-import { CompaniesSection } from '@/components/CompaniesSection/CompaniesSection';
-import { BestSellerSection } from '@/components/HomeComponents/BestSellerSection/BestSellerSection';
-import { Collection } from '@/components/HomeComponents/Collection/Collection';
-import CompaniesBanner from '@/components/HomeComponents/CompaniesBanner/CompaniesBanner';
-import { FlashSaleBanner } from '@/components/HomeComponents/FlashSaleBanner/FlashSaleBanner';
-import { PopularProducts } from '@/components/HomeComponents/PopularProducts/PopularProducts';
-import { WhyChooseUs } from '@/components/HomeComponents/WhyChooseUs/WhyChooseUs';
+import ActionsBoard from '@/components/HomeComponents/ActionsBoard';
+import { CampaignsAds } from '@/components/HomeComponents/CampaignsAds';
+import { NewArrivalsSlider } from '@/components/HomeComponents/NewArrivalsSlider';
+import { NotificationsBox } from '@/components/HomeComponents/NotificationsBox';
+import { SalePerformance } from '@/components/HomeComponents/SalePerformance';
+import { StoreBar } from '@/components/HomeComponents/StoreBar';
+import Vehicles from '@/components/HomeComponents/Vehicles';
 import { Layout } from '@/components/Layout/Layout';
-import SubMenu from '@/components/Menu/SubMenu/SubMenu';
 import { fetchWord } from '@/lang/fetchWord';
 import Head from 'next/head';
 import Image from 'next/image';
 import { useContext } from 'react';
 
-import Sidebar from './../components/Sidebar/Sidebar';
 import { LanguageContext } from './../context/LangContext';
-
-import "slick-carousel/slick/slick-theme.css";
-import "slick-carousel/slick/slick.css";
-import { categories } from '@/data/dummyData'
+import { EventsCalender } from '@/components/HomeComponents/EventsCalender';
 
 export default function Home() {
   const { lang } = useContext(LanguageContext);
-
   return (
     <>
       <Head>
@@ -31,30 +24,22 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Layout hideSubMenu>
-        <div className='container'>
-          <div className='flex gap-4'>
-            <Sidebar list={categories} title={fetchWord('shop_department', lang)} />
+      <Layout>
+        <StoreBar />
+        <div className='container !my-8'>
+          <div className='flex gap-8'>
             <div className='flex-1'>
-              <SubMenu />
-              <Banner />
+              <SalePerformance />
+              <ActionsBoard />
+              <Vehicles />
+              <CampaignsAds />
+            </div>
+            <div className='w-[587px] overflow-hidden'>
+              <NewArrivalsSlider />
+              <NotificationsBox />
+              <EventsCalender />
             </div>
           </div>
-          <CompaniesSection />
-          <PopularProducts title={fetchWord('popular_products', lang)} />
-          <CompaniesBanner />
-          <PopularProducts title={fetchWord('opportunity_products', lang)} />
-          <BestSellerSection />
-        </div>
-        <div className='relative z-10 mt-[170px]'>
-          <Image src="/images/backdrop-banner.png" alt="Flash sale" height={600} width={1440} className='absolute top-0 left-0 h-full w-screen object-cover' />
-          <div className='container relative z-[12]'>
-            <FlashSaleBanner />
-            <Collection />
-          </div>
-        </div>
-        <div className='container'>
-          <WhyChooseUs />
         </div>
       </Layout>
     </>

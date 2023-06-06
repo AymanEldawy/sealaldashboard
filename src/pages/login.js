@@ -1,7 +1,6 @@
 import { InputField } from "@/components/Forms/InputField";
 import { Button } from "@/components/Global/Button/Button";
 import EyeSlashIcon from "@/components/Icons/EyeSlashIcon";
-import { SignInWith } from "@/components/SignInWith/SignInWith";
 import { fetchWord } from "@/lang/fetchWord";
 import Head from "next/head";
 import Image from "next/image";
@@ -34,7 +33,7 @@ export default function Login() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="container flex items-center min-h-screen relative" >
-        
+
         <Image
           className="object-contain absolute top-4 ltr:left-6 rtl:right-6"
           src="/images/logo.png"
@@ -80,13 +79,6 @@ export default function Login() {
                 <Button classes="!p-3 block w-full">{fetchWord("login", lang)}</Button>
               </form>
               <Link href="/forgot-password" className=" text-[#009EF7] text-sm w-fit block ltr:ml-auto rtl:mr-auto mt-4">{fetchWord('forgot_password', lang)} {lang === 'ar' ? '؟' : '?'} </Link>
-              <SignInWith />
-              <div className="mt-4 text-center gap-1 flex justify-center">
-                {fetchWord("dont_have_account", lang)}
-                <Link href="/signup" className=" text-primary">
-                  {fetchWord("signin", lang)}
-                </Link>
-              </div>
             </div>
           </div>
         </div>
