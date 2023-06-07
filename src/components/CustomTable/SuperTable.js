@@ -141,7 +141,7 @@ const SuperTable = ({
   };
   return (
     <>
-      <Table className={classes?.table}>
+      <Table containerClassName={classes?.containerClassName} tableClassName={classes.table}>
         <TableHead classes={classes?.head}>
           <TableRow classes={classes?.headRow}>
             {allowSelect ? (

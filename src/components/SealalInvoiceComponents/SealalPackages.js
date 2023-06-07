@@ -1,11 +1,10 @@
+import { LanguageContext } from '@/context/LangContext'
+import { packages } from '@/data/dummyData'
+import { fetchWord } from '@/lang/fetchWord'
 import React, { useContext } from 'react'
+
 import { Button } from '../Global/Button/Button'
 import { PackageIcon, WarningIcon } from '../Icons'
-import { LanguageContext } from '@/context/LangContext'
-import { fetchWord } from '@/lang/fetchWord'
-import { packages } from '@/data/dummyData'
-
-
 
 export const SealalPackages = () => {
   const { lang } = useContext(LanguageContext)
@@ -34,11 +33,11 @@ export const SealalPackages = () => {
             <p className='text-[#273142]'>{item?.quality}</p>
             <div className='flex border-y border-gray-300 py-2 px-4 w-full'>
               <div className='flex flex-col gap-1 flex-1 justify-center items-center'>
-                <span className="text-xs text-primary-text">{fetchWord('Unit_price', lang)}</span>
+                <span className="whitespace-nowrap text-xs text-primary-text">{fetchWord('Unit_price', lang)}</span>
                 <span className='text-primary font-semibold'>{item?.unit_price}</span>
               </div>
               <div className='flex flex-col gap-1 flex-1 justify-center items-center'>
-                <span className="text-xs text-primary-text">{fetchWord('Package_Price', lang)}</span>
+                <span className="whitespace-nowrap text-xs text-primary-text">{fetchWord('Package_Price', lang)}</span>
                 <span className='text-primary font-semibold'>{item?.package_price}</span>
               </div>
             </div>

@@ -3,6 +3,8 @@ import { Layout } from "@/components/Layout/Layout";
 import { SealalInvoiceEditing } from "@/components/SealalInvoiceComponents/SealalInvoiceEditing";
 import { SealalPackages } from "@/components/SealalInvoiceComponents/SealalPackages";
 import { SealalProcess } from "@/components/SealalInvoiceComponents/SealalProcess";
+import { SealalQuestions } from "@/components/SealalInvoiceComponents/SealalQuestions";
+import { SealalReviews } from "@/components/SealalInvoiceComponents/SealalReviews";
 import { LanguageContext } from "@/context/LangContext";
 import { fetchWord } from "@/lang/fetchWord";
 import Link from "next/link";
@@ -23,6 +25,8 @@ const SealalInvoice = () => {
         <SealalInvoiceEditing />
         <SealalProcess />
         <SealalPackages />
+        <SealalReviews />
+        <SealalQuestions />
       </div>
     </Layout>
   );

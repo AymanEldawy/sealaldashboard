@@ -1,7 +1,5 @@
 import { AirConIcon, FriggedIcon, GasIcon, MicrowavesIcon, OthersIcon, OvensIcon } from "@/components/Icons";
 
-
-
 export const links = [
   {
     id: 1,
@@ -304,6 +302,71 @@ export const documentData = [
 ]
 
 
+export const allNotifications = [
+  {
+    "Notification_No": 1,
+    "Stream_Name": "Marketing",
+    "occur_History": "The marketing team received complaints from several customers regarding the quality of the product.",
+    "Solve_History": "The marketing team investigated the issue and found that there was a problem with the manufacturing process. They worked with the production team to fix the issue.",
+    "Redirect_Date": "2022-01-15",
+    "Grade_Status": "Resolved",
+    "Situation": "Quality Issue"
+  },
+  {
+    "Notification_No": 2,
+    "Stream_Name": "Sales",
+    "occur_History": "The sales team noticed a decrease in sales in a particular region.",
+    "Solve_History": "The sales team conducted market research and found that a competitor had recently launched a similar product. They adjusted their pricing strategy to remain competitive.",
+    "Redirect_Date": "2022-02-10",
+    "Grade_Status": "Resolved",
+    "Situation": "Competition"
+  },
+  {
+    "Notification_No": 3,
+    "Stream_Name": "Human Resources",
+    "occur_History": "An employee reported experiencing harassment from a colleague.",
+    "Solve_History": "The HR team conducted an investigation and found evidence of the harassment. They took appropriate disciplinary action against the colleague.",
+    "Redirect_Date": "2022-03-05",
+    "Grade_Status": "Resolved",
+    "Situation": "Harassment"
+  },
+  {
+    "Notification_No": 4,
+    "Stream_Name": "IT",
+    "occur_History": "The company's website was down for several hours.",
+    "Solve_History": "The IT team identified a problem with the hosting provider and worked with them to resolve the issue.",
+    "Redirect_Date": "2022-04-01",
+    "Grade_Status": "Resolved",
+    "Situation": "Website Down"
+  },
+  {
+    "Notification_No": 5,
+    "Stream_Name": "Finance",
+    "occur_History": "A customer reported an incorrect charge on their account.",
+    "Solve_History": "The finance team investigated the issue and found that it was a billing error. They refunded the customer and updated their billing system to prevent similar errors in the future.",
+    "Redirect_Date": "2022-05-20",
+    "Grade_Status": "Resolved",
+    "Situation": "Billing Error"
+  },
+  {
+    "Notification_No": 6,
+    "Stream_Name": "Operations",
+    "occur_History": "Several employees reported safety concerns in the warehouse.",
+    "Solve_History": "The operations team conducted a safety audit and identified several areas for improvement. They implemented new safety protocols and provided additional safety training to employees.",
+    "Redirect_Date": "2022-06-15",
+    "Grade_Status": "Resolved",
+    "Situation": "Safety Concerns"
+  },
+  {
+    "Notification_No": 7,
+    "Stream_Name": "Customer Service",
+    "occur_History": "A customer reported a problem with their order delivery.",
+    "Solve_History": "The customer service team investigated the issue and found that there was a problem with the shipping carrier. They worked with the carrier to resolve the issue and provided the customer with a refund for the delayed delivery.",
+    "Redirect_Date": "2022-07-10",
+    "Grade_Status": "Resolved",
+    "Situation": "Delivery Delay"
+  }
+]
 
 export const notifications = [
   {
@@ -549,28 +612,28 @@ export const companyChanges = [
 export const packages = [
   {
     "size": "XS",
-    "count": 8,
+    "count": 50,
     "unit_price": 1.5,
     "quality": "Average",
     "package_price": 12
   },
   {
     "size": "S",
-    "count": 10,
+    "count": 150,
     "unit_price": 2.5,
     "quality": "Good",
     "package_price": 25
   },
   {
     "size": "M",
-    "count": 15,
+    "count": 500,
     "unit_price": 3.0,
     "quality": "Excellent",
     "package_price": 45
   },
   {
     "size": "L",
-    "count": 12,
+    "count": 1000,
     "unit_price": 2.0,
     "quality": "Good",
     "package_price": 24
@@ -578,20 +641,27 @@ export const packages = [
 
   {
     "size": "xL",
-    "count": 20,
+    "count": 1500,
     "unit_price": 5.0,
     "quality": "Average",
     "package_price": 100
   },
   {
     "size": "XLL",
-    "count": 5,
+    "count": 2000,
     "unit_price": 10.0,
     "quality": "Premium",
     "package_price": 50
   },
 ]
 
+export const reviews = [
+  { name: 'Ali Cakir', role: 'Kemerix', title: 'Efficient and Fast', comment: 'Thanks to my Trendyol e-invoice, our workload has decreased. The batch invoice feature has been great, our processes have become much more efficient and faster.', rating: 4, image: "/images/reviews/1.png", },
+  { name: 'ERGUN AKTAS', role: 'NAZ Accessory', title: 'Fast and Simple!', comment: 'Trendyol E-invoice is very fast and simple to use. The batch invoice feature makes the job easier.', rating: 4, image: "/images/reviews/2.png", },
+  { name: 'Ayse Guney', role: 'A & G Pastry', title: 'Reassuring', comment: 'It is good and reassuring to know that our customers receive their e-invoices immediately. It is also very nice that the price is affordable and practical.', rating: 4, image: "/images/reviews/3.png", },
+  { name: 'Ayse Guney', role: 'A & G Pastry', title: 'Reassuring', comment: 'It is good and reassuring to know that our customers receive their e-invoices immediately. It is also very nice that the price is affordable and practical.', rating: 4, image: "/images/reviews/3.png", },
+
+]
 
 // unused
 
@@ -1062,34 +1132,6 @@ export const productImages = [
   { id: 6, src: '/images/products/6.png' },
 
 ]
-
-
-export const reviews = [
-  {
-    id: 1,
-    name: "John Smith",
-    image: "/images/clients/1.png",
-    date: "2023-04-08",
-    rating: 4,
-    comment: "Great product, works as advertised!",
-  },
-  {
-    id: 2,
-    name: "Jane Doe",
-    image: "/images/clients/2.png",
-    date: "2023-04-07",
-    rating: 2,
-    comment: "This product did not meet my expectations.",
-  },
-  {
-    id: 3,
-    name: "Bob Johnson",
-    image: "/images/clients/3.png",
-    date: "2023-04-05",
-    rating: 5,
-    comment: "I am very happy with my purchase!",
-  },
-];
 
 
 export const sizeChart = [

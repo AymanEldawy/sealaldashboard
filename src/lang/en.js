@@ -461,7 +461,62 @@ export const en = {
   Package_Price: "Package Price",
   Buy: "Buy",
 
+  // reviews
+  our_business: "Our Business Partners Using Trendyol e-Invoice",
+
+
+  // questions
+  question_text1: "Frequently Asked Questions",
+  question_text3: "Sealal E-Invoice, which allows you to create paper invoices as electronic invoices and transmit them to our customers much more easily; It is an electronic invoice service prepared in cooperation with Sealal and Digital Planet. ",
+  question_text4: "For more detailed information about Sealal E-Invoice, you can call 0123456789 or send an e-mail to exampel@exampel.com .",
+  question_text2: "What is Sealal E-Invoice?",
+  question_text5: "What are the advantages of Sealal E-Invoice?",
+  question_text6: "Is there a setup fee?",
+  question_text7: "What are E-Archive, E-Invoice and E-Waybill?",
+  question_text8: "What is the difference between an electronic invoice and a printed invoice?",
+  question_text9: "What is the difference between E-Archive and E-Invoice?",
+  question_text10: "I will only create an E-Archive invoice, is it necessary to register with the E-Invoice system?",
+  question_text11: "Can I invoice my orders from other platforms with my Seala;l E-Invoice?",
+  question_text12: "How can I start using Sealal l E-Invoice?",
+  question_text13: "What is e-signature and financial seal?",
+  question_text14: "I am working with a different E-Invoice provider, can I use my sealal E-Invoice?",
+  question_text15: "Who is responsible for issuing the invoice issued within the scope of sealal E-Invoice in accordance with the legislation?",
+  question_text16: "Can I cancel my e-invoice membership?",
+  question_text17: "I have canceled my membership. What should I do to get my fee back?",
+  question_text18: "With which ERP/accounting/bookkeeping systems does Trendyol E-Invoice work integrated?",
+  answer_text2: "answer_text2",
+  answer_text5: "answer_text5",
+  answer_text6: "answer_text6",
+  answer_text7: "answer_text7",
+  answer_text8: "answer_text8",
+  answer_text9: "answer_text9",
+  answer_text10: "answer_text10",
+  answer_text11: "answer_text11",
+  answer_text12: "answer_text12",
+  answer_text13: "answer_text13",
+  answer_text14: "answer_text14",
+  answer_text15: "answer_text15",
+  answer_text16: "answer_text16",
+  answer_text17: "answer_text17",
+  answer_text18: "answer_text18",
   /********** Sealal Invoice PAGE **********/
+  /*********************************/
+  /********** Notifications PAGE **********/
+  Notifications: "Notifications",
+  customer_requests: "customer requests",
+  My_supports_requests: "My supports requests",
+  request: "request",
+
+  Notification_No:"Notification No.",
+  Stream_Name:"Stream Name",
+  occur_History:"occur. History",
+  Solve_History:"Solve. History",
+  Redirect_Date:"Redirect Date",
+  Grade_Status:"Grade Status",
+  Situation:"Situation",
+
+
+  /********** Notifications PAGE **********/
   /*********************************/
 
 

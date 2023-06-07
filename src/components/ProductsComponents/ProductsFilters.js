@@ -16,7 +16,7 @@ const listFilter = [
   { name: 'Archived_Products', extraContent: '31 Products', iconEnd: '' },
 ]
 export const ProductsFilters = () => {
-  const [activeTab, setActiveTab] = useState('')
+  const [activeTab, setActiveTab] = useState(listFilter?.[0])
   return (
     <div className='container '>
       <div className='mt-4 p-5'>
