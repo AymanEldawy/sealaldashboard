@@ -60,7 +60,7 @@ export const ReturnProcessFilterForm = () => {
             className='text-sm !w-full border border-[#D5D9E1] rounded-md p-2'
             placeholder={fetchWord('Return_request_START_DATE', lang)}
             {...register("product_name", { required: true, maxLength: 20 })}
-            iconEnd={<CalenderIcon className="w-5 h-5" />} 
+            iconEnd={<CalenderIcon className="bg-white w-5 h-5" />} 
             iconEndClassName=" pointer-events-none"
           />
           <InputField
@@ -69,7 +69,7 @@ export const ReturnProcessFilterForm = () => {
             className='text-sm !w-full border border-[#D5D9E1] rounded-md p-2'
             placeholder={fetchWord('Return_request_FINISH_DATE', lang)}
             {...register("stock_code", { required: true, maxLength: 20 })}
-            iconEnd={<CalenderIcon className="w-5 h-5" />} 
+            iconEnd={<CalenderIcon className="bg-white w-5 h-5" />} 
             iconEndClassName=" pointer-events-none"
           />
         </div>

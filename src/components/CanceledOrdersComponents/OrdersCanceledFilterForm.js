@@ -38,7 +38,7 @@ export const OrdersCanceledFilterForm = () => {
           className='text-sm !w-full border border-[#D5D9E1] rounded-md p-2'
           placeholder={fetchWord('Cancelation_START_DATE', lang)}
           {...register("product_name", { required: true, maxLength: 20 })}
-          iconEnd={<CalenderIcon className="w-5 h-5  pointer-events-none" />} iconEndClassName=" pointer-events-none"
+          iconEnd={<CalenderIcon className="bg-white w-5 h-5  pointer-events-none" />} iconEndClassName=" pointer-events-none"
           
         />
         <InputField
@@ -47,7 +47,7 @@ export const OrdersCanceledFilterForm = () => {
           className='text-sm !w-full border border-[#D5D9E1] rounded-md p-2'
           placeholder={fetchWord('Cancelation_FINISH_DATE', lang)}
           {...register("stock_code", { required: true, maxLength: 20 })}
-          iconEnd={<CalenderIcon className="w-5 h-5  pointer-events-none" />} iconEndClassName=" pointer-events-none"
+          iconEnd={<CalenderIcon className="bg-white w-5 h-5  pointer-events-none" />} iconEndClassName=" pointer-events-none"
         />
         <Button classes="!py-1 px-4 h-10 !bg-secondary" >{fetchWord('Download_Excel', lang)}</Button>
         <Button classes="h-10 px-4">{fetchWord('Search', lang)}</Button>

@@ -546,6 +546,52 @@ export const companyChanges = [
   }
 ]
 
+export const packages = [
+  {
+    "size": "XS",
+    "count": 8,
+    "unit_price": 1.5,
+    "quality": "Average",
+    "package_price": 12
+  },
+  {
+    "size": "S",
+    "count": 10,
+    "unit_price": 2.5,
+    "quality": "Good",
+    "package_price": 25
+  },
+  {
+    "size": "M",
+    "count": 15,
+    "unit_price": 3.0,
+    "quality": "Excellent",
+    "package_price": 45
+  },
+  {
+    "size": "L",
+    "count": 12,
+    "unit_price": 2.0,
+    "quality": "Good",
+    "package_price": 24
+  },
+
+  {
+    "size": "xL",
+    "count": 20,
+    "unit_price": 5.0,
+    "quality": "Average",
+    "package_price": 100
+  },
+  {
+    "size": "XLL",
+    "count": 5,
+    "unit_price": 10.0,
+    "quality": "Premium",
+    "package_price": 50
+  },
+]
+
 
 // unused
 

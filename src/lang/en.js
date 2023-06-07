@@ -425,11 +425,43 @@ export const en = {
   calculate_role1: "As of 31 December 2022, our 'Barem Support' application has changed. As of this date, our current 'Barem Support' application is as follows:",
   calculate_role2: "Detailed information can be found here .",
   calculate_role3: "Prices excluding VAT per package for our sellers using Trendyol contracted cargo: ",
-  prices_no1:"a)8.47 TL+VAT for orders between 0-59.99 TL sent via PTT, TEX; For your orders between 60-99.99 TL, it is 19.91 TL + VAT. ",
-  prices_no2:"b)10.17 TL+VAT for your orders between 0-59.99 TL sent via Aras, Sürat, MNG, UPS; For your orders between 60-99.99 TL, it is 22.45 TL + ",
-  prices_no3:"c)15.25 TL+VAT for orders between 0-59.99 TL sent via Yurtiçi Cargo, Sendeo; 30.50 TL+VAT for your orders between 60-99.99 TL.",
-
+  prices_no1: "a)8.47 TL+VAT for orders between 0-59.99 TL sent via PTT, TEX; For your orders between 60-99.99 TL, it is 19.91 TL + VAT. ",
+  prices_no2: "b)10.17 TL+VAT for your orders between 0-59.99 TL sent via Aras, Sürat, MNG, UPS; For your orders between 60-99.99 TL, it is 22.45 TL + ",
+  prices_no3: "c)15.25 TL+VAT for orders between 0-59.99 TL sent via Yurtiçi Cargo, Sendeo; 30.50 TL+VAT for your orders between 60-99.99 TL.",
   /********** Cargo Transactions PAGE **********/
+  /*********************************/
+  /********** Sealal Invoice PAGE **********/
+  My_Sealal_Invoice: "My Sealal E-Invoice",
+  Screen_Introduction: "Screen Introduction",
+  My_Sealal_Invoice: "My Sealal E-Invoice",
+  speed_up_your_operation: "You can create, store and view all invoices with sealal E-Invoice; In this way, you can reduce your costs and speed up your operation.",
+  Saving_time: "Saving time",
+  Secure_Billing: "Secure Billing",
+  Low_Cost_Advantage: "Low Cost Advantage",
+  Frequently_Asked_Questions: "Frequently Asked Questions",
+
+  // process
+  process_text1: "How Does the Process Work?",
+  process_text2: "Buy e-Invoice Package",
+  process_text3: "Choose the e-invoice package that suits you and complete your application within minutes!",
+  process_text4: "Complete Financial Seal Processes",
+  process_text5: "In order to start using your e-Invoice package after purchasing it, you must have a financial seal. What is a financial seal?",
+  process_text6: "Complete Your Activation",
+  process_text7: "To start e-invoicing 0850 222 93 26 You need to call the number and complete your activation process.",
+  process_text8: "You Can Start Using e-Invoice",
+  process_text9: "You can start billing with one click in minutes!",
+
+  //  packages
+  package_text: "Sealal E-Invoice Packages",
+  package_text1: "Even if you don't have a balanceXS packYou can start by purchasing",
+  Available_balance: "Available balance",
+
+  Quantity_Invoice: "Quantity Invoice",
+  Unit_price: "Unit price",
+  Package_Price: "Package Price",
+  Buy: "Buy",
+
+  /********** Sealal Invoice PAGE **********/
   /*********************************/
 
 

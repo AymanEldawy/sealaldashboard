@@ -122,3 +122,7 @@ export { default as BellFlatIcon } from "./BellFlatIcon";
 export { default as CheckTaskIcon } from "./CheckTaskIcon";
 export { default as TrunkRefusedIcon } from "./TrunkRefusedIcon";
 export { default as HistoryDeliveryIcon } from "./HistoryDeliveryIcon";
+export { default as SavingTimeIcon } from "./SavingTimeIcon";
+export { default as SecureBilgingIcon } from "./SecureBilgingIcon";
+export { default as LowCostIcon } from "./LowCostIcon";
+export { default as PackageIcon } from "./PackageIcon";
