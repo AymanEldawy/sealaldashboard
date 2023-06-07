@@ -2,7 +2,7 @@ import React from 'react'
 
 const CalenderIcon = ({ ...props }) => {
   return (
-    <svg style={{background: '#fff'}} width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
+    <svg  width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
       <path d="M8.78516 2.49219V5.49219" stroke="#9299A5" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
       <path d="M16.7852 2.49219V5.49219" stroke="#9299A5" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
       <path d="M4.28516 9.58594H21.2852" stroke="#9299A5" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
