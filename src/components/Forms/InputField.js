@@ -9,6 +9,8 @@ export const InputField = ({
   iconStart,
   iconEnd,
   labelClassName,
+  iconEndClassName,
+  iconStartClassName,
   containerClassName,
   ...inputProps
 }) => {
@@ -21,7 +23,7 @@ export const InputField = ({
       ) : null}
       <div className="relative">
         {!!iconStart ? (
-          <span className="absolute top-3 left-2 rtl:right-2 rtl:left-auto">
+          <span className={`absolute top-3 left-2 rtl:right-2 rtl:left-auto ${iconStartClassName}`}>
             {" "}
             {iconStart}{" "}
           </span>
@@ -32,7 +34,7 @@ export const InputField = ({
           {...inputProps}
         />
         {!!iconEnd ? (
-          <span className="absolute top-3 rtl:left-2 ltr:right-2">
+          <span className={`absolute top-3 rtl:left-2 ltr:right-2 ${iconEndClassName}`}>
             {iconEnd}
           </span>
         ) : null}

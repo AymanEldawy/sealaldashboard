@@ -119,3 +119,6 @@ export { default as CardPrimaryIcon } from "./CardPrimaryIcon";
 export { default as ReportIcon } from "./ReportIcon";
 export { default as ReportViewIcon } from "./ReportViewIcon";
 export { default as BellFlatIcon } from "./BellFlatIcon";
+export { default as CheckTaskIcon } from "./CheckTaskIcon";
+export { default as TrunkRefusedIcon } from "./TrunkRefusedIcon";
+export { default as HistoryDeliveryIcon } from "./HistoryDeliveryIcon";

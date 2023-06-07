@@ -291,11 +291,145 @@ export const en = {
   // Notifications
   "Notification": "Notification",
   // events calender 
-  Events_calendar:"Events calendar",
+  Events_calendar: "Events calendar",
   Fashion_sale: "Fashion sale ",
-  Fashion_sale_msg : "Will start from this day ",
+  Fashion_sale_msg: "Will start from this day ",
   // "Operation": "Operation",
   /********** Home PAGE **********/
+  /*********************************/
+  /********** Orders PAGE **********/
+  Orders_In_Shipping_Stage: "Orders In Shipping Stage",
+  Add_Product: "Add Product",
+  How_Do_I_Manage_the_Product_List: "    How Do I Manage the Product List?",
+  ALL_ORDERS: "ALL ORDERS",
+  NEW: "NEW",
+  PROCESSED: "PROCESSED",
+  IN_CASE_OF_CARRYING: "IN CASE OF CARRYING",
+  DELIVERED: "DELIVERED",
+  RESENDINGS: "RE-SENDINGS",
+  PENDING_ORDERS: "PENDING ORDERS",
+  PACKAGES: "PACKAGES",
+  CUSTOMER_NAME: "CUSTOMER NAME",
+  ORDER_NUMBER: "ORDER NUMBER",
+  PACKAGE_NO: "PACKAGE NO",
+  BARCODE: "BARCODE",
+  SUPPLY_TIME_STATUS: "SUPPLY TIME STATUS",
+  All_Orders: "All Orders",
+  Search: "Search",
+  ORDER_START_DATE: "ORDER START DATE",
+  ORDER_FINISH_DATE: "ORDER FINISH DATE",
+  SHIPPING_CODE: "SHIPPING CODE",
+  DELIVERY_TYPE: "DELIVERY TYPE",
+  All_Deliveries: "All Deliveries",
+  Come_Take_Point: "Come Take Point",
+  Download_Excel: "Download Excel",
+  Order_Date: "Order Date",
+  Old_to_New: "(Old to New)",
+  Filtering_Result: "Filtering Result: ",
+  Order: "Order",
+  Order_Information: "Order Information",
+  Package_No: "Package No.",
+  Buyer: "Buyer",
+  Piece: "Piece",
+  Information: "Information",
+  Unit_price: "Unit price",
+  Cargo: "Cargo",
+  Invoice: "Invoice",
+  Situation: "Situation",
+  /********** Orders PAGE **********/
+  /*********************************/
+  /********** Orders Canceled PAGE **********/
+  Canceled_Orders: "Canceled Orders",
+  ALL_cancelation: "ALL cancelation",
+  Customer_cancelled: "Customer cancelled",
+  I_cancelled: "I cancelled",
+  Sealal_canceled: "Sealal canceled",
+  ORDER_NUMBER: "ORDER NUMBER",
+  SHIPPING_CODE: "SHIPPING CODE",
+  BARCODE: "BARCODE",
+  Cancelation_START_DATE: "Cancelation START DATE",
+  Cancelation_FINISH_DATE: "Cancelation FINISH DATE",
+
+  Cancellation_Date: "Cancellation Date",
+  Order_Information: "Order Information",
+  Buyer: "Buyer",
+  Piece: "Piece",
+  Information: "Information",
+  Unit_price: "Unit price",
+  Cancelation_date: "Cancelation date",
+  Reason_for_cancellation: "Reason for cancellation",
+  /********** Orders Canceled PAGE **********/
+  /*********************************/
+  /********** Return process PAGE **********/
+  Approval_Rejection_Pending_Returns: "Approval/Rejection/Pending Returns ( 12 pieces )",
+  Needs_to_be_Shipped_Refused_Returns: "Needs to be Shipped Refused Returns ( 8 pieces )",
+  Delivery_Required_Returns: "Delivery Required Returns",
+
+  Customer_name: "Customer name",
+  ORDER_NUMBER: "ORDER NUMBER",
+  Return_code: "Return code",
+  BARCODE: "BARCODE",
+  Reason_for_return: "Reason for return",
+  Return_request_START_DATE: "Return request START DATE",
+  Return_request_FINISH_DATE: "Return request FINISH DATE",
+
+  Returns_Processes: "Returns Processes",
+  Order_Information: "Order Information",
+  Buyer: "Buyer",
+  Piece: "Piece",
+  Information: "Information",
+  Unit_price: "Unit price",
+  Cargo: "Cargo",
+  Invoice: "Invoice",
+  Reason_for_return: "Reason for return",
+  Situation: "Situation",
+  /********** Return process PAGE **********/
+  /*********************************/
+  /********** Cargo Transactions PAGE **********/
+  Cargo_Transactions: "Cargo Transactions",
+
+  COMPANIES_I_WORKED_FOR: "COMPANIES I WORKED FOR",
+  FREQUENTLY_ASKED_QUESTIONS: "FREQUENTLY ASKED QUESTIONS",
+  CARGO_INVOICES: "CARGO INVOICES",
+  DESI_OBJECTION_PROCEDURES: "DESI OBJECTION PROCEDURES",
+
+  Cargo_company: "Cargo company",
+  Trendyol_Express: "Trendyol Express",
+  Other_Companies: "Other Companies",
+
+  Company_name: "Company name",
+  Date_of_Change: "Date of Change",
+  Working_Status: "Working Status",
+  Working_Model: "Working Model",
+  Change_Channel: "Change Channel",
+  Transactions: "Transactions",
+  Average_Desi: "Average Desi",
+  Optional: "Optional",
+
+  apply_sealal_text1: "Apply to Sealal Express!",
+  apply_sealal_text2: "Apply now to send your orders with Sealal Express!",
+  apply_sealal_text3: "Click to apply",
+
+  Desi_Calculator: 'Desi Calculator',
+  EN_CM: 'EN (CM)',
+  SIZE_CM: 'SIZE (CM)',
+  HEIGHT_CM: 'HEIGHT (CM)',
+  CALCULATE_DESI: 'CALCULATE DESI',
+  Calculation_Result: 'Calculation Result:',
+
+
+  Calculate_Shipping_Price: "Calculate Shipping Price",
+  Current_Shipping_Prices: "Current Shipping Prices",
+  DESI: "DESI",
+  CALCULATE: "CALCULATE",
+  calculate_role1: "As of 31 December 2022, our 'Barem Support' application has changed. As of this date, our current 'Barem Support' application is as follows:",
+  calculate_role2: "Detailed information can be found here .",
+  calculate_role3: "Prices excluding VAT per package for our sellers using Trendyol contracted cargo: ",
+  prices_no1:"a)8.47 TL+VAT for orders between 0-59.99 TL sent via PTT, TEX; For your orders between 60-99.99 TL, it is 19.91 TL + VAT. ",
+  prices_no2:"b)10.17 TL+VAT for your orders between 0-59.99 TL sent via Aras, Sürat, MNG, UPS; For your orders between 60-99.99 TL, it is 22.45 TL + ",
+  prices_no3:"c)15.25 TL+VAT for orders between 0-59.99 TL sent via Yurtiçi Cargo, Sendeo; 30.50 TL+VAT for your orders between 60-99.99 TL.",
+
+  /********** Cargo Transactions PAGE **********/
   /*********************************/
 
 
@@ -661,14 +795,14 @@ export const en = {
 
   // terms
   terms: "terms",
-  terms_desc: "It is a long established fact that a reader will be using Lorem Ipsu distracted by the readable content of a page when  t that a reader looking at its layout. The point of using Lorem Ipsum look like rea is that it has a more-or-less normal distribution of letters look like as opposed to using 'Content here, content here', making it look la look like readable English. looking at its layout. The point of using Lorem Ipsum look like rea is that it has a more-or-less normal distribution of letters look like as opposed to using 'Content here, content here', making it look la look like readable English.",
+  terms_desc: "It is a long established fact that a reader will be using Lorem Ipsu distracted by the readable content of a page when  t that a reader looking at its layout. The point of using  look like rea is that it has a more-or-less normal distribution of letters look like as opposed to using 'Content here, content here', making it look la look like readable English. looking at its layout. The point of using  look like rea is that it has a more-or-less normal distribution of letters look like as opposed to using 'Content here, content here', making it look la look like readable English.",
   Use_License: "Use License",
-  Use_License_desc: "It is a long established fact that a reader will be using Lorem Ipsu distracted by the readable content of a page when  t that a reader looking at its layout. The point of using Lorem Ipsum look like rea is that it has a more-or-less normal distribution of letters look like as opposed to using 'Content here, content here', making it look la look like ",
-  Use_License_desc1: " he point of using Lorem Ipsum look like rea is that it has a more-or-less normal distribution of letters ",
-  Use_License_desc2: " Lorem Ipsum look like rea is that it has a more-or-less normal distribution of letters ",
-  Use_License_desc3: " using Lorem Ipsum look like rea is that it has a more-or-less normal distribution of letters ",
+  Use_License_desc: "It is a long established fact that a reader will be using Lorem Ipsu distracted by the readable content of a page when  t that a reader looking at its layout. The point of using  look like rea is that it has a more-or-less normal distribution of letters look like as opposed to using 'Content here, content here', making it look la look like ",
+  Use_License_desc1: " he point of using  look like rea is that it has a more-or-less normal distribution of letters ",
+  Use_License_desc2: "  look like rea is that it has a more-or-less normal distribution of letters ",
+  Use_License_desc3: " using  look like rea is that it has a more-or-less normal distribution of letters ",
   Use_License_desc4: "psum look like rea is that it has a more-or-less normal distribution of letters ",
-  Use_License_desc5: "he point of using Lorem Ipsum look like rea is that it has a more-or-less normal distribution of letters he point of using Lorem Ipsum look like rea is that it has a more-or-less normal distribution of letters ",
+  Use_License_desc5: "he point of using  look like rea is that it has a more-or-less normal distribution of letters he point of using  look like rea is that it has a more-or-less normal distribution of letters ",
 
   // seller products
   Product_code: "Product code",

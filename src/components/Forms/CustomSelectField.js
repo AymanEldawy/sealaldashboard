@@ -22,7 +22,7 @@ const CustomSelectField = ({
           {error?.length ? <span className="">{error}</span> : null}
         </label>
       ) : null}
-      <div className="relative">
+      <div className="relative w-full">
         {iconStart ? (
           <span className="absolute top-3 ltr:left-2 rtl:right-2">{iconStart}</span>
         ) : null}

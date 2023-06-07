@@ -338,6 +338,215 @@ export const notifications = [
   }
 ]
 
+
+export const newOrders = [
+  {
+    Order_Information: " Order_Information",
+    "Package_No": "ABC123",
+    "Buyer": "John Smith",
+    "Piece": "Widget",
+    "Information": "Blue, Large",
+    "Unit_price": 12.99,
+    "Cargo": "Air",
+    "Invoice": "INV-456",
+    "Situation": "Pending"
+  },
+  {
+    Order_Information: " Order_Information",
+    "Package_No": "DEF456",
+    "Buyer": "Jane Doe",
+    "Piece": "Gadget",
+    "Information": "Red, Small",
+    "Unit_price": 9.99,
+    "Cargo": "Ground",
+    "Invoice": "INV-789",
+    "Situation": "Shipped"
+  },
+  {
+    Order_Information: " Order_Information",
+    "Package_No": "GHI789",
+    "Buyer": "Bob Johnson",
+    "Piece": "Thingamajig",
+    "Information": "Green, Medium",
+    "Unit_price": 24.99,
+    "Cargo": "Sea",
+    "Invoice": "INV-012",
+    "Situation": "Delivered"
+  },
+  {
+    Order_Information: " Order_Information",
+    "Package_No": "JKL012",
+    "Buyer": "Sarah Lee",
+    "Piece": "Doodad",
+    "Information": "Purple, Large",
+    "Unit_price": 17.99,
+    "Cargo": "Air",
+    "Invoice": "INV-345",
+    "Situation": "Pending"
+  },
+  {
+    Order_Information: " Order_Information",
+    "Package_No": "MNO345",
+    "Buyer": "Tom Jackson",
+    "Piece": "Whatchamacallit",
+    "Information": "Yellow, Small",
+    "Unit_price": 7.99,
+    "Cargo": "Ground",
+    "Invoice": "INV-678",
+    "Situation": "Shipped"
+  }
+]
+
+export const canceledOrders = [
+  {
+    "Order_Information": "Order_Information",
+    "Buyer": "Alice Smith",
+    "Piece": "Widget",
+    "Information": "Green, Large",
+    "Unit_price": 15.99,
+    "Cancelation_date": "2023-06-05",
+    "Reason_for_cancellation": "Item no longer needed"
+  },
+  {
+    "Order_Information": "Order_Information",
+    "Buyer": "Bob Johnson",
+    "Piece": "Gadget",
+    "Information": "Blue, Small",
+    "Unit_price": 12.99,
+    "Cancelation_date": "2023-06-06",
+    "Reason_for_cancellation": "Product arrived damaged"
+  },
+  {
+    "Order_Information": "Order_Information",
+    "Buyer": "Charlie Brown",
+    "Piece": "Thingamajig",
+    "Information": "Red, Medium",
+    "Unit_price": 19.99,
+    "Cancelation_date": "2023-06-04",
+    "Reason_for_cancellation": "Changed mind about purchase"
+  },
+  {
+    "Order_Information": "Order_Information",
+    "Buyer": "Diana Garcia",
+    "Piece": "Doodad",
+    "Information": "Yellow, Large",
+    "Unit_price": 22.99,
+    "Cancelation_date": "2023-06-01",
+    "Reason_for_cancellation": "Found better deal elsewhere"
+  },
+  {
+    "Order_Information": "Order_Information",
+    "Buyer": "Ethan Lee",
+    "Piece": "Whatchamacallit",
+    "Information": "Purple, Small",
+    "Unit_price": 9.99,
+    "Cancelation_date": "2023-06-02",
+    "Reason_for_cancellation": "Ordered wrong item by mistake"
+  }
+]
+
+export const returnsProcesses = [
+  {
+    "Order_Information": "Order infromation",
+    "Buyer": "John Smith",
+    "Piece": "Widget",
+    "Information": "Blue, Large",
+    "Unit_price": 12.99,
+    "Cargo": "Air",
+    "Invoice": "INV-456",
+    "Reason_for_return": "Item arrived damaged",
+    "Situation": "Pending"
+  },
+  {
+    "Order_Information": "Order infromation",
+    "Buyer": "Jane Doe",
+    "Piece": "Gadget",
+    "Information": "Red, Small",
+    "Unit_price": 9.99,
+    "Cargo": "Ground",
+    "Invoice": "INV-789",
+    "Reason_for_return": "Wrong item shipped",
+    "Situation": "Received"
+  },
+  {
+    "Order_Information": "Order infromation",
+    "Buyer": "Bob Johnson",
+    "Piece": "Thingamajig",
+    "Information": "Green, Medium",
+    "Unit_price": 24.99,
+    "Cargo": "Sea",
+    "Invoice": "INV-012",
+    "Reason_for_return": "Changed mind about purchase",
+    "Situation": "Processing"
+  },
+  {
+    "Order_Information": "Order infromation",
+    "Buyer": "Sarah Lee",
+    "Piece": "Doodad",
+    "Information": "Purple, Large",
+    "Unit_price": 17.99,
+    "Cargo": "Air",
+    "Invoice": "INV-345",
+    "Reason_for_return": "Item not as described",
+    "Situation": "Completed"
+  },
+  {
+    "Order_Information": "Order infromation",
+    "Buyer": "Tom Jackson",
+    "Piece": "Whatchamacallit",
+    "Information": "Yellow, Small",
+    "Unit_price": 7.99,
+    "Cargo": "Ground",
+    "Invoice": "INV-678",
+    "Reason_for_return": "Item defective",
+    "Situation": "Processing"
+  }
+]
+
+export const companyChanges = [
+  {
+    "Company_name": "ABC Industries",
+    "Date_of_Change": "2023-06-01",
+    "Working_Status": "Active",
+    "Working_Model": "B2B",
+    "Change_Channel": "Email",
+    "Transactions": 150
+  },
+  {
+    "Company_name": "XYZ Corporation",
+    "Date_of_Change": "2023-06-02",
+    "Working_Status": "Inactive",
+    "Working_Model": "B2C",
+    "Change_Channel": "Phone",
+    "Transactions": 75
+  },
+  {
+    "Company_name": "123 Enterprises",
+    "Date_of_Change": "2023-06-03",
+    "Working_Status": "Active",
+    "Working_Model": "B2B",
+    "Change_Channel": "Website",
+    "Transactions": 200
+  },
+  {
+    "Company_name": "789 Inc.",
+    "Date_of_Change": "2023-06-04",
+    "Working_Status": "Active",
+    "Working_Model": "B2C",
+    "Change_Channel": "Email",
+    "Transactions": 100
+  },
+  {
+    "Company_name": "456 Corporation",
+    "Date_of_Change": "2023-06-05",
+    "Working_Status": "Inactive",
+    "Working_Model": "B2B",
+    "Change_Channel": "Phone",
+    "Transactions": 50
+  }
+]
+
+
 // unused
 
 const getRandomOf = (list) => {

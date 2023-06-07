@@ -2,11 +2,19 @@ import React from 'react'
 
 const CalenderIcon = ({ ...props }) => {
   return (
-    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
-      <path fill-rule="evenodd" clip-rule="evenodd" d="M2 2C0.895431 2 0 2.89543 0 4V12C0 13.1046 0.89543 14 2 14H12C13.1046 14 14 13.1046 14 12V4C14 2.89543 13.1046 2 12 2H2ZM12 4H2V6H12V4Z" fill="white" />
-      <path d="M5 1C5 0.447715 4.55228 0 4 0C3.44772 0 3 0.447715 3 1V2C3 2.55228 3.44772 3 4 3C4.55228 3 5 2.55228 5 2V1Z" fill="white" />
-      <path d="M11 1C11 0.447715 10.5523 0 10 0C9.44772 0 9 0.447715 9 1V2C9 2.55228 9.44772 3 10 3C10.5523 3 11 2.55228 11 2V1Z" fill="white" />
+    <svg style={{background: '#fff'}} width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
+      <path d="M8.78516 2.49219V5.49219" stroke="#9299A5" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M16.7852 2.49219V5.49219" stroke="#9299A5" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M4.28516 9.58594H21.2852" stroke="#9299A5" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M21.7852 8.99219V17.4922C21.7852 20.4922 20.2852 22.4922 16.7852 22.4922H8.78516C5.28516 22.4922 3.78516 20.4922 3.78516 17.4922V8.99219C3.78516 5.99219 5.28516 3.99219 8.78516 3.99219H16.7852C20.2852 3.99219 21.7852 5.99219 21.7852 8.99219Z" stroke="#9299A5" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M16.4789 14.1953H16.4879" stroke="#9299A5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M16.4789 17.1953H16.4879" stroke="#9299A5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M12.7797 14.1953H12.7886" stroke="#9299A5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M12.7797 17.1953H12.7886" stroke="#9299A5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M9.08044 14.1953H9.08943" stroke="#9299A5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M9.08044 17.1953H9.08943" stroke="#9299A5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
     </svg>
+
   )
 }
 
