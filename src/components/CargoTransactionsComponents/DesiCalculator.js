@@ -32,7 +32,7 @@ export const DesiCalculator = () => {
         <InputField type="number" labelClassName="!mb-0 text-primary-text text-sm" value={SIZE} onChange={e => setSIZE(e.target.value)} label={fetchWord('SIZE_CM', lang)} />
         <InputField type="number" labelClassName="!mb-0 text-primary-text text-sm" value={HEIGHT} onChange={e => setHEIGHT(e.target.value)} label={fetchWord('HEIGHT_CM', lang)} />
       </div>
-      <Button classes="px-8 max-w-[341px] w-full mx-auto block" onClick={calculator}>{fetchWord('CALCULATE_DESI', lang)}</Button>
+      <Button classes="px-8 max-w-[341px] text-sm w-full mx-auto block" onClick={calculator}>{fetchWord('CALCULATE_DESI', lang)}</Button>
       <p className='text-center mt-8 mb-2 gap-4  font-medium'>
         <span className="text-secondary">{fetchWord('Calculation_Result', lang)}</span>
         <span>{results}</span>

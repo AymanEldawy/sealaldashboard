@@ -31,7 +31,7 @@ const AddProduct = () => {
   return (
     <Layout>
       <SectionBar hideAddProductButton title={fetchWord('Create_Single_Product', lang)} />
-      <div className='container !my-8'>
+      <div className='container !my-4 md:!my-8'>
         <div className='flex gap-4'>
           <TabsList
             direction="vertical"

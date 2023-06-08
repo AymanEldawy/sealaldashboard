@@ -29,9 +29,9 @@ export const AllOrders = () => {
   return (
     <div>
       <OrdersFilterForm />
-      <div className='h-8' />
+      <div className='h-4 md:h-8' />
       <div className='overflow-hidden bg-white rounded-xl'>
-        <div className='p-4 flex gap-4'>
+        <div className='p-4 flex gap-4 overflow-auto w-full scroll-hide'>
           <Button classes="text-sm !px-4 !h-10 flex gap-2 items-center">
             {fetchWord('Batch_Actions', lang)}
             <ChevronIcon className="-rotate-90 scale-75" />
@@ -45,7 +45,7 @@ export const AllOrders = () => {
               placeholder={fetchWord('Old_to_New', lang)}
             />
           </div>
-          <div className='flex items-center gap-1'>
+          <div className='flex whitespace-nowrap items-center gap-1'>
             <span>
               {fetchWord('Filtering_Result', lang)}
             </span>

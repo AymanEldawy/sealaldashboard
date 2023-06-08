@@ -14,7 +14,7 @@ export const DocumentTransactionsForm = () => {
   const onSubmit = data => console.log(data);
   console.log(register)
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className='pt-6 px-4 pb-4 gap-4 bg-white rounded-b-xl grid grid-cols-2 md:grid-cols-4'>
+    <form onSubmit={handleSubmit(onSubmit)} className='pt-6 px-4 pb-4 gap-4 bg-white rounded-b-xl grid sm:grid-cols-2 md:grid-cols-4'>
       <CustomSelectField containerClassName='text-sm max-w-full flex-1 !mb-0 rounded-md' placeholder={fetchWord('Category', lang)} {...register("category", { required: true, maxLength: 20 })} />
       <CustomSelectField containerClassName='text-sm max-w-full flex-1 !mb-0 rounded-md' placeholder={fetchWord('Brand', lang)} {...register("brand", { required: true, maxLength: 20 })} />
       <CustomSelectField containerClassName='text-sm max-w-full flex-1 !mb-0 rounded-md' placeholder={fetchWord('All', lang)} {...register("all", { required: true, maxLength: 20 })} />

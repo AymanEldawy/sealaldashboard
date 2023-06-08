@@ -88,7 +88,7 @@ export const OrdersFilterForm = () => {
           />
         </div>
         <div className='flex items-end gap-4 overflow-hidden'>
-          <label className='h-11 flex flex-1 items-center gap-1'>
+          <label className='h-11 flex flex-1 whitespace-nowrap items-center gap-1'>
             <input type="checkbox" className="h-5 w-5" />
             {fetchWord('Come_Take_Point', lang)}
           </label>

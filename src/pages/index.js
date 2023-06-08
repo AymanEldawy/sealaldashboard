@@ -26,8 +26,8 @@ export default function Home() {
       </Head>
       <Layout>
         <StoreBar />
-        <div className='container !my-8'>
-          <div className='flex gap-8'>
+        <div className='container !my-4 md:!my-8'>
+          <div className='flex gap-8 flex-wrap'>
             <div className='flex-1'>
               <SalePerformance />
               <ActionsBoard />

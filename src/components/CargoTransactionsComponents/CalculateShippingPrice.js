@@ -14,7 +14,7 @@ export const CalculateShippingPrice = () => {
       </div>
       <div className='flex justify-between items-end gap-2 flex-wrap mb-6'>
         <InputField containerClassName="flex-1 !mb-0" labelClassName="text-primary-text text-sm !mb-0" label={fetchWord('DESI', lang)} />
-        <Button classes="flex-1 h-12">{fetchWord('CALCULATE', lang)}</Button>
+        <Button classes="flex-1 h-12 text-sm sm:text-base">{fetchWord('CALCULATE', lang)}</Button>
       </div>
       <ul className='list-disc px-4 text-xs text-[#273142]'>
         <li className='marker:text-secondary-dark leading-5 mt-2'><p>{fetchWord('calculate_role1', lang)}</p> </li>

@@ -663,6 +663,41 @@ export const reviews = [
 
 ]
 
+
+export const invoicing = [
+  {
+    "INVOICE_NUMBER": "INV-001",
+    "BILL_TYPE": "Sales",
+    "INVOICE_DATE": "2022-01-01",
+    "AMOUNT": 1200.00
+  },
+  {
+    "INVOICE_NUMBER": "INV-002",
+    "BILL_TYPE": "Purchase",
+    "INVOICE_DATE": "2022-01-02",
+    "AMOUNT": 5000.00
+  },
+  {
+    "INVOICE_NUMBER": "INV-003",
+    "BILL_TYPE": "Sales",
+    "INVOICE_DATE": "2022-01-03",
+    "AMOUNT": 3000.00
+  },
+  {
+    "INVOICE_NUMBER": "INV-004",
+    "BILL_TYPE": "Purchase",
+    "INVOICE_DATE": "2022-01-04",
+    "AMOUNT": 7500.00
+  },
+  {
+    "INVOICE_NUMBER": "INV-005",
+    "BILL_TYPE": "Sales",
+    "INVOICE_DATE": "2022-01-05",
+    "AMOUNT": 500.00
+  }
+]
+
+
 // unused
 
 const getRandomOf = (list) => {

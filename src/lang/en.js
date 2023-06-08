@@ -507,16 +507,58 @@ export const en = {
   My_supports_requests: "My supports requests",
   request: "request",
 
-  Notification_No:"Notification No.",
-  Stream_Name:"Stream Name",
-  occur_History:"occur. History",
-  Solve_History:"Solve. History",
-  Redirect_Date:"Redirect Date",
-  Grade_Status:"Grade Status",
-  Situation:"Situation",
-
-
+  Notification_No: "Notification No.",
+  Stream_Name: "Stream Name",
+  occur_History: "occur. History",
+  Solve_History: "Solve. History",
+  Redirect_Date: "Redirect Date",
+  Grade_Status: "Grade Status",
+  Situation: "Situation",
   /********** Notifications PAGE **********/
+  /*********************************/
+  /********** Invoice listing PAGE **********/
+  Invoice_Listing: "Invoice Listing",
+  MY_INVOICES: "MY INVOICES",
+  INVOICES_SEALAL: "INVOICES I NEED TO INCLUDE SEALAL",
+  Bill_type: "Bill type",
+  Starting_date: "Starting date",
+  End_date: "End date",
+  filter: 'Filter',
+  Question: "Question",
+  Download_with_table: "Download with table",
+
+
+  INVOICE_NUMBER: "INVOICE NUMBER",
+  BILL_TYPE: "BILL TYPE",
+  INVOICE_DATE: "INVOICE DATE",
+  AMOUNT: "AMOUNT",
+  TRANSACTIONS: "TRANSACTIONS",
+  Download_invoice: "Download invoice",
+  Download_details: "Download details",
+  /********** Invoice listing PAGE **********/
+  /*********************************/
+  /********** Payments PAGE **********/
+  Payments: "Payments",
+  Detailed_Payment_Search: "Detailed Payment Search",
+  Search_type: "Search type",
+  Order_number: "Order number",
+  SEARCH_PAYMENT: "SEARCH PAYMENT",
+  Today_Progress: "Today's Progress",
+  progress_payment: "progress payment",
+  Early_payment: "Early payment",
+  Total_Progress_Amount: "Total Progress Amount:",
+  Payment_Failed: "Payment Failed",
+  Total_Sales_Amount: "Total Sales Amount",
+  Commission_Deduction: "Commission Deduction",
+  Shipping_Invoice: "Shipping Invoice",
+  Penalty_Bill: "Penalty Bill",
+  Other: "Other",
+  Total: "Total",
+  commission: "commission",
+  invoice: "invoice",
+  penalty: "penalty",
+  other: "other",
+  /********** Payments PAGE **********/
   /*********************************/
 
 

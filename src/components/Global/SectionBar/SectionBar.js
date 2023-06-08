@@ -15,7 +15,7 @@ export const SectionBar = ({ title, hideAddProductButton, hideMangeProduct, hide
           containerClassName="!mb-0 py-6 flex-wrap"
           title={title}
           extraContent={
-            <div className={`flex gap-4 items-center ${extraContentClassName}`}>
+            <div className={`flex gap-4 items-center overflow-auto whitespace-nowrap pb-4 mt-4 md:mt-0 md:pb-0 ${extraContentClassName}`}>
               {
                 extraContent ? extraContent :
                   <>

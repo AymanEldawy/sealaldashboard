@@ -13,7 +13,7 @@ export const CustomerQuestionFilters = () => {
   const [activeTab, setActiveTab] = useState(listFilter?.[0])
   return (
     <div className='container '>
-      <div className='mt-4 p-5'>
+      <div className='mt-4 md:p-5'>
         <TabsList
           separated
           separatedClassName="mt-3 !h-[20px]"
@@ -21,8 +21,8 @@ export const CustomerQuestionFilters = () => {
           setActiveTab={setActiveTab}
           keyName="name"
           activeTab={activeTab}
-          containerClassName="bg-white !mb-0 px-4 pt-4 rounded-t-xl border-b scroll-hide overflow-auto"
-          itemClassName="!px-6 capitalize whitespace-nowrap  text-secondary flex flex-col relative text-sm !gap-1 !px-5"
+          containerClassName="bg-white !mb-0 px-2 md:px-4 pt-4 rounded-t-xl border-b scroll-hide overflow-auto"
+          itemClassName="px-3 md:!px-6 capitalize whitespace-nowrap  text-secondary flex flex-col relative text-sm !gap-1"
           iconEndClassName="absolute ltr:right-1 top-2 rtl:left-1"
           activeClassName="before:w-[60px] before:bg-primary before:h-[2px] text-primary before:absolute before:bottom-0 before:left-1/2 before:-translate-x-1/2"
           extraContentClassName="text-xs"

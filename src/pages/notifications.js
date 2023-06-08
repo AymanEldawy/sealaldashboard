@@ -3,7 +3,7 @@ import { SectionBar } from '@/components/Global/SectionBar/SectionBar'
 import { Layout } from '@/components/Layout/Layout'
 import TabsList from '@/components/Tabs/TabsList'
 import { LanguageContext } from '@/context/LangContext'
-import { allNotifications, notifications } from '@/data/dummyData'
+import { allNotifications } from '@/data/dummyData'
 import { fetchWord } from '@/lang/fetchWord'
 import React, { useState, useContext } from 'react'
 
@@ -27,9 +27,8 @@ const Notifications = () => {
   return (
     <Layout>
       <SectionBar title={fetchWord('Notifications', lang)} />
-      <div className='container !my-8'>
-        <div className='bg-white rounded-md p-4'>
-
+      <div className='container !my-4 md:!my-8'>
+        <div className='bg-white rounded-md p-2 md:p-4'>
           <TabsList
             separated
             separatedClassName="mt-3 !h-[20px]"
@@ -37,8 +36,8 @@ const Notifications = () => {
             setActiveTab={setActiveTab}
             keyName="name"
             activeTab={activeTab?.name}
-            containerClassName="bg-white mb-4 px-4 pt-4 rounded-t-xl border-b scroll-hide overflow-auto"
-            itemClassName="!px-6 capitalize whitespace-nowrap  text-secondary flex flex-col relative text-sm !gap-1 !px-5"
+            containerClassName="bg-white mb-4 px-2 md:px-4 pt-4 rounded-t-xl border-b scroll-hide overflow-auto"
+            itemClassName="px-3 md:!px-6 capitalize whitespace-nowrap  text-secondary flex flex-col relative text-sm !gap-1"
             iconEndClassName="absolute ltr:right-1 top-2 rtl:left-1"
             activeClassName="before:w-[60px] before:bg-primary before:h-[2px] text-primary before:absolute before:bottom-0 ltr:before:left-0 rtl:before:right-0"
             extraContentClassName="text-xs"

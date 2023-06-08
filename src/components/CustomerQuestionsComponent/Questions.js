@@ -21,8 +21,8 @@ export const Questions = () => {
   return (
     <div>
       <CustomerQuestionForm />
-      <div className='h-8' />
-      <div className='overflow-hidden bg-white rounded-xl p-6'>
+      <div className='h-4 md:h-8' />
+      <div className='overflow-hidden bg-white rounded-xl p-2 md:p-6'>
         <CustomSelectField
           placeholder={fetchWord('New_by_creation_date', lang)}
           selectClassName="border-primary text-secondary font-medium"

@@ -16,14 +16,14 @@ const ActionsBoard = () => {
   ]
 
   return (
-    <div className='bg-white rounded-md p-4 my-4'>
+    <div className='bg-white rounded-md p-2 md:p-4 my-4'>
       <h2 className='text-secondary lg:text-lg font-semibold mb-4'>{fetchWord('Actions', lang)}</h2>
-      <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-4'>
+      <div className='grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4'>
         {
           actions?.map(item => (
-            <div className='bg-secondary-light rounded p-2' key={item?.title}>
-              <h3 className="text-[#5CAEFF] font-medium mb-2">{fetchWord(item?.name, lang)}</h3>
-              <span className=' font-semibold text-sm lg:text-lg text-[#094E99]'>{item?.count}</span>
+            <div className='bg-secondary-light flex flex-col rounded p-2' key={item?.title}>
+              <h3 className="text-[#5CAEFF] text-sm md:text-base font-medium mb-2">{fetchWord(item?.name, lang)}</h3>
+              <span className=' font-semibold mt-auto text-xs md:text-sm lg:text-lg text-[#094E99]'>{item?.count}</span>
             </div>
           ))
         }

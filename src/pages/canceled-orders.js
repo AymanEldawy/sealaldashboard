@@ -21,15 +21,15 @@ const CanceledOrders = () => {
     <Layout containerClassName="mb-12">
       <SectionBar title={fetchWord('Canceled_Orders', lang)} />
       <div className='container '>
-      <div className='mt-4 p-5'>
+      <div className='mt-4 md:p-5'>
         <TabsList
           separated
           separatedClassName="mt-3 !h-[20px]"
           list={listFilter}
           setActiveTab={setActiveTab}
           activeTab={activeTab}
-          containerClassName="bg-white !mb-0 px-4 pt-4 rounded-t-xl border-b scroll-hide overflow-auto"
-          itemClassName="!px-6 py-3 capitalize whitespace-nowrap  text-secondary flex flex-col relative text-sm !gap-1 !px-5"
+          containerClassName="bg-white !mb-0 px-2 md:px-4 pt-4 rounded-t-xl border-b scroll-hide overflow-auto"
+          itemClassName="!px-6 py-3 capitalize whitespace-nowrap  text-secondary flex flex-col relative text-sm !gap-1"
           iconEndClassName="absolute ltr:right-1 top-2 rtl:left-1"
           activeClassName="before:w-[60px] before:bg-primary before:h-[2px] text-primary before:absolute before:bottom-0 ltr:before:left-0 rtl:before:right-0"
           extraContentClassName="text-xs"

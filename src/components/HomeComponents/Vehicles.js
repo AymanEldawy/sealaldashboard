@@ -16,14 +16,14 @@ const vehicles = [
 const Vehicles = () => {
   const { lang } = useContext(LanguageContext)
   return (
-    <div className='bg-white rounded-md p-4 my-4'>
+    <div className='bg-white rounded-md p-2 md:p-4 my-4'>
       <h2 className='text-secondary lg:text-lg font-semibold mb-4'>{fetchWord('Vehicles', lang)}</h2>
-      <div className='flex gap-4'>
+      <div className='flex gap-4 flex-wrap'>
         {
           vehicles?.map(item => (
             <div className='bg-secondary-light w-[150px] rounded p-2 flex flex-col gap-2 items-center justify-start' key={item?.title}>
               <span  className='h-[60px]'>{item?.icon}</span>
-              <h3 className="text-secondary font-medium mb-2 text-center break-words">{fetchWord(item?.name, lang)}</h3>
+              <h3 className="text-secondary text-sm md:text-base font-medium mb-2 text-center break-words">{fetchWord(item?.name, lang)}</h3>
             </div>
           ))
         }

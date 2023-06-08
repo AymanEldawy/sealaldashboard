@@ -26,7 +26,7 @@ const VideoCenter = () => {
   return (
     <Layout>
       <SectionBar hideAddProductButton title={fetchWord('Video_Center', lang)} />
-      <div className="container !my-8">
+      <div className="container !my-4 md:!my-8">
         <div className='flex gap-8 flex-wrap'>
           <DropzoneInfo
             list={list}

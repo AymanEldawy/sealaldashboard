@@ -9,16 +9,18 @@ import { useState } from "react";
 
 import Brand from "../Brand/Brand";
 import { ChevronIcon } from "../Icons";
+import BarsIcon from "../Icons/BarsIcon";
 
-const Menu = () => {
+const Menu = ({openMenu}) => {
   const { lang } = useContext(LanguageContext);
   const router = useRouter();
   const [openSubMenu, setOpenSubMenu] = useState('')
   return (
-    <div className="bg-secondary">
-      <div className="container justify-between flex items-center py-6 ">
+    <nav className="bg-secondary">
+      <div className="container justify-between flex items-center py-2 md:py-6 ">
         <Brand />
-        <div className="flex flex-1 gap-4">
+        <button className="md:hidden" onClick={openMenu}><BarsIcon /></button>
+        <div className="flex-1 gap-4 hidden md:flex">
           <ul className='flex items-center justify-around flex-1'>
             {links?.map(item => (
               <li key={item?.name} className="relative z-[3]">
@@ -54,7 +56,7 @@ const Menu = () => {
           </ul>
         </div>
       </div>
-    </div>
+    </nav>
   );
 };
 

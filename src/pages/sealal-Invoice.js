@@ -21,7 +21,7 @@ const SealalInvoice = () => {
           </Link>
         }
       />
-      <div className="container !my-8">
+      <div className="container !my-4 md:!my-8">
         <SealalInvoiceEditing />
         <SealalProcess />
         <SealalPackages />

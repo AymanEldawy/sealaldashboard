@@ -16,7 +16,7 @@ export const ReturnProcessFilterForm = () => {
   return (
     <form onSubmit={handleSubmit(onSubmit)} className='pt-6 px-4 pb-4 bg-white rounded-b-xl'>
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-4'>
-        <div className='flex gap-4'>
+        <div className='flex gap-4 flex-col sm:flex-row sm:flex-wrap'>
           <InputField
             containerClassName="flex-1 !mb-0"
             className='text-sm !w-full border border-[#D5D9E1] rounded-md p-2'
@@ -28,7 +28,7 @@ export const ReturnProcessFilterForm = () => {
             placeholder={fetchWord('ORDER_NUMBER', lang)}
             {...register("product_name", { required: true, maxLength: 20 })} />
         </div>
-        <div className='flex gap-4'>
+        <div className='flex gap-4 flex-col sm:flex-row sm:flex-wrap'>
           <InputField
             containerClassName="flex-1 !mb-0"
             className='text-sm !w-full border border-[#D5D9E1] rounded-md p-2'
@@ -40,7 +40,7 @@ export const ReturnProcessFilterForm = () => {
             placeholder={fetchWord('BARCODE', lang)}
             {...register("product_name", { required: true, maxLength: 20 })} />
         </div>
-        <div className='flex gap-4'>
+        <div className='flex gap-4 flex-col sm:flex-row sm:flex-wrap'>
           <InputField
             containerClassName="flex-1 !mb-0"
             className='text-sm !w-full border border-[#D5D9E1] rounded-md p-2'
@@ -53,7 +53,7 @@ export const ReturnProcessFilterForm = () => {
         </div>
       </div>
       <div className='flex justify-between flex-wrap gap-4'>
-        <div className='flex flex-wrap gap-4'>
+        <div className='flex flex-col sm:flex-row w-full sm:flex-wrap gap-4'>
           <InputField
             containerClassName="flex-1 !mb-0 min-w-[220px]"
             type="date"
@@ -73,7 +73,7 @@ export const ReturnProcessFilterForm = () => {
             iconEndClassName=" pointer-events-none"
           />
         </div>
-        <Button classes="!py-1 px-4 h-10 !bg-secondary min-w-[220px]" >{fetchWord('Download_Excel', lang)}</Button>
+        <Button classes="!py-1 px-4 w-full block sm:w-auto h-10 !bg-secondary min-w-[220px]" >{fetchWord('Download_Excel', lang)}</Button>
       </div>
     </form>
   )

@@ -24,7 +24,10 @@ const SuperTable = ({
   itemsPerPage,
   selectedList,
   setSelectedList,
-  classes
+  classes,
+  allowActions,
+  actionKey,
+  actionsContent
 }) => {
   console.log(data, 'data')
   const { lang } = useContext(LanguageContext)
@@ -141,11 +144,11 @@ const SuperTable = ({
   };
   return (
     <>
-      <Table containerClassName={classes?.containerClassName} tableClassName={classes.table}>
+      <Table containerClassName={classes?.containerClassName} tableClassName={classes?.table}>
         <TableHead classes={classes?.head}>
           <TableRow classes={classes?.headRow}>
             {allowSelect ? (
-              <TableHeadCol classes={classes?.colHead}>
+              <TableHeadCol contentClassName={classes?.colHeadContentClassName} classes={classes?.colHead}>
                 <input
                   type="checkbox"
                   className="w-4 h-4 "
@@ -154,10 +157,15 @@ const SuperTable = ({
               </TableHeadCol>
             ) : null}
             {columns?.map((col, index) => (
-              <TableHeadCol classes={classes?.colHead} key={`${col}-${index}`} sort sortBy={sortBy}>
+              <TableHeadCol contentClassName={classes?.colHeadContentClassName} classes={classes?.colHead} key={`${col}-${index}`} sort sortBy={sortBy}>
                 {fetchWord(col, lang)}
               </TableHeadCol>
             ))}
+            {allowActions ? (
+              <TableHeadCol contentClassName={classes?.colHeadContentClassName} classes={classes?.colHead}>
+                {fetchWord(actionKey, lang)}
+              </TableHeadCol>
+            ) : null}
           </TableRow>
         </TableHead>
         <TableBody classes={classes?.body}>
@@ -188,12 +196,19 @@ const SuperTable = ({
                   else
                     return <TableCol classes={`!py-4 border ${classes?.colBody}`} key={index}>{row?.[col]}</TableCol>;
                 })}
+                {
+                  allowActions ?
+                    <TableCol classes={`!py-4 border ${classes?.colBody}`}>
+                      {actionsContent(row)}
+                    </TableCol>
+                    : null
+                }
               </TableRow>
             );
           })}
         </TableBody>
       </Table>
-      {currentItems.length ? (
+      {currentItems?.length ? (
         <>
           <ReactPaginate
             breakLabel="..."

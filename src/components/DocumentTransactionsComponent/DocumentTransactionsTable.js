@@ -21,8 +21,8 @@ export const DocumentTransactionsTable = () => {
   return (
     <div>
       <DocumentTransactionsForm />
-      <div className='h-8' />
-      <div className='overflow-hidden bg-white rounded-xl p-6'>
+      <div className='h-4 md:h-8' />
+      <div className='overflow-hidden bg-white rounded-xl p-2 py-4 md:p-6'>
         <CustomSelectField
           placeholder={fetchWord('Upload_documents_to_selected', lang)}
           selectClassName="border-primary !text-white text-sm !bg-transparent"

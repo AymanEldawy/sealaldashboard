@@ -24,8 +24,8 @@ export const AllReturnProcess = () => {
   return (
     <div>
       <ReturnProcessFilterForm />
-      <div className='h-8' />
-      <div className='overflow-hidden bg-white rounded-xl p-4'>
+      <div className='md:h-8 h-4' />
+      <div className='overflow-hidden bg-white rounded-xl md:p-4 mb-4'>
         <SuperTable selectedList={selectedList} setSelectedList={setSelectedList} allowSelect columns={columns} data={returnsProcesses} />
       </div>
     </div >
