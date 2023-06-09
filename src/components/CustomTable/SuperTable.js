@@ -193,6 +193,15 @@ const SuperTable = ({
                         <FullImage src={row?.[col]} alt="image description" height={50} width={70} className="block mx-auto cursor-pointer" />
                       </TableCol>
                     )
+                  else if (col === 'Period')
+                    return (
+                      <TableCol classes={`!py-4 border ${classes?.colBody}`} key={index}>
+                        <div className="flex gap-4">
+                          <span>{row?.[col]?.from}</span>
+                          <span>{row?.[col]?.to}</span>
+                        </div>
+                      </TableCol>
+                    )
                   else
                     return <TableCol classes={`!py-4 border ${classes?.colBody}`} key={index}>{row?.[col]}</TableCol>;
                 })}
@@ -226,7 +235,7 @@ const SuperTable = ({
               </span>
             }
             renderOnZeroPageCount={null}
-            className="pagination flex gap-6 items-center shadow p-3"
+            className="pagination flex gap-6 items-center shadow p-3 bg-white"
             activeClassName="bg-blue-500 p-1 px-2 rounded text-sm text-white"
             previousClassName="rounded-md dark:bg-borderdark dark:text-gray-50 text-gray-500 bg-gray-100 shadow px-1"
             nextClassName="rounded-md dark:bg-borderdark dark:text-gray-50 text-gray-500 bg-gray-100 shadow px-1"
@@ -242,4 +251,4 @@ const SuperTable = ({
   );
 };
 
-export default memo(SuperTable);
+export default SuperTable;

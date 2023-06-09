@@ -27,7 +27,6 @@ const AddProduct = () => {
   const [activeTab, setActiveTab] = useState(list?.[0])
 
   console.log(activeTab)
-  return <VideoCenter tabName="Image_Gallery" />
   return (
     <Layout>
       <SectionBar hideAddProductButton title={fetchWord('Create_Single_Product', lang)} />

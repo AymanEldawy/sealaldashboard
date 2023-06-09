@@ -187,70 +187,60 @@ export const customerQuestions = [
 
   {
     id: 1,
-    "Creation_Date": "2022-02-14",
     "Product_information": "A high-quality widget for everyday use",
     "Question_Detail": "Does the widget come in different colors?",
     "Process": "We currently offer the widget in black and white."
   },
   {
     id: 2,
-    "Creation_Date": "2022-03-01",
     "Product_information": "An advanced widget for tech enthusiasts",
     "Question_Detail": "What is the warranty on Widget B?",
     "Process": "Widget B comes with a 1-year warranty for all manufacturing defects."
   },
   {
     id: 3,
-    "Creation_Date": "2022-04-10",
     "Product_information": "A compact widget for travel",
     "Question_Detail": "Can Widget C be used internationally?",
     "Process": "Yes, Widget C works with all international power outlets."
   },
   {
     id: 4,
-    "Creation_Date": "2022-05-15",
     "Product_information": "A durable widget for outdoor activities",
     "Question_Detail": "Is Widget D waterproof?",
     "Process": "Yes, Widget D is completely waterproof and can be used in any weather condition."
   },
   {
     id: 5,
-    "Creation_Date": "2022-06-20",
     "Product_information": "A versatile widget with multiple functions",
     "Question_Detail": "What are the different functions of Widget E?",
     "Process": "Widget E can be used as a flashlight, a compass, and a thermometer."
   },
   {
     id: 6,
-    "Creation_Date": "2022-07-25",
     "Product_information": "A stylish widget for home decor",
     "Question_Detail": "What colors is Widget F available in?",
     "Process": "Widget F is available in black, white, and silver."
   },
   {
     id: 7,
-    "Creation_Date": "2022-08-30",
     "Product_information": "A high-performance widget for professionals",
     "Question_Detail": "When will Widget G be back in stock?",
     "Process": "We expect Widget G to be back in stock in 2-3 weeks."
   },
   {
     id: 8,
-    "Creation_Date": "2022-09-10",
     "Product_information": "An eco-friendly widget made from recycled materials",
     "Question_Detail": "How is Widget H environmentally friendly?",
     "Process": "Widget H is made from 100% recycled plastic and comes in eco-friendly packaging."
   },
   {
     id: 9,
-    "Creation_Date": "2022-10-20",
     "Product_information": "A customizable widget that can be personalized",
     "Question_Detail": "Can Widget I be engraved with a name or message?",
     "Process": "Yes, Widget I can be engraved with a name or message of your choice."
   },
   {
     id: 10,
-    "Creation_Date": "2022-11-30",
     "Product_information": "A budget-friendly widget for everyday use",
     "Question_Detail": "What is the material of Widget J?",
     "Process": "Widget J is made from high-quality plastic that is durable and long-lasting."
@@ -697,6 +687,281 @@ export const invoicing = [
   }
 ]
 
+export const paymentHistory = [
+  {
+    "PROCESS_TYPE": "Type A",
+    "EXPLANATION": "Explanation 1",
+    "INVOICE_NUMBER": "INV001",
+    "NET_AMOUNT": 1000.00
+  },
+  {
+    "PROCESS_TYPE": "Type B",
+    "EXPLANATION": "Explanation 2",
+    "INVOICE_NUMBER": "INV002",
+    "NET_AMOUNT": 2000.00
+  },
+  {
+    "PROCESS_TYPE": "Type C",
+    "EXPLANATION": "Explanation 3",
+    "INVOICE_NUMBER": "INV003",
+    "NET_AMOUNT": 3000.00
+  },
+  {
+    "PROCESS_TYPE": "Type D",
+    "EXPLANATION": "Explanation 4",
+    "INVOICE_NUMBER": "INV004",
+    "NET_AMOUNT": 4000.00
+  },
+  {
+    "PROCESS_TYPE": "Type E",
+    "EXPLANATION": "Explanation 5",
+    "INVOICE_NUMBER": "INV005",
+    "NET_AMOUNT": 5000.00
+  }
+]
+
+export const paymentHistoryDetails = [
+  {
+    "PROCESS_TYPE": "Type A",
+    "ORDER_NUMBER": "ORD001",
+    "TRANSACTION_DATE": "2022-01-01",
+    "DATE_OF_EXTRACT": "2022-01-02",
+    "DETAIL_PRODUCT__DESCRIPTION": "Product A",
+    "AMOUNT": 1000.00,
+    "COMMISSION": 100.00,
+    "NET_AMOUNT": 900.00
+  },
+  {
+    "PROCESS_TYPE": "Type B",
+    "ORDER_NUMBER": "ORD002",
+    "TRANSACTION_DATE": "2022-01-03",
+    "DATE_OF_EXTRACT": "2022-01-04",
+    "DETAIL_PRODUCT__DESCRIPTION": "Product B",
+    "AMOUNT": 2000.00,
+    "COMMISSION": 200.00,
+    "NET_AMOUNT": 1800.00
+  },
+  {
+    "PROCESS_TYPE": "Type C",
+    "ORDER_NUMBER": "ORD003",
+    "TRANSACTION_DATE": "2022-01-05",
+    "DATE_OF_EXTRACT": "2022-01-06",
+    "DETAIL_PRODUCT__DESCRIPTION": "Product C",
+    "AMOUNT": 3000.00,
+    "COMMISSION": 300.00,
+    "NET_AMOUNT": 2700.00
+  },
+  {
+    "PROCESS_TYPE": "Type D",
+    "ORDER_NUMBER": "ORD004",
+    "TRANSACTION_DATE": "2022-01-07",
+    "DATE_OF_EXTRACT": "2022-01-08",
+    "DETAIL_PRODUCT__DESCRIPTION": "Product D",
+    "AMOUNT": 4000.00,
+    "COMMISSION": 400.00,
+    "NET_AMOUNT": 3600.00
+  },
+  {
+    "PROCESS_TYPE": "Type E",
+    "ORDER_NUMBER": "ORD005",
+    "TRANSACTION_DATE": "2022-01-09",
+    "DATE_OF_EXTRACT": "2022-01-10",
+    "DETAIL_PRODUCT__DESCRIPTION": "Product E",
+    "AMOUNT": 5000.00,
+    "COMMISSION": 500.00,
+    "NET_AMOUNT": 4500.00
+  }
+]
+export const dailyRecordsData = [
+  {
+    "Receipt_NO": "RCPT001",
+    "DATE_OF_RELEASE": "2022-01-01",
+    "EXPIRY_DATE": "2022-01-31",
+    "TERM_DAY": 30,
+    "AMOUNT": 1000.00
+  },
+  {
+    "Receipt_NO": "RCPT002",
+    "DATE_OF_RELEASE": "2022-02-01",
+    "EXPIRY_DATE": "2022-02-28",
+    "TERM_DAY": 27,
+    "AMOUNT": 2000.00
+  },
+  {
+    "Receipt_NO": "RCPT003",
+    "DATE_OF_RELEASE": "2022-03-01",
+    "EXPIRY_DATE": "2022-03-31",
+    "TERM_DAY": 30,
+    "AMOUNT": 3000.00
+  },
+  {
+    "Receipt_NO": "RCPT004",
+    "DATE_OF_RELEASE": "2022-04-01",
+    "EXPIRY_DATE": "2022-04-30",
+    "TERM_DAY": 29,
+    "AMOUNT": 4000.00
+  },
+  {
+    "Receipt_NO": "RCPT005",
+    "DATE_OF_RELEASE": "2022-05-01",
+    "EXPIRY_DATE": "2022-05-31",
+    "TERM_DAY": 30,
+    "AMOUNT": 5000.00
+  }
+]
+
+
+export const accountStatementData = [
+  {
+    "Request_No": "REQ001",
+    "File_name": "file001.csv",
+    "Period": {
+      "from": "2022-01-01",
+      "to": "2022-01-31"
+    },
+  },
+  {
+    "Request_No": "REQ002",
+    "File_name": "file002.csv",
+    "Period": {
+      "from": "2022-02-01",
+      "to": "2022-02-28"
+    },
+  },
+  {
+    "Request_No": "REQ003",
+    "File_name": "file003.csv",
+    "Period": {
+      "from": "2022-03-01",
+      "to": "2022-03-31"
+    },
+  },
+  {
+    "Request_No": "REQ004",
+    "File_name": "file004.csv",
+    "Period": {
+      "from": "2022-04-01",
+      "to": "2022-04-30"
+    },
+  },
+  {
+    "Request_No": "REQ005",
+    "File_name": "file005.csv",
+    "Period": {
+      "from": "2022-05-01",
+      "to": "2022-05-31"
+    },
+  }
+]
+
+
+export const productCommissionData = [
+  {
+    "Product_Information": "Product A",
+    "Question_Detail": "How can I order Product A?",
+    "Process": "Online Ordering"
+  },
+  {
+    "Product_Information": "Product B",
+    "Question_Detail": "What are the dimensions of Product B?",
+    "Process": "Product Information Request"
+  },
+  {
+    "Product_Information": "Product C",
+    "Question_Detail": "How long does it take to ship Product C?",
+    "Process": "Shipping Inquiry"
+  },
+  {
+    "Product_Information": "Product D",
+    "Question_Detail": "Can I return Product D if I'm not satisfied?",
+    "Process": "Return Request"
+  },
+  {
+    "Product_Information": "Product E",
+    "Question_Detail": "What is the warranty on Product E?",
+    "Process": "Warranty Inquiry"
+  }
+]
+
+export const myCoupons = [
+  {
+    "START_END_DATE": "2023-06-15 to 2023-06-30",
+    "COUPON_BUDGET": 5000,
+    "COUPON_INFORMATION": "20% off on all products",
+    "VALID_PRODUCT_NUMBER": [1001, 1002, 1003],
+    "WIN_TOTAL": 100,
+    "USED_TOTAL": 25,
+    "COUPON_STATUS": "Active"
+  },
+  {
+    "START_END_DATE": "2023-07-01 to 2023-07-15",
+    "COUPON_BUDGET": 7500,
+    "COUPON_INFORMATION": "Free shipping on orders above $50",
+    "VALID_PRODUCT_NUMBER": [2001, 2002, 2003],
+    "WIN_TOTAL": 50,
+    "USED_TOTAL": 10,
+    "COUPON_STATUS": "Active"
+  },
+  {
+    "START_END_DATE": "2023-08-01 to 2023-08-31",
+    "COUPON_BUDGET": 10000,
+    "COUPON_INFORMATION": "$10 off on orders above $100",
+    "VALID_PRODUCT_NUMBER": [3001, 3002, 3003],
+    "WIN_TOTAL": 200,
+    "USED_TOTAL": 50,
+    "COUPON_STATUS": "Active"
+  },
+  {
+    "START_END_DATE": "2023-09-01 to 2023-09-30",
+    "COUPON_BUDGET": 5000,
+    "COUPON_INFORMATION": "Buy one, get one free on all products",
+    "VALID_PRODUCT_NUMBER": [4001, 4002, 4003],
+    "WIN_TOTAL": 75,
+    "USED_TOTAL": 20,
+    "COUPON_STATUS": "Active"
+  },
+  {
+    "START_END_DATE": "2023-10-01 to 2023-10-31",
+    "COUPON_BUDGET": 2500,
+    "COUPON_INFORMATION": "15% off on all orders above $50",
+    "VALID_PRODUCT_NUMBER": [5001, 5002, 5003],
+    "WIN_TOTAL": 50,
+    "USED_TOTAL": 5,
+    "COUPON_STATUS": "Active"
+  }
+]
+export const flashPricesData = [
+  {
+    "Creation_Date": "2023-06-09",
+    "Product_Information": "Product A",
+    "Question_Detail": "How can I order Product A?",
+    "Process": "Online Ordering"
+  },
+  {
+    "Creation_Date": "2023-06-09",
+    "Product_Information": "Product B",
+    "Question_Detail": "What are the dimensions of Product B?",
+    "Process": "Product Information Request"
+  },
+  {
+    "Creation_Date": "2023-06-09",
+    "Product_Information": "Product C",
+    "Question_Detail": "How long does it take to ship Product C?",
+    "Process": "Shipping Inquiry"
+  },
+  {
+    "Creation_Date": "2023-06-09",
+    "Product_Information": "Product D",
+    "Question_Detail": "Can I return Product D if I'm not satisfied?",
+    "Process": "Return Request"
+  },
+  {
+    "Creation_Date": "2023-06-09",
+    "Product_Information": "Product E",
+    "Question_Detail": "What is the warranty on Product E?",
+    "Process": "Warranty Inquiry"
+  }
+]
 
 // unused
 

@@ -560,6 +560,167 @@ export const en = {
   other: "other",
   /********** Payments PAGE **********/
   /*********************************/
+  /********** Payment history PAGE **********/
+  Payment_History: "Payment History",
+  Search_by_date: "Search by date",
+  Starting_date: "Starting date",
+  End_date: "End date",
+  Dated_Payment: "Dated Payment",
+  Payment_completed: "Payment completed",
+  The_total_payment: "The total payment:",
+  Summery_view: "Summery view",
+  Detail_view: "Detail view",
+  Payment_cancelled: "Payment cancelled",
+  PROCESS_TYPE: "PROCESS TYPE",
+  EXPLANATION: "EXPLANATION",
+  INVOICE_NUMBER: "INVOICE NUMBER",
+  NET_AMOUNT: "NET AMOUNT",
+
+
+  PROCESS_TYPE: "PROCESS TYPE",
+  ORDER_NUMBER: "ORDER NUMBER",
+  TRANSACTION_DATE: "TRANSACTION DATE",
+  DATE_OF_EXTRACT: "DATE OF EXTRACT",
+  DETAIL_PRODUCT__DESCRIPTION: "DETAIL (PRODUCT & DESCRIPTION)",
+  AMOUNT: "AMOUNT",
+  COMMISSION: "COMMISSION",
+  NET_AMOUNT: "NET AMOUNT",
+  /********** Payment history PAGE **********/
+  /*********************************/
+  /********** Daily Records PAGE **********/
+  Daily_Records: "Daily Records",
+  Receipt_NO: "Receipt NO",
+  DATE_OF_RELEASE: "DATE OF RELEASE",
+  EXPIRY_DATE: "EXPIRY DATE",
+  TERM_DAY: "TERM DAY",
+  AMOUNT: "AMOUNT",
+  TRANSACTIONS: "TRANSACTIONS",
+  Details: "Details",
+  /********** Daily Records PAGE **********/
+  /*********************************/
+  /********** Current Account statement PAGE **********/
+  Request_No: "Request No.",
+  File_name: "File name",
+  Period: "Period",
+  Creation_Date: "Creation Date",
+  TRANSACTIONS: "TRANSACTIONS",
+  Download_Statement: "Download Statement",
+  Current_account_statement: "Current account statement",
+  Current_Account_Statement_List: "Current Account Statement List",
+  Select_date: 'Select Date',
+  /********** Current Account statement PAGE **********/
+  /*********************************/
+  /********** Promotion & Price Home Page PAGE **********/
+  Promotion_Price_Home_Page: "Promotion & Price Home Page",
+  Pricing: "Pricing",
+  Create_Discount: "Create Discount",
+  Go_to_Create_Discount: "Go to Create Discount",
+  Coupons: "Coupons",
+  Go_To_Coupons: "Go To Coupons",
+  new: "New",
+  // pricing
+  pricing_q1: "Product Commission Tariffs",
+  pricing_a1: "Check out the commission tariffs on the specified products, update your price and increase your sales!",
+  pricing_q2: "Starred Product Labels",
+  pricing_a2: "Update your prices by reviewing the Starred Product Tags prices, get up to 4x more visibility!",
+  pricing_q3: "Flash Discounts Every 3 Hours",
+  pricing_a3: "Participate in 1 flash discounts in 3 hours that will be displayed on the homepage, multiply your visibility and sales!",
+  pricing_q4: "Campaigns",
+  pricing_a4: "Participate in campaigns, multiply your visibility and sales!",
+  // discounts
+  discount_q1: "Discount on Amount",
+  discount_a1: "Create special discounts to increase customers' cart amount and conversion rate!",
+  discount_q2: "Discount on Pieces",
+  discount_a2: "Create a discount for multiple purchases, increase the number of products in the basket, the basket amount and your profitability!",
+  discount_q3: "Buy Together",
+  discount_a3: "Define discounts on products that customers are likely to buy together, increase cart amount and conversion rate!",
+
+  // coupons 
+  coupon_q1: "Product Specific Coupon",
+  coupon_a1: "By defining product-specific coupons, increase the conversion rate and basket amount with coupons that will appear on your product pages!",
+  coupon_q2: "Store Tracking Coupon",
+  coupon_a2: "By creating special coupons for those who will follow your store, increase your number of followers 5 times compared to those who do not create coupons!",
+  coupon_q3: "Custom Audience Coupon",
+  coupon_a3: "Create coupons based on algorithms, increase your sales by reaching the right customer!",
+  coupon_q4: "Leave a Comment Win",
+  coupon_a4: "Increase your number of comments and conversion rate by creating special coupons for those who will comment on your products!",
+
+  /********** Promotion & Price Home Page PAGE **********/
+  /*********************************/
+  /********** Product commission PAGE **********/
+  Product_Commission_Tariffs: "Product Commission Tariffs",
+  Name_of_the_product: "Name of the product",
+  Barcode: "Barcode",
+  Model_code: "Model code",
+  Product_status: "Product status ",
+  Brand: "Brand ",
+  Category: "Category",
+
+  Creation_Date: "Creation Date",
+  Product_Information: "Product Information",
+  Question_Detail: "Question Detail",
+  Process: "Process",
+  /********** Product commission PAGE **********/
+  /*********************************/
+  /********** My Coupons PAGE **********/
+  My_coupons: "My coupons",
+  WIN_FROM_THE_PRODUCT: "WIN FROM THE PRODUCT",
+  SPECIAL_TO_YOUR_TARGET_AUDIENCE: "SPECIAL TO YOUR TARGET AUDIENCE",
+  EARN_FOLLOWERS: "EARN FOLLOWERS",
+  COMMENT_WIN: "COMMENT WIN",
+  Review_report: "Review report",
+
+  START_END_DATE: "START / END DATE",
+  COUPON_BUDGET: "COUPON BUDGET",
+  COUPON_INFORMATION: "COUPON INFORMATION",
+  VALID_PRODUCT_NUMBER: "VALID PRODUCT NUMBER",
+  WIN_TOTAL: "WIN / TOTAL",
+  USED_TOTAL: "USED / TOTAL",
+  COUPON_STATUS: "COUPON STATUS",
+  /********** My Coupons PAGE **********/
+  /*********************************/
+  /********** Create Discount PAGE **********/
+  Create_Discount: "Create Discount",
+  Discount_type: "Discount type",
+  Select_discount_type: "Select a discount type.",
+  Summery: "Summery",
+  preview: "preview",
+  Discount_on_Amount: "Discount on Amount",
+  Discount_on_Pieces: "Discount on Pieces",
+  Buy_Together: "Buy Together",
+  Special_discounts_text1: "Special discounts are applied to purchases made above the specified basket amount.",
+  Special_discounts_text2: "Special discounts are applied to the purchases made in the specified product quantities.",
+  Special_discounts_text3: "A special discount is applied to the selected award products when they are purchased with other products of the seller.",
+  Special_discounts_text4: "Your discount summary will be displayed here as you make your selections.",
+  Front_Display: "Front Display",
+  Discount_Information: "Discount Information",
+  Special_discounts_text5: "There is no discount information yet, please choose.",
+  Detail: "Detail",
+  Special_discounts_text6: "If the criteria determined for your products with different discount types are defined, the discounts will work together. For detailed information click here.",
+  /********** Create Discount PAGE **********/
+  /*********************************/
+  /********** FLASH PRICES PAGE **********/
+  Flash_Prices_in_Hours: "Flash Prices in 3 Hours",
+  Situation: "Situation:",
+  What_I_May_Be_Included: "What I May Be Included (0)",
+  Im_Included: "I'm Included (0)",
+  Model_code: "Model code",
+  Brand: "Brand ",
+  Category: "Category",
+  starting_date: "starting date",
+  Ending_date: "Ending date",
+  Creation_Date: "Creation Date",
+  Product_Information: "Product Information",
+  Question_Detail: "Question Detail",
+  Process: "Process",
+
+  Products_in_stock: "Products in stock",
+  sort_by:"Sort by:",
+  Best_seller: "Best seller",
+  /********** FLASH PRICES PAGE **********/
+  /*********************************/
+
+
 
 
 
