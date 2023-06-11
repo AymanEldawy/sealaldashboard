@@ -1,5 +1,4 @@
 import { LanguageContext } from '@/context/LangContext';
-import { links } from '@/data/dummyData'
 import { fetchWord } from '@/lang/fetchWord';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
@@ -7,6 +6,7 @@ import React, { useContext, useState } from 'react'
 
 import { BellIcon, CalenderIcon, ChevronIcon, CloseIcon, MessageIcon, StoreIcon, UserIcon } from '../Icons';
 import { Button } from '../Global/Button/Button';
+import { menu } from '@/data/menu';
 
 export const MobileMenu = ({ closeMenu }) => {
   const { lang } = useContext(LanguageContext);
@@ -22,9 +22,9 @@ export const MobileMenu = ({ closeMenu }) => {
         <Link href="" className="flex gap-4 text-secondary whitespace-nowrap font-medium "><StoreIcon className="w-5 h-5 text-secondary " /> {fetchWord('Go_To_Store', lang)}</Link>
         <Link href="" className="flex gap-4 text-secondary whitespace-nowrap font-medium "><UserIcon className="w-5 h-5 text-secondary " /> {fetchWord('with_the_Store', lang)}</Link>
       </div>
-      <ul className='flex flex-col gap-4 flex-1 mt-4'>
-        {links?.map(item => (
-          <li key={item?.name} className="relative z-10 px-4 font-medium">
+      <ul className='flex flex-col gap-4 flex-1 mt-4 overflow-auto'>
+        {menu?.map(item => (
+          <li key={item?.name} className="relative z-10 px-4 font-medium overflow-hidden">
             {
               item?.children?.length ? (
                 <>
@@ -34,7 +34,7 @@ export const MobileMenu = ({ closeMenu }) => {
                   </button>
                   {
                     openSubMenu == item?.id ? (
-                      <ul className="z-[3]bg-gray-100 flex flex-col gap-2 rounded-md min-w-[150px] p-4 top-[40px]">
+                      <ul className="z-[3]bg-gray-100 bg-gray-100 flex flex-col gap-2 rounded-md min-w-[150px] p-4 top-[40px]">
                         {item?.children?.map(subItem => (
                           <li key={subItem?.name}>
                             <Link href={subItem?.link} onClick={closeMenu} className="whitespace-nowrap capitalize text-secondary hover:text-primary ">

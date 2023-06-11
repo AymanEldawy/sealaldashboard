@@ -9,9 +9,9 @@ export const StoreBar = () => {
   const { lang } = useContext(LanguageContext)
   return (
     <div className='py-3 bg-white border-b border-gray-200'>
-      <div className='container flex gap-2 items-center justify-between flex-wrap'>
+      <div className='container flex gap-2 items-center justify-between flex-wrap sm:flex-nowrap'>
         <StoreCard />
-        <div className='flex gap-2 justify-between w-full md:justify-start whitespace-nowrap sm:gap-4'>
+        <div className='flex gap-2 flex-wrap justify-between sm:justify-start w-full sm:w-fit whitespace-nowrap sm:gap-4'>
           <div className='flex gap-2'>
             <span className='text-secondary text-xs md:text-base font-medium'> {fetchWord('Shipping_today', lang)}:</span>
             <strong className="text-xs md:text-base">2 orders</strong>
