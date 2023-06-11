@@ -5,7 +5,6 @@ import React, { useContext, useState } from "react";
 
 import { BellIcon, CalenderIcon, StoreIcon, UserIcon, WorldIcon } from "../Icons";
 import MessageIcon from "../Icons/MessageIcon";
-import LanguageBar from "../LanguageBar/LanguageBar";
 
 const UpperMenu = () => {
   const { lang, changeLang } = useContext(LanguageContext);
@@ -14,7 +13,6 @@ const UpperMenu = () => {
     <div className=" bg-secondary-dark text-white py-1">
       <div className="text-xs flex justify-between flex-wrap gap-4 items-center min-h-[35px] container">
         <div className="flex items-center gap-4 justify-between sm:justify-start w-full sm:w-fit">
-          {/* <LanguageBar /> */}
           <Link href="">{fetchWord('Vendor_Panel', lang)}</Link>
           <Link href="">{fetchWord('Seller_Information_Center', lang)}</Link>
         </div>
