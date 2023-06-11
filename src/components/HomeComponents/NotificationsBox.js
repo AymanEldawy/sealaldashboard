@@ -20,7 +20,7 @@ export const NotificationsBox = () => {
                 <BellFlatIcon />
               </span>
               <div className="flex-1 ">
-                <div className="text-[#5CAEFF] flex text-xs md:text-sm gap-2 justify-between items-start">
+                <div className="text-blue-light flex text-xs md:text-sm gap-2 justify-between items-start">
                   <span>{item?.title}</span>
                   <small>{new Date(item?.date).toLocaleDateString('en-UK')}</small>
                 </div>

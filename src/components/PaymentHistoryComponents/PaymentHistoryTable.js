@@ -56,8 +56,8 @@ export const PaymentHistoryTable = ({ openPaymentSummary, setOpenPaymentSummary,
         openPaymentSummary === index ? (
           <>
             <div className='flex gap-2 my-4'>
-              <Button onClick={() => setShowDetails(false)} classes={`text-sm rounded-3xl px-4 ${showDetails ? '!bg-transparent !text-[#5CAEFF]' : ''}`}>{fetchWord('Summery_view', lang)}</Button>
-              <Button onClick={() => setShowDetails(true)} classes={`text-sm rounded-3xl px-4 ${!showDetails ? '!bg-transparent !text-[#5CAEFF]' : ''}`}>{fetchWord('Detail_view', lang)}</Button>
+              <Button onClick={() => setShowDetails(false)} classes={`text-sm rounded-3xl px-4 ${showDetails ? '!bg-transparent !text-blue-light' : ''}`}>{fetchWord('Summery_view', lang)}</Button>
+              <Button onClick={() => setShowDetails(true)} classes={`text-sm rounded-3xl px-4 ${!showDetails ? '!bg-transparent !text-blue-light' : ''}`}>{fetchWord('Detail_view', lang)}</Button>
             </div>
             <SuperTable columns={showDetails ? columnsDetails : columns} data={showDetails ? paymentHistoryDetails : paymentHistory} classes={{ containerClassName: '!rounded-none', table: '!border-none', colBody: "!border-x-0", colHead: 'border-b-2 border-primary !py-3' }} />
           </>

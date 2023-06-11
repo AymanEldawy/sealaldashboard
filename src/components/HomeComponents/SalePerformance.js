@@ -20,7 +20,7 @@ export const SalePerformance = () => {
         {
           performanceList?.map(item => (
             <div className='bg-secondary-light flex flex-col rounded p-2' key={item?.title}>
-              <h3 className="text-[#5CAEFF] font-medium mb-2 text-sm md:text-base">{fetchWord(item?.title, lang)}</h3>
+              <h3 className="text-blue-light font-medium mb-2 text-sm md:text-base">{fetchWord(item?.title, lang)}</h3>
               <div className='flex justify-between items-center mt-auto gap-2'>
                 <span className='font-semibold text-xs md:text-sm lg:text-lg text-[#094E99]'>{item?.total}$</span>
                 <small className="text-xs text-gray-400 flex gap-1 items-center">% {item?.discount} <DiamondIcon /></small>

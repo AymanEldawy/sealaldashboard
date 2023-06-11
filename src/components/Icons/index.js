@@ -137,3 +137,5 @@ export { default as TagBoxIcon } from "./TagBoxIcon";
 export { default as StoreBixIcon } from "./StoreBixIcon";
 export { default as UserBoxIcon } from "./UserBoxIcon";
 export { default as MessageTagIcon } from "./MessageTagIcon";
+export { default as BookProgressIcon } from "./BookProgressIcon";
+export { default as EarlyIcon } from "./EarlyIcon";

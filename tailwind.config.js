@@ -14,6 +14,7 @@ module.exports = {
         'secondary-dark': '#013977',
         'secondary-light': '#F7FBFF',
         'primary-text': '#6E7787',
+        'blue-light': '#5CAEFF',
         ptext: '#949CA9',
         bsecondary: "#F2F5F8",
         bmain: "#F4F4F4",

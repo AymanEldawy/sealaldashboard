@@ -40,7 +40,7 @@ export const InvoiceListingFilter = () => {
         />
         <div className='flex gap-8 flex-1 w-full md:w-fit'>
           <Button classes="h-10 flex-1 px-4 w-full md:w-fit">{fetchWord('filter', lang)}</Button>
-          <button className="bg-[#5CAEFF] text-white rounded-md h-10 w-10 flex items-center justify-center"><CloseIcon /> </button>
+          <button className="bg-blue-light text-white rounded-md h-10 w-10 flex items-center justify-center"><CloseIcon /> </button>
         </div>
       </div>
     </form>

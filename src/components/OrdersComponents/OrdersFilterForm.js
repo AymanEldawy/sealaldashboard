@@ -55,7 +55,7 @@ export const OrdersFilterForm = () => {
           />
           <div className="flex gap-2 flex-1 items-center">
             <Button classes="h-11 px-4 flex-1">{fetchWord('Search', lang)}</Button>
-            <button className="bg-[#5CAEFF] text-white rounded-md h-11 w-11 flex items-center justify-center"><CloseIcon /> </button>
+            <button className="bg-blue-light text-white rounded-md h-11 w-11 flex items-center justify-center"><CloseIcon /> </button>
           </div>
         </div>
         <div className='flex items-end gap-4 overflow-hidden'>

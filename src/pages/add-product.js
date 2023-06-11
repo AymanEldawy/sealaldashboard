@@ -45,7 +45,8 @@ const AddProduct = () => {
             <ProductInformationForm tabName="Product_Information" />
             <SalesInformation tabName="Sales_Information" />
             <ProductsFeatures tabName="Product_features" />
-            {/* <ImageGallery tabName="Image_Gallery" /> */}
+            <ImageGallery tabName="Image_Gallery" />
+            <VideoCenter tabName="Video_center" />
           </TabsContent>
         </div>
       </div>

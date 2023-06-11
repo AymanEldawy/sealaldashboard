@@ -13,7 +13,7 @@ export const SealalPackages = () => {
       <div className='flex justify-between items-center gap-4 flex-wrap'>
         <div className=''>
           <h4 className="md:text-lg font-medium text-secondary">{fetchWord('package_text', lang)}</h4>
-          <p className='text-[#5CAEFF] flex gap-1 items-center text-xs md:text-base'><WarningIcon className="text-inherit" /> {fetchWord('package_text1', lang)}</p>
+          <p className='text-blue-light flex gap-1 items-center text-xs md:text-base'><WarningIcon className="text-inherit" /> {fetchWord('package_text1', lang)}</p>
         </div>
         <div className='flex items-center gap-2 bg-primary text-white p-2 px-4 rounded-md'>
           <PackageIcon />

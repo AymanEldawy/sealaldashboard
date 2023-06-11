@@ -48,7 +48,7 @@ export const ReturnProcessFilterForm = () => {
             {...register("product_name", { required: true, maxLength: 20 })} />
           <div className="flex-1 flex gap-2">
             <Button classes="h-10 px-4 flex-1">{fetchWord('Search', lang)}</Button>
-            <button className="bg-[#5CAEFF] text-white rounded-md h-10 w-10 flex items-center justify-center"><CloseIcon /> </button>
+            <button className="bg-blue-light text-white rounded-md h-10 w-10 flex items-center justify-center"><CloseIcon /> </button>
           </div>
         </div>
       </div>

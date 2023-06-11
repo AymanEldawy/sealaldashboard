@@ -50,7 +50,7 @@ const Promotion = () => {
             title='Coupons'
             linkDetails={{ name: 'Go_To_Coupons', href: '/coupons' }}
             titleClassName="!text-secondary"
-            itemTitleClassName='!text-[#5CAEFF]'
+            itemTitleClassName='!text-blue-light'
             newClassName="!bg-primary"
           />
         </div>

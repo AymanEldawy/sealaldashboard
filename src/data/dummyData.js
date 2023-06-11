@@ -963,6 +963,42 @@ export const flashPricesData = [
   }
 ]
 
+export const companies = [{
+  "company_name": "ABC Inc.",
+  "date_of_change": "2022-01-01",
+  "working_status": "Active",
+  "working_model": "Hybrid",
+  "change_channel": "Internal"
+},
+
+{
+  "company_name": "XYZ Corp.",
+  "date_of_change": "2022-03-15",
+  "working_status": "Inactive",
+  "working_model": "Remote",
+  "change_channel": "Email"
+},
+{
+  "company_name": "123 Co.",
+  "date_of_change": "2022-06-30",
+  "working_status": "Active",
+  "working_model": "In-person",
+  "change_channel": "Meeting"
+},
+{
+  "company_name": "DEF LLC",
+  "date_of_change": "2022-09-01",
+  "working_status": "Active",
+  "working_model": "Hybrid",
+  "change_channel": "In-person"
+},
+{
+  "company_name": "456 Ltd.",
+  "date_of_change": "2022-12-31",
+  "working_status": "Inactive",
+  "working_model": "Remote",
+  "change_channel": "Phone"
+}]
 // unused
 
 const getRandomOf = (list) => {

@@ -22,7 +22,7 @@ const ActionsBoard = () => {
         {
           actions?.map(item => (
             <div className='bg-secondary-light flex flex-col rounded p-2' key={item?.title}>
-              <h3 className="text-[#5CAEFF] text-sm md:text-base font-medium mb-2">{fetchWord(item?.name, lang)}</h3>
+              <h3 className="text-blue-light text-sm md:text-base font-medium mb-2">{fetchWord(item?.name, lang)}</h3>
               <span className=' font-semibold mt-auto text-xs md:text-sm lg:text-lg text-[#094E99]'>{item?.count}</span>
             </div>
           ))

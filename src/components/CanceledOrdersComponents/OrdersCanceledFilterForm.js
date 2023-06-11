@@ -51,7 +51,7 @@ export const OrdersCanceledFilterForm = () => {
         />
         <Button classes="!py-1 px-4 h-10 !bg-secondary" >{fetchWord('Download_Excel', lang)}</Button>
         <Button classes="h-10 px-4">{fetchWord('Search', lang)}</Button>
-        <button className="bg-[#5CAEFF] text-white rounded-md h-10 w-10 flex items-center justify-center"><CloseIcon /> </button>
+        <button className="bg-blue-light text-white rounded-md h-10 w-10 flex items-center justify-center"><CloseIcon /> </button>
       </div>
     </form>
   )

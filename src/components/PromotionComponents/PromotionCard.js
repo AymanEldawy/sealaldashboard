@@ -15,7 +15,7 @@ const PromotionCard = ({ item, newClassName, itemTitleClassName }) => {
       <div className='flex gap-[2px] mb-auto items-center'>
         <ChevronIcon className="ltr:rotate-180 text-secondary h-5 w-5" />
         {item?.extraNew ?
-          <span className={`bg-[#5CAEFF] text-white p-1 text-xs rounded-md w-8 ${newClassName}`}>
+          <span className={`bg-blue-light text-white p-1 text-xs rounded-md w-8 ${newClassName}`}>
             {fetchWord(item?.extraNew, lang)}
           </span>
           : <span className="w-8" />}

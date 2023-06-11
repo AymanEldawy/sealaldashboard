@@ -38,7 +38,7 @@ export const PaymentsHistoryFilter = () => {
           iconEnd={<CalenderIcon className="bg-white w-5 h-5  pointer-events-none" />} iconEndClassName=" pointer-events-none"
         />
         <Button classes="h-10 flex-1 px-4">{fetchWord('filter', lang)}</Button>
-        <button className="bg-[#5CAEFF] text-white rounded-md h-10 w-10 flex items-center justify-center"><CloseIcon /> </button>
+        <button className="bg-blue-light text-white rounded-md h-10 w-10 flex items-center justify-center"><CloseIcon /> </button>
       </div>
     </div>
   )

@@ -48,10 +48,10 @@ const CreateDiscount = () => {
             <div className='h-[202px] bg-secondary-light flex items-center justify-center my-4'>
               <p className='text-[#95A1B5] text-sm text-center mx-4 md:mx-8 lg:mx-12'>{fetchWord('Special_discounts_text4', lang)}</p>
             </div>
-            <h4 className='text-[#5CAEFF] text-sm mb-2'>{fetchWord('Discount_Information', lang)}</h4>
+            <h4 className='text-blue-light text-sm mb-2'>{fetchWord('Discount_Information', lang)}</h4>
             <p className="text-[#273142] text-sm mb-2">{fetchWord('Special_discounts_text5', lang)}</p>
             <div className="my-4 bg-gray-100 h-[1px]" />
-            <h4 className='text-[#5CAEFF] text-sm mb-2'>{fetchWord('Detail', lang)}</h4>
+            <h4 className='text-blue-light text-sm mb-2'>{fetchWord('Detail', lang)}</h4>
             <p className="text-[#273142] text-sm mb-3">{fetchWord('Special_discounts_text5', lang)}</p>
             <p className="text-[#273142] text-sm mb-2 text-center">{fetchWord('Special_discounts_text6', lang)}</p>
           </div>
