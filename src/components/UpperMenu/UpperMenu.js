@@ -3,12 +3,12 @@ import { fetchWord } from "@/lang/fetchWord";
 import Link from "next/link";
 import React, { useContext, useState } from "react";
 
-import { BellIcon, CalenderIcon, StoreIcon, UserIcon } from "../Icons";
+import { BellIcon, CalenderIcon, StoreIcon, UserIcon, WorldIcon } from "../Icons";
 import MessageIcon from "../Icons/MessageIcon";
 import LanguageBar from "../LanguageBar/LanguageBar";
 
 const UpperMenu = () => {
-  const { lang } = useContext(LanguageContext);
+  const { lang, changeLang } = useContext(LanguageContext);
 
   return (
     <div className=" bg-secondary-dark text-white py-1">
@@ -24,6 +24,7 @@ const UpperMenu = () => {
           <Link href="" className="flex gap-1 items-center whitespace-nowrap flex-col sm:flex-row font-medium max-[450px]:flex-col "><MessageIcon className="w-5 h-5 text-white fill-white" /> {fetchWord('Support', lang)}</Link>
           <Link href="" className="flex gap-1 items-center whitespace-nowrap flex-col sm:flex-row font-medium max-[450px]:flex-col "><StoreIcon className="w-5 h-5 text-white fill-white" /> {fetchWord('Go_To_Store', lang)}</Link>
           <Link href="" className="flex gap-1 items-center whitespace-nowrap flex-col sm:flex-row font-medium max-[450px]:flex-col "><UserIcon className="w-5 h-5 text-white fill-white" /> {fetchWord('with_the_Store', lang)}</Link>
+          <button className="bg-white rounded-full h-6 w-6 flex items-center justify-center" onClick={() => changeLang(lang === 'ar' ? 'en' : 'ar')}><WorldIcon className="w-5 h-5 text-secondary" /> </button>
         </div>
       </div>
     </div>

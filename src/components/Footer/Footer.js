@@ -5,7 +5,6 @@ import Link from "next/link";
 import React, { useContext } from "react";
 
 import Brand from "../Brand/Brand";
-import PrimaryLink from "../Global/PrimaryLink/PrimaryLink";
 import { ContactInfo } from "./ContactInfo";
 import { FooterListTitle } from "./FooterListTitle";
 import FormSubscription from "./FormSubscription/FormSubscription";

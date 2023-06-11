@@ -106,6 +106,7 @@ export const en = {
   /*********** PRODUCT PAGE **********/
   /*********************************/
   /*********** Create PRODUCT PAGE **********/
+  Create_Single: "Create Product",
   Create_Single_Product: "Create a Single Product",
   Product_Information: "Product Information",
   Sales_Information: "Sales Information",
@@ -631,6 +632,7 @@ export const en = {
   /********** Current Account statement PAGE **********/
   /*********************************/
   /********** Promotion & Price Home Page PAGE **********/
+  Promotion_Price: "Promotion & Price",
   Promotion_Price_Home_Page: "Promotion & Price Home Page",
   Pricing: "Pricing",
   Create_Discount: "Create Discount",
@@ -720,6 +722,7 @@ export const en = {
   /********** Create Discount PAGE **********/
   /*********************************/
   /********** FLASH PRICES PAGE **********/
+  Flash_Prices: "Flash Prices",
   Flash_Prices_in_Hours: "Flash Prices in 3 Hours",
   Situation: "Situation:",
   What_I_May_Be_Included: "What I May Be Included (0)",

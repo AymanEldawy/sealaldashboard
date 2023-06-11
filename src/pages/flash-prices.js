@@ -19,7 +19,7 @@ const FlashPrices = () => {
   return (
     <Layout>
       <SectionBar
-        title={fetchWord('Create_Discount', lang)}
+        title={fetchWord('Flash_Prices', lang)}
         extraContent={
           <Link href="/" className="text-secondary">
             {fetchWord('Screen_Introduction', lang)}

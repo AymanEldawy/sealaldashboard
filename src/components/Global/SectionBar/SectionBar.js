@@ -35,16 +35,16 @@ export const SectionBar = ({ title, hideAddProductButton, hideMangeProduct, hide
               }
               {hideMangeProduct ? null :
                 <>
-                  <button className="text-secondary flex gap-2 items-center">
+                  <Link href="#" className="text-secondary flex gap-2 items-center">
                     <EducationIcon className="text-white" />
                     {fetchWord('How_Product_List', lang)}
-                  </button>
+                  </Link>
                   <span className='h-4 w-[1px] bg-[#D5D9E1]' aria-hidden={true} />
                 </>
               }
               {
                 hideHelp ? null :
-                  <Link href="/help" className="text-secondary flex gap-2 items-center">
+                  <Link href="/customer-questions" className="text-secondary flex gap-2 items-center">
                     <QuestionMarkIcon className="text-white" />
                     {fetchWord('Help', lang)}
                   </Link>

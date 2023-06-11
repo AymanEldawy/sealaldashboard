@@ -18,6 +18,7 @@ const list = [
   "Sales_Information",
   "Product_features",
   "Image_Gallery",
+  "Video_center"
 ]
 
 

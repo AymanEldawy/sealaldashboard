@@ -13,7 +13,7 @@ export const MobileMenu = ({ closeMenu }) => {
   const router = useRouter();
   const [openSubMenu, setOpenSubMenu] = useState('')
   return (
-    <nav className='md:hidden fixed z-10 top-0 left-0 h-full bg-white w-screen'>
+    <nav className='lg:hidden fixed z-10 top-0 left-0 h-full bg-white w-screen'>
       <Button outline classes="mt-4 !border-0 mb-2 flex items-center justify-center h-10 mx-4 w-10 " onClick={closeMenu}><ChevronIcon className="text-primary rtl:rotate-180 h-6 w-6" /> </Button>
       <div className="relative flex flex-col gap-4 border-y py-3 px-4">
         <Link href="" className="flex gap-4 text-secondary whitespace-nowrap font-medium "><BellIcon className="w-5 h-5 text-secondary " /> {fetchWord('My_Announcements', lang)}</Link>
@@ -37,7 +37,7 @@ export const MobileMenu = ({ closeMenu }) => {
                       <ul className="z-[3]bg-gray-100 flex flex-col gap-2 rounded-md min-w-[150px] p-4 top-[40px]">
                         {item?.children?.map(subItem => (
                           <li key={subItem?.name}>
-                            <Link href={subItem?.link} onClick={closeMenu} className="capitalize text-secondary hover:text-primary ">
+                            <Link href={subItem?.link} onClick={closeMenu} className="whitespace-nowrap capitalize text-secondary hover:text-primary ">
                               {fetchWord(subItem?.name, lang)}
                             </Link>
                           </li>
@@ -47,7 +47,7 @@ export const MobileMenu = ({ closeMenu }) => {
                   }
                 </>
               ) :
-                <Link onClick={closeMenu} href={item?.link} className={`capitalize text-white hover:text-primary ${router?.pathname === item?.link ? 'text-primary' : ''}`}>{fetchWord(item?.name, lang)}</Link>
+                <Link onClick={closeMenu} href={item?.link} className={`capitalize whitespace-nowrap text-white hover:text-primary ${router?.pathname === item?.link ? 'text-primary' : ''}`}>{fetchWord(item?.name, lang)}</Link>
             }
           </li>
         ))}
