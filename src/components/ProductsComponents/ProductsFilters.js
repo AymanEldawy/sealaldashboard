@@ -3,8 +3,8 @@ import React, { useState } from 'react'
 import { WarningIcon } from '../Icons'
 import TabsContent from '../Tabs/TabsContent'
 import TabsList from '../Tabs/TabsList'
-import { ProductsFilterForm } from './ProductsFilterForm'
 import { AllProducts } from './AllProducts'
+import { ProductsFilterForm } from './ProductsFilterForm'
 
 const listFilter = [
   { name: 'All_products', iconEnd: '' },
@@ -28,7 +28,7 @@ export const ProductsFilters = () => {
           keyName="name"
           activeTab={activeTab}
           containerClassName="bg-white !mb-0 px-2 md:px-4 pt-4 rounded-t-xl border-b scroll-hide overflow-auto"
-          itemClassName="px-3 md:!px-6 capitalize whitespace-nowrap  text-secondary flex flex-col relative text-sm !gap-1"
+          itemClassName="px-6 capitalize whitespace-nowrap  text-secondary flex flex-col relative text-sm !gap-1"
           iconEndClassName="absolute ltr:right-1 top-2 rtl:left-1"
           activeClassName="before:w-[60px] before:bg-primary before:h-[2px] text-primary before:absolute before:bottom-0 ltr:before:left-0 rtl:before:right-0"
           extraContentClassName="text-xs"

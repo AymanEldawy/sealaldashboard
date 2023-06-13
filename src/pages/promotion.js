@@ -33,7 +33,7 @@ const Promotion = () => {
   return (
     <Layout>
       <SectionBar title={fetchWord('Promotion_Price_Home_Page', lang)} />
-      <div className='container my-4 md:my-8'>
+      <div className='container !my-4 md:!my-8'>
         <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4'>
           <PromotionList
             list={pricingList}

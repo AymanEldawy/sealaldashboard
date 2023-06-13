@@ -7,7 +7,7 @@ import { fetchWord } from '@/lang/fetchWord';
 export const DropzoneInfo = ({ containerClassName, list, dropzonePlaceholder, dropzoneSizes }) => {
   const { lang } = useContext(LanguageContext)
   return (
-    <div className={`bg-white p-4 rounded-xl max-w-[400px] ${containerClassName}`}>
+    <div className={`bg-white rounded-xl max-w-[400px] ${containerClassName}`}>
       <Dropzone containerClassName="" dropzonePlaceholder={dropzonePlaceholder} dropzoneSizes={dropzoneSizes} />
       <ul className="flex flex-col gap-3 mt-4">
         {

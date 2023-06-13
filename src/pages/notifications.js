@@ -45,6 +45,7 @@ const Notifications = () => {
           <SuperTable
             columns={columns}
             data={allNotifications}
+            primaryStyles
             classes={{ containerClassName: 'mt-8', table: '!rounded-0 !border-0', colHead: 'py-4', colBody: 'px-4 !border-x-0 border-b' }}
           />
         </div>

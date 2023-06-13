@@ -11,7 +11,7 @@ export const SealalReviews = () => {
   return (
     <div className='rounded-xl bg-white py-8 px-4 mt-4 md:mt-8'>
       <h2 className="md:text-xl mb-6 font-medium text-secondary">{fetchWord('our_business', lang)}</h2>
-      <div className='grid grid-cols-2 lg:grid-cols-4 gap-4'>
+      <div className='grid sm:grid-cols-2 lg:grid-cols-4 gap-4'>
         {
           reviews?.map((review, index) => (
             <div className='h-full bg-[#F6FAFF] p-4' key={index}>

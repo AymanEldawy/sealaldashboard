@@ -4,9 +4,9 @@ import React from 'react'
 import { useContext } from 'react';
 import { useForm } from "react-hook-form";
 
+import CustomSelectField from '../Forms/CustomSelectField';
 import { InputField } from '../Forms/InputField';
 import { Button } from '../Global/Button/Button';
-import CustomSelectField from '../Forms/CustomSelectField';
 
 export const CustomerQuestionForm = () => {
   const { lang } = useContext(LanguageContext)
@@ -30,8 +30,8 @@ export const CustomerQuestionForm = () => {
         <CustomSelectField containerClassName='text-sm max-w-full flex-1 !mb-0 rounded-md' placeholder={fetchWord('Keyword_Search', lang)} {...register("keyword_search", { required: true, maxLength: 20 })} />
         <CustomSelectField containerClassName='text-sm max-w-full flex-1 !mb-0 rounded-md' placeholder={fetchWord('Brand', lang)} {...register("brand", { required: true, maxLength: 20 })} />
         <div className='flex gap-4'>
-          <Button classes="!py-1 flex-1" type="button" outline onClick={reset} >{fetchWord('Clean', lang)}</Button>
-          <Button classes="!py-1 flex-1" >{fetchWord('filter', lang)}</Button>
+          <Button classes="!py-1 flex-1 text-sm md:text-base" type="button" outline onClick={reset} >{fetchWord('Clean', lang)}</Button>
+          <Button classes="!py-1 flex-1 text-sm md:text-base" >{fetchWord('filter', lang)}</Button>
         </div>
       </div>
     </form>

@@ -1,11 +1,12 @@
-import React, { useState } from 'react'
-import { InputField } from '../Forms/InputField'
-import { fetchWord } from '@/lang/fetchWord';
-import { useContext } from 'react';
 import { LanguageContext } from '@/context/LangContext';
-import { useForm } from 'react-hook-form';
-import CustomSelectField from '../Forms/CustomSelectField';
+import { fetchWord } from '@/lang/fetchWord';
 import dynamic from 'next/dynamic';
+import React, { useState } from 'react'
+import { useContext } from 'react';
+import { useForm } from 'react-hook-form';
+
+import CustomSelectField from '../Forms/CustomSelectField';
+import { InputField } from '../Forms/InputField'
 
 const Editor = dynamic(() => import('@/lib/Editor'), { ssr: false })
 
@@ -61,9 +62,9 @@ export const ProductInformationForm = () => {
           selectClassName="text-xs"
           {...register('Size')}
         />
-        <div className='mb-8'>
+        <div className='mb-8 text-xs'>
           <p className='text-primary-text text-xs mb-1'>{fetchWord('Product_Description_msg', lang)}</p>
-          <Editor msg={msg} setMsg={setMsg} />
+          <Editor  msg={msg} setMsg={setMsg} />
         </div>
       </form>
     </div>

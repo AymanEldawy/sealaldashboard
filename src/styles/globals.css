@@ -218,8 +218,12 @@ overflow: visible !important;
 
  .custom-calendar-events .react-datepicker__day--selected {
   background-color: var(--primary-color) !important;
-  border-radius: 50%;
+  border-radius: 11px;
   color: white;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .custom-calendar-events .react-datepicker__children-container {

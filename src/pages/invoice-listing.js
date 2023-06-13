@@ -44,7 +44,7 @@ const InvoiceListing = () => {
           <InvoiceListingFilter />
         </div>
         <div className='mt-8 rounded-xl bg-white p-4'>
-          <div className='flex justify-end gap-4 flex-col items-center sm:flex-row '>
+          <div className='flex justify-end gap-4 flex-col items-center sm:flex-row mb-4'>
             <div className='flex items-center gap-1'>
               <span>
                 {fetchWord('Filtering_Result', lang)}
@@ -59,6 +59,7 @@ const InvoiceListing = () => {
             </Button>
           </div>
           <SuperTable
+            primaryStyles
             columns={columns}
             data={invoicing}
             allowActions

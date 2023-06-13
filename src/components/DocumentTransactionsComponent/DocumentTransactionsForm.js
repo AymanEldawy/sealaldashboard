@@ -19,8 +19,8 @@ export const DocumentTransactionsForm = () => {
       <CustomSelectField containerClassName='text-sm max-w-full flex-1 !mb-0 rounded-md' placeholder={fetchWord('Brand', lang)} {...register("brand", { required: true, maxLength: 20 })} />
       <CustomSelectField containerClassName='text-sm max-w-full flex-1 !mb-0 rounded-md' placeholder={fetchWord('All', lang)} {...register("all", { required: true, maxLength: 20 })} />
       <div className='flex gap-4'>
-        <Button classes="!py-1 flex-1" type="button" outline onClick={reset} >{fetchWord('Clean', lang)}</Button>
-        <Button classes="!py-1 flex-1" >{fetchWord('filter', lang)}</Button>
+        <Button classes="!py-1 flex-1 text-sm md:text-base" type="button" outline onClick={reset} >{fetchWord('Clean', lang)}</Button>
+        <Button classes="!py-1 flex-1 text-xs md:text-base" >{fetchWord('filter', lang)}</Button>
       </div>
     </form>
   )

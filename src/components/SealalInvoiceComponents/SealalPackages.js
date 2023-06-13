@@ -9,7 +9,7 @@ import { PackageIcon, WarningIcon } from '../Icons'
 export const SealalPackages = () => {
   const { lang } = useContext(LanguageContext)
   return (
-    <div className='rounded-xl bg-white py-8 px-4 mt-4 md:mt-8'>
+    <div className='rounded-xl bg-white py-8 px-2 md:px-4 mt-4 md:mt-8'>
       <div className='flex justify-between items-center gap-4 flex-wrap'>
         <div className=''>
           <h4 className="md:text-lg font-medium text-secondary">{fetchWord('package_text', lang)}</h4>
@@ -31,7 +31,7 @@ export const SealalPackages = () => {
             <span className='font-medium text-primary text-lg'>{item?.size}</span>
             <h3 className='font-semibold text-base text-black sm:text-lg lg:text-2xl'>{item?.count}</h3>
             <p className='text-[#273142]'>{item?.quality}</p>
-            <div className='flex border-y border-gray-300 py-2 px-4 w-full'>
+            <div className='flex border-y flex-wrap sm:flex-nowrap border-gray-300 py-2 px-4 w-full'>
               <div className='flex flex-col gap-1 flex-1 justify-center items-center'>
                 <span className="whitespace-nowrap text-xs text-primary-text">{fetchWord('Unit_price', lang)}</span>
                 <span className='text-primary font-semibold'>{item?.unit_price}</span>

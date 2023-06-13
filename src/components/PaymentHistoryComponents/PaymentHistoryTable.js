@@ -29,23 +29,25 @@ export const PaymentHistoryTable = ({ openPaymentSummary, setOpenPaymentSummary,
   const [showDetails, setShowDetails] = useState(false);
   return (
     <div className='overflow-hidden bg-white rounded-xl p-2 md:p-4 mb-4'>
-      <div className='flex gap-4 flex-wrap justify-between'>
-        <div className='flex gap-4 text-sm md:text-base py-2'>
-          <h4 className='flex gap-1 items-center font-medium text-secondary'>{new Date().toLocaleDateString('en-UK')} {fetchWord('Dated_Payment', lang)}</h4>
+      <div className='flex gap-4 flex-wrap justify-between items-end sm:items-center'>
+        <div className='flex gap-4 text-sm md:text-base py-2 flex-col sm:flex-row'>
+          <h4 className='flex gap-1 items-center font-medium order-2 sm:order-1 text-secondary'>{fetchWord('Dated_Payment', lang)}: <span className='font-normal'> {new Date().toLocaleDateString('en-UK')} </span>  </h4>
           {
             canceled ?
-              <h4 className='flex gap-1 items-center font-medium text-red-500'>{fetchWord('Payment_cancelled', lang)} <span className='h-7 w-7 flex items-center justify-center border border-red-500 rounded-full scale-75'><CloseIcon /></span>  </h4>
+              <h4 className='flex gap-1 items-center order-1 sm:order-2 font-medium text-red-500'>{fetchWord('Payment_cancelled', lang)} <span className='h-7 w-7 flex items-center justify-center border border-red-500 rounded-full scale-75'><CloseIcon /></span>  </h4>
               :
-              <h4 className='flex gap-1 items-center font-medium text-green-500'>{fetchWord('Payment_completed', lang)} <span className='h-7 w-7 flex items-center justify-center border border-green-500 rounded-full scale-75'><CheckIcon /></span>  </h4>
+              <h4 className='flex gap-1 items-center order-1 sm:order-2 font-medium text-green-500'>{fetchWord('Payment_completed', lang)} <span className='h-7 w-7 flex items-center justify-center border border-green-500 rounded-full scale-75'><CheckIcon /></span>  </h4>
           }
         </div>
         <div className='flex gap-2 items-center'>
-          <span className='text-primary'>
-            {fetchWord('The_total_payment', lang)}
-          </span>
-          <span className='text-secondary'>
-            345
-          </span>
+          <div className='flex gap-1'>
+            <span className='text-primary'>
+              {fetchWord('The_total_payment', lang)}
+            </span>
+            <span className='text-secondary'>
+              345
+            </span>
+          </div>
           <Button classes="!p-1" onClick={() => setOpenPaymentSummary(prev => prev !== index ? index : '')}>
             <ChevronIcon className={`${openPaymentSummary === index ? 'ltr:-rotate-90 rtl:rotate-90' : 'rtl:rotate-180'} scale-75 text-white`} />
           </Button>

@@ -4,7 +4,9 @@ const TableCol = ({ children, scope, classes }) => {
   // console.log(children)
   return (
     <td scope={scope ? scope : 1} className={`p-2 ${classes}`}>
-      {children}
+      <div className="flex justify-center items-center w-full text-center">
+        {children}
+      </div>
     </td>
   );
 };

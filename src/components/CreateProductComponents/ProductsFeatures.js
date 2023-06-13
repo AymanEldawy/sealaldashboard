@@ -1,10 +1,11 @@
-import React from 'react'
-import CustomSelectField from '../Forms/CustomSelectField';
-import { useContext } from 'react';
 import { LanguageContext } from '@/context/LangContext';
-import { useForm } from 'react-hook-form';
-import { useState } from 'react';
 import { fetchWord } from '@/lang/fetchWord';
+import React from 'react'
+import { useContext } from 'react';
+import { useState } from 'react';
+import { useForm } from 'react-hook-form';
+
+import CustomSelectField from '../Forms/CustomSelectField';
 
 const fields = [
   {
@@ -82,10 +83,10 @@ export const ProductsFeatures = () => {
   const [msg, setMsg] = useState('')
   console.log(register)
   return (
-    <div>
-      <h3 className='text-lg text-secondary mb-4 font-medium'>{fetchWord('Product_Information', lang)}</h3>
+    <div className='w-full'>
+      <h3 className='text-lg text-secondary mb-4 font-medium'>{fetchWord('Product_features', lang)}</h3>
       <form onSubmit={onSubmit} className='mb-8'>
-        <div className='grid gap-4 md:grid-cols-2'>
+        <div className='grid gap-4 grid-cols-2'>
           {
             fields?.map(field => (
               <CustomSelectField

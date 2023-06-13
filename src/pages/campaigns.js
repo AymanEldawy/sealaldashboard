@@ -49,7 +49,7 @@ const Companies = () => {
         hideMangeProduct
       />
       <div className="container">
-        <div className='mt-4 md:p-5 bg-white'>
+        <div className='px-4 mt-4 md:p-5 bg-white'>
           <TabsList
             separated
             separatedClassName="mt-3 !h-[22px]"
@@ -62,23 +62,23 @@ const Companies = () => {
             activeClassName="before:w-[60px] before:bg-primary before:h-[2px] text-primary before:absolute before:bottom-0 ltr:before:left-0 rtl:before:right-0"
             extraContentClassName="text-xs"
           />
-          <div className='my-4 flex items-center justify-between gap-4'>
-            <div className='flex gap-4 items-center text-sm text-secondary'>
-              <label className='flex gap-2 items-center'>
+          <div className='my-4 flex flex-wrap  items-center justify-between gap-4'>
+            <div className='flex justify-between gap-4 items-center text-sm text-secondary'>
+              <label className='flex gap-2 items-center sm:whitespace-nowrap'>
                 <input type="radio" name="type" className='w-4 h-4 accent-primary' />
                 {fetchWord('All', lang)}
               </label>
-              <label className='flex gap-2 items-center'>
+              <label className='flex gap-2 items-center sm:whitespace-nowrap'>
                 <input type="radio" name="type" className='w-4 h-4 accent-primary' />
                 {fetchWord('Upcoming_Campaigns', lang)}
               </label>
-              <label className='flex gap-2 items-center'>
+              <label className='flex gap-2 items-center sm:whitespace-nowrap'>
                 <input type="radio" name="type" className='w-4 h-4 accent-primary' />
                 {fetchWord('Ongoing_Campaigns', lang)}
               </label>
             </div>
             <CustomSelectField
-              containerClassName="w-fit !mb-0"
+              containerClassName="sm:!w-fit !mb-0"
               selectClassName="ltr:pr-10 rtl:pl-10 py-2"
               placeholder={fetchWord('According_to_Stock_Quantity', lang)}
             />

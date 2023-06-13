@@ -19,7 +19,7 @@ export const CargoTransactionsTable = () => {
   return (
     <div className='bg-white px-2 md:px-4 py-4'>
       <CargoTransactionsFilters />
-      <SuperTable columns={columns } data={companyChanges} classes={{table:'!rounded-none', colHead: '!py-2', colBody: '!py-2'}}/>
+      <SuperTable columns={columns } data={companyChanges} classes={{table:'!rounded-none', colHead: '!py-4', colBody: '!py-2'}}/>
     </div>
 
   )

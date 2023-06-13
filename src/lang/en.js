@@ -134,6 +134,7 @@ export const en = {
   "Stock": "Stock",
   "VAT": "VAT",
   "Stock code": "Stock code",
+  Trendyol_Sale_Price:"Trendyol Sale Price",
   "Process": "Process",
   "VAT": "VAT",
   "Stock code": "Stock code",
@@ -259,6 +260,7 @@ export const en = {
 
   // actions
   Actions: "Actions",
+  Orders: " Orders",
   Pending_orders: "Pending orders",
   Delayed_orders: "Delayed orders",
   Pending_Returns: "Pending Returns",

@@ -33,7 +33,7 @@ export const AllOrdersCanceled = () => {
             placeholder={fetchWord('Old_to_New', lang)}
           />
         </div>
-        <SuperTable selectedList={selectedList} setSelectedList={setSelectedList} allowSelect columns={columns} data={canceledOrders} />
+        <SuperTable primaryStyles selectedList={selectedList} setSelectedList={setSelectedList} allowSelect columns={columns} data={canceledOrders} />
       </div>
     </div >
   )

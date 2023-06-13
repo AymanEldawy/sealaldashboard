@@ -1,14 +1,16 @@
-import React from 'react'
-import { CustomerQuestionForm } from './CustomerQuestionForm'
-import SuperTable from '../CustomTable/SuperTable'
-import { useState } from 'react'
-import { customerQuestions, productsData } from '@/data/dummyData'
-import { Button } from '../Global/Button/Button'
-import { useContext } from 'react'
 import { LanguageContext } from '@/context/LangContext'
+import { customerQuestions, productsData } from '@/data/dummyData'
 import { fetchWord } from '@/lang/fetchWord'
-import { ChevronIcon, GearIcon } from '../Icons'
+import React from 'react'
+import { useState } from 'react'
+import { useContext } from 'react'
+
+import SuperTable from '../CustomTable/SuperTable'
 import CustomSelectField from '../Forms/CustomSelectField'
+import { Button } from '../Global/Button/Button'
+import { ChevronIcon, GearIcon } from '../Icons'
+import { CustomerQuestionForm } from './CustomerQuestionForm'
+
 let columns = [
   'Creation_Date',
   'Product_information',
@@ -25,7 +27,7 @@ export const Questions = () => {
       <div className='overflow-hidden bg-white rounded-xl p-2 md:p-6'>
         <CustomSelectField
           placeholder={fetchWord('New_by_creation_date', lang)}
-          selectClassName="border-primary text-secondary font-medium"
+          selectClassName="border-primary text-secondary font-medium text-xs md:text-base"
           containerClassName="max-w-xs"
         />
         <SuperTable selectedList={selectedList} setSelectedList={setSelectedList} columns={columns} data={customerQuestions}

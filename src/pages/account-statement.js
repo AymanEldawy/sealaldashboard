@@ -11,6 +11,7 @@ import { accountStatementData, dailyRecordsData } from '@/data/dummyData'
 import { fetchWord } from '@/lang/fetchWord'
 import Link from 'next/link'
 import React, { useContext, useState } from 'react'
+
 let columns = [
   'Request_No',
   'File_name',
@@ -27,9 +28,9 @@ const AccountStatement = () => {
   return (
     <Layout>
       <SectionBar title={fetchWord('Current_account_statement', lang)} />
-      <div className='container'>
+      <div className='container !my-4 md:!my-8'>
         <div className='md:p-4'>
-          <div className='bg-white rounded-md p-2 md:p-4 grid grid-cols-2 items-end gap-4'>
+          <div className='bg-white rounded-md p-2 md:p-4 grid grid-cols-1 sm:grid-cols-2 items-end gap-4'>
             <InputField containerClassName='text-sm flex-1 !mb-0'
               type="date"
               value={date}
@@ -38,13 +39,13 @@ const AccountStatement = () => {
               className='text-sm !w-full border border-[#D5D9E1] rounded-md p-2'
               iconEnd={<CalenderIcon className="bg-white w-5 h-5  pointer-events-none" />} iconEndClassName=" pointer-events-none"
             />
-            <Button classes="flex-1" onClick={handleFilterDate}>{fetchWord('Current_Account_Statement_List', lang)}</Button>
+            <Button classes="flex-1 text-sm sm:text-base" onClick={handleFilterDate}>{fetchWord('Current_Account_Statement_List', lang)}</Button>
           </div>
           <div className='h-4 md:h-8' />
           <SuperTable
+            primaryStyles
             columns={columns}
             data={accountStatementData}
-            classes={{ containerClassName: 'bg-white px-4 !rounded-none', table: '!border-none', colBody: "!border-x-0", colHead: 'border-b-2 border-primary !py-3' }}
             allowActions
             actionKey="TRANSACTIONS"
             actionsContent={() => (

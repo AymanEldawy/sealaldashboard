@@ -17,7 +17,7 @@ export const PaymentsHistoryFilter = () => {
       <h4 className='text-secondary font-medium mb-4'>
         {fetchWord('$', lang)}
       </h4>
-      <div className='flex flex-wrap items-end gap-4'>
+      <div className='grid grid-cols-1 min-[450px]:grid-cols-2 md:grid-cols-4 items-end gap-4'>
         <InputField containerClassName='text-sm flex-1 !mb-0'
           {...register("Search_by_date", { required: true, maxLength: 20 })}
           label={fetchWord('Search_by_date', lang)}
@@ -37,8 +37,10 @@ export const PaymentsHistoryFilter = () => {
           className='text-sm !w-full border border-[#D5D9E1] rounded-md p-2'
           iconEnd={<CalenderIcon className="bg-white w-5 h-5  pointer-events-none" />} iconEndClassName=" pointer-events-none"
         />
+        <div className="flex gap-2">
         <Button classes="h-10 flex-1 px-4">{fetchWord('filter', lang)}</Button>
         <button className="bg-blue-light text-white rounded-md h-10 w-10 flex items-center justify-center"><CloseIcon /> </button>
+      </div>
       </div>
     </div>
   )

@@ -16,7 +16,7 @@ export const FlashPricesForm = () => {
   console.log(register)
   return (
     <form onSubmit={handleSubmit(onSubmit)} className='pt-6 px-4 pb-4 bg-white rounded-b-xl'>
-      <div className='grid gap-4 grid-cols-2 md:grid-cols-4 items-end'>
+      <div className='grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-4 items-end'>
         <InputField
           labelClassName="text-primary-text"
           containerClassName="flex-1 !mb-0"

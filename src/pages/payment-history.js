@@ -17,7 +17,7 @@ const PaymentHistory = () => {
   return (
     <Layout>
       <SectionBar title={fetchWord('Payment_History', lang)} />
-      <div className='container'>
+      <div className='container !my-4 md:!my-8'>
         <div className='md:p-4'>
           <PaymentsHistoryFilter />
           <div className='h-4 md:h-8' />

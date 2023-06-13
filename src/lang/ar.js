@@ -130,6 +130,9 @@ export const ar = {
   Trendyol_Sale_Price: "سعر البيع على ترنديول",
   Stock: "المخزون",
   VAT: "ضريبة القيمة المضافة",
+  Trendyol_Sale_Price: "سعر البيع على ترنديول",
+
+
   'Stock code': "رمز المخزون",
   Process: "العملية",
 
@@ -255,6 +258,7 @@ export const ar = {
 
   // actions
   Actions: "الإجراءات",
+  Orders: "الطلبات",
   Pending_orders: "الطلبات المعلقة",
   Delayed_orders: "الطلبات المؤجلة",
   Pending_Returns: "المرتجعات المعلقة",

@@ -24,19 +24,26 @@ const SuperTable = ({
   itemsPerPage,
   selectedList,
   setSelectedList,
-  classes,
+  classes: classesProps,
   allowActions,
   actionKey,
-  actionsContent
+  actionsContent,
+  primaryStyles
 }) => {
-  console.log(data, 'data')
+  console.log(primaryStyles, 'data')
   const { lang } = useContext(LanguageContext)
   const [filterList, setFilterList] = useState(data);
   const [itemOffset, setItemOffset] = useState(0);
   const [currentItems, setCurrentItems] = useState([]);
   const [pageCount, setPageCount] = useState(1);
   const [refresh, setRefresh] = useState(false);
-
+  let defaultPrimaryStyle = primaryStyles ? {
+    table: "!border-none !rounded-none",
+    headRow: 'border-b !border-primary',
+    colHead: "border-b !border-primary !py-4",
+    colBody: "ltr:first:border-l-0  rtl:first:border-r-0 ltr:last:border-r-0 rtl:last:border-l-0"
+  } : {}
+  let classes = { colHead:"!py-3", ...classesProps, ...defaultPrimaryStyle, containerClassName: '!rounded-none',  }
   useEffect(() => {
     setFilterList(data);
   }, [data]);
@@ -173,7 +180,7 @@ const SuperTable = ({
             return (
               <TableRow
                 key={`${row?.Name}-${index}`}
-                classes={`border-b dark:border-borderdark whitespace-nowrap ${!!selectedList?.[row?.id] ? "bg-gray-100 dark:bg-[#1115]" : ""
+                classes={`border-b dark:border-borderdark ${!!selectedList?.[row?.id] ? "bg-gray-100 dark:bg-[#1115]" : ""
                   } ${classes?.row}`}
               >
                 {allowSelect ? (
@@ -197,8 +204,8 @@ const SuperTable = ({
                     return (
                       <TableCol classes={`!py-4 border ${classes?.colBody}`} key={index}>
                         <div className="flex gap-4">
-                          <span>{row?.[col]?.from}</span>
-                          <span>{row?.[col]?.to}</span>
+                          <span className="whitespace-nowrap">{row?.[col]?.from}</span>
+                          <span className="whitespace-nowrap">{row?.[col]?.to}</span>
                         </div>
                       </TableCol>
                     )

@@ -13,7 +13,7 @@ const Payments = () => {
   return (
     <Layout>
       <SectionBar title={fetchWord('Payments', lang)} />
-      <div className='container my-4 md:my-8'>
+      <div className='container !my-4 md:!my-8'>
         <PaymentsFilterDetails />
         <div className='flex gap-4 mt-8 flex-wrap'>
           <TodayProgress />

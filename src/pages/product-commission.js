@@ -23,12 +23,12 @@ const ProductCommission = () => {
         <div className='mt-4 md:p-5'>
           <ProductCommissionForm />
           <div className='bg-white mt-4 pt-4'>
-            <div className='flex gap-1 items-center rounded-md border border-gray-400 px-2 max-w-xs mx-4'>
+            <div className='flex gap-1 mb-4 items-center rounded-md border border-gray-400 px-2 max-w-xs mx-4'>
               <span className="whitespace-nowrap">{fetchWord('Order_Date', lang)}</span>
               <CustomSelectField
                 containerClassName="!mb-0 min-w-[150px]"
                 arrowClassName="ltr:!-right-3 rtl:-left-3 !top-1"
-                selectClassName="!border-none w-full  !h-10 !py-0"
+                selectClassName="!border-none w-full  !h-10 !py-0 text-sm md:text-base"
                 placeholder={fetchWord('Old_to_New', lang)}
               />
             </div>

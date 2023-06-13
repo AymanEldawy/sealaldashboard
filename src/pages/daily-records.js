@@ -29,9 +29,9 @@ const DailyRecords = () => {
           <PaymentsHistoryFilter />
           <div className='h-4 md:h-8' />
           <SuperTable
+          primaryStyles
             columns={columns}
             data={dailyRecordsData}
-            classes={{ containerClassName: 'bg-white px-4 !rounded-none', table: '!border-none', colBody: "!border-x-0", colHead: 'border-b-2 border-primary !py-3' }}
             allowActions
             actionKey="TRANSACTIONS"
             actionsContent={() => (

@@ -1,6 +1,5 @@
 import { AirConIcon, FriggedIcon, GasIcon, MicrowavesIcon, OthersIcon, OvensIcon } from "@/components/Icons";
 
-
 export const productsData = [
   {
     id: "21",
@@ -89,7 +88,7 @@ export const salesInformation = [
     "Image": "/images/products/1.png",
     "Barcode": "123456789012",
     "Color": "Black",
-    "Trendyol Sale Price": 49.99,
+    "Trendyol_Sale_Price": 49.99,
     "Stock": 100,
     "VAT": 0.18,
     "Stock code": "PRD-001",
@@ -99,7 +98,7 @@ export const salesInformation = [
     "Image": "/images/products/2.png",
     "Barcode": "234567890123",
     "Color": "White",
-    "Trendyol Sale Price": 29.99,
+    "Trendyol_Sale_Price": 29.99,
     "Stock": 50,
     "VAT": 0.18,
     "Stock code": "PRD-002",
@@ -109,7 +108,7 @@ export const salesInformation = [
     "Image": "/images/products/3.png",
     "Barcode": "345678901234",
     "Color": "Red",
-    "Trendyol Sale Price": 69.99,
+    "Trendyol_Sale_Price": 69.99,
     "Stock": 20,
     "VAT": 0.18,
     "Stock code": "PRD-003",
@@ -119,7 +118,7 @@ export const salesInformation = [
     "Image": "/images/products/4.png",
     "Barcode": "456789012345",
     "Color": "Blue",
-    "Trendyol Sale Price": 99.99,
+    "Trendyol_Sale_Price": 99.99,
     "Stock": 10,
     "VAT": 0.18,
     "Stock code": "PRD-004",
@@ -129,7 +128,7 @@ export const salesInformation = [
     "Image": "/images/products/5.png",
     "Barcode": "567890123456",
     "Color": "Green",
-    "Trendyol Sale Price": 39.99,
+    "Trendyol_Sale_Price": 39.99,
     "Stock": 30,
     "VAT": 0.18,
     "Stock code": "PRD-005",
@@ -147,60 +146,70 @@ export const customerQuestions = [
 
   {
     id: 1,
+    Creation_Date: new Date().toLocaleDateString('en-UK'),
     "Product_information": "A high-quality widget for everyday use",
     "Question_Detail": "Does the widget come in different colors?",
     "Process": "We currently offer the widget in black and white."
   },
   {
     id: 2,
+    Creation_Date: new Date().toLocaleDateString('en-UK'),
     "Product_information": "An advanced widget for tech enthusiasts",
     "Question_Detail": "What is the warranty on Widget B?",
     "Process": "Widget B comes with a 1-year warranty for all manufacturing defects."
   },
   {
     id: 3,
+    Creation_Date: new Date().toLocaleDateString('en-UK'),
     "Product_information": "A compact widget for travel",
     "Question_Detail": "Can Widget C be used internationally?",
     "Process": "Yes, Widget C works with all international power outlets."
   },
   {
     id: 4,
+    Creation_Date: new Date().toLocaleDateString('en-UK'),
     "Product_information": "A durable widget for outdoor activities",
     "Question_Detail": "Is Widget D waterproof?",
     "Process": "Yes, Widget D is completely waterproof and can be used in any weather condition."
   },
   {
     id: 5,
+    Creation_Date: new Date().toLocaleDateString('en-UK'),
     "Product_information": "A versatile widget with multiple functions",
     "Question_Detail": "What are the different functions of Widget E?",
     "Process": "Widget E can be used as a flashlight, a compass, and a thermometer."
   },
   {
     id: 6,
+    Creation_Date: new Date().toLocaleDateString('en-UK'),
     "Product_information": "A stylish widget for home decor",
     "Question_Detail": "What colors is Widget F available in?",
     "Process": "Widget F is available in black, white, and silver."
   },
   {
     id: 7,
+    Creation_Date: new Date().toLocaleDateString('en-UK'),
     "Product_information": "A high-performance widget for professionals",
     "Question_Detail": "When will Widget G be back in stock?",
     "Process": "We expect Widget G to be back in stock in 2-3 weeks."
   },
   {
     id: 8,
+    Creation_Date: new Date().toLocaleDateString('en-UK'),
     "Product_information": "An eco-friendly widget made from recycled materials",
     "Question_Detail": "How is Widget H environmentally friendly?",
     "Process": "Widget H is made from 100% recycled plastic and comes in eco-friendly packaging."
   },
   {
     id: 9,
+    Creation_Date: new Date().toLocaleDateString('en-UK'),
     "Product_information": "A customizable widget that can be personalized",
     "Question_Detail": "Can Widget I be engraved with a name or message?",
     "Process": "Yes, Widget I can be engraved with a name or message of your choice."
   },
   {
     id: 10,
+    Creation_Date: new Date().toLocaleDateString('en-UK'),
     "Product_information": "A budget-friendly widget for everyday use",
     "Question_Detail": "What is the material of Widget J?",
     "Process": "Widget J is made from high-quality plastic that is durable and long-lasting."
@@ -773,6 +782,7 @@ export const dailyRecordsData = [
 
 export const accountStatementData = [
   {
+    'Creation_Date': "12/01/203",
     "Request_No": "REQ001",
     "File_name": "file001.csv",
     "Period": {
@@ -781,6 +791,7 @@ export const accountStatementData = [
     },
   },
   {
+    'Creation_Date': "12/01/203",
     "Request_No": "REQ002",
     "File_name": "file002.csv",
     "Period": {
@@ -789,6 +800,7 @@ export const accountStatementData = [
     },
   },
   {
+    'Creation_Date': "12/01/203",
     "Request_No": "REQ003",
     "File_name": "file003.csv",
     "Period": {
@@ -797,6 +809,7 @@ export const accountStatementData = [
     },
   },
   {
+    'Creation_Date': "12/01/203",
     "Request_No": "REQ004",
     "File_name": "file004.csv",
     "Period": {
@@ -805,6 +818,7 @@ export const accountStatementData = [
     },
   },
   {
+    'Creation_Date': "12/01/203",
     "Request_No": "REQ005",
     "File_name": "file005.csv",
     "Period": {
@@ -817,26 +831,31 @@ export const accountStatementData = [
 
 export const productCommissionData = [
   {
+    "Creation_Date": "2023-06-09",
     "Product_Information": "Product A",
     "Question_Detail": "How can I order Product A?",
     "Process": "Online Ordering"
   },
   {
+    "Creation_Date": "2023-06-09",
     "Product_Information": "Product B",
     "Question_Detail": "What are the dimensions of Product B?",
     "Process": "Product Information Request"
   },
   {
+    "Creation_Date": "2023-06-09",
     "Product_Information": "Product C",
     "Question_Detail": "How long does it take to ship Product C?",
     "Process": "Shipping Inquiry"
   },
   {
+    "Creation_Date": "2023-06-09",
     "Product_Information": "Product D",
     "Question_Detail": "Can I return Product D if I'm not satisfied?",
     "Process": "Return Request"
   },
   {
+    "Creation_Date": "2023-06-09",
     "Product_Information": "Product E",
     "Question_Detail": "What is the warranty on Product E?",
     "Process": "Warranty Inquiry"

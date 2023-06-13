@@ -28,8 +28,10 @@ const FlashPrices = () => {
       />
       <div className='container'>
         <div className='mt-4 md:p-4'>
-          <div className='flex gap-4 items-center bg-white rounded-t-xl md:pt-4 px-2 md:px-4 font-medium text-secondary'>
+          <div className='flex flex-col pt-4 sm:flex-row gap-4 sm:items-center bg-white rounded-t-xl md:pt-4 px-2 md:px-4 font-medium text-secondary'>
             <p>{fetchWord('Situation', lang)}</p>
+            <div className="flex gap-4">
+
             <label className='flex gap-2 items-center'>
               <input type="radio" name="extend" className="accent-primary h-4 w-4" />
               {fetchWord('What_I_May_Be_Included', lang)}
@@ -38,16 +40,17 @@ const FlashPrices = () => {
               <input type="radio" name="extend" className="accent-primary h-4 w-4" />
               {fetchWord('Im_Included', lang)}
             </label>
+            </div>
           </div>
           <FlashPricesForm />
         </div>
         <div className='bg-white rounded-md'>
-          <div className="flex gap-4 items-center pt-4 mb-2 md:p-4">
+          <div className="flex flex-col sm:flex-row gap-4 sm:items-center pt-4 px-4 mb-2 md:p-4">
             <label className='flex items-center gap-2 text-secondary font-medium'>
               <input type="checkbox" className='h-4 w-4 accent-primary' />
               {fetchWord('Products_in_stock', lang)}
             </label>
-            <div className='flex gap-1 items-center rounded-md border border-gray-400 px-2 max-w-xs mx-4'>
+            <div className='flex gap-1 items-center rounded-md border border-gray-400 px-2 max-w-xs sm:mx-4'>
               <span className="whitespace-nowrap">{fetchWord('sort_by', lang)}</span>
               <CustomSelectField
                 containerClassName="!mb-0 min-w-[150px]"

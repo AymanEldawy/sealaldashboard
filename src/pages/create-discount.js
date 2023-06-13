@@ -24,14 +24,14 @@ const CreateDiscount = () => {
           </Link>
         }
       />
-      <div className='container my-4 md:my-8'>
-        <div className='flex gap-4 md:gap-8'>
-          <div className='flex-1 bg-white p-2 rounded-md md:p-4'>
+      <div className='container !my-4 md:!my-8 !mb-12'>
+        <div className='flex flex-col lg:flex-row gap-4 md:gap-8'>
+          <div className='flex-1 bg-white rounded-md p-4'>
             <h3 className='text-lg text-secondary font-semibold mb-1'>{fetchWord('Discount_type', lang)}</h3>
             <p className='text-sm text-primary-text'>{fetchWord('Select_discount_type', lang)}</p>
-            <div className='flex gap-4 my-4 '>
+            <div className='flex flex-col sm:flex-row lg:grid lg:grid-cols-3 gap-4 my-4 '>
               {list?.map(item => (
-                <div key={item?.title} className='bg-[#F6FAFF] p-4 rounded-md flex flex-col gap-2'>
+                <div key={item?.title} className='bg-[#F6FAFF] p-4 rounded-md lg:w-fit flex flex-col gap-2'>
                   <label className='cursor-pointer text-secondary font-medium flex items-center gap-4'>
                     <input type="radio" name="type" className="h-4 w-4" />
                     {fetchWord(item?.title, lang)}
@@ -42,7 +42,7 @@ const CreateDiscount = () => {
               ))}
             </div>
           </div>
-          <div className='bg-white p-2 rounded-md md:p-4 flex-1 max-w-lg'>
+          <div className='bg-white rounded-md p-4 flex-1 lg:max-w-lg'>
             <h3 className='text-lg text-secondary font-semibold mb-1'>{fetchWord('Summery', lang)}</h3>
             <p className='text-sm text-primary-text'>{fetchWord('preview', lang)}</p>
             <div className='h-[202px] bg-secondary-light flex items-center justify-center my-4'>

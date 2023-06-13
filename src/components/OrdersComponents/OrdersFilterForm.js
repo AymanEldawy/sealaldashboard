@@ -58,6 +58,10 @@ export const OrdersFilterForm = () => {
             <button className="bg-blue-light text-white rounded-md h-11 w-11 flex items-center justify-center"><CloseIcon /> </button>
           </div>
         </div>
+      </div>
+      <div className='h-[1px] bg-gray-300 my-4' />
+      <div className='grid gap-4 md:grid-cols-2 lg:grid-cols-3'>
+
         <div className='flex items-end gap-4 overflow-hidden'>
           <InputField
             labelClassName="text-primary-text"
